@@ -13,6 +13,8 @@ function user_job_setup()
 	state.Weapons:options('Default','DualWeapons','DualSavageWeapons','DualLeadenRanged','DualLeadenMelee','DualAeolian','DualLeadenMeleeAcc','DualRanged','None') --F9 to cycle
 	state.CompensatorMode:options('Always','300','1000','Never')
 
+--boogers
+
     gear.RAbullet = "Eminent Bullet"
     gear.WSbullet = "Eminent Bullet"
     gear.MAbullet = "Eminent Bullet" --For MAB WS, do not put single-use bullets here. Orichalc. Bullet preferred
