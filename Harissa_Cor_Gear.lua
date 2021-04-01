@@ -73,10 +73,10 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
 
 	sets.precast.JA['Triple Shot'] = {body="Chasseur\'s Frac"}
-    sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +1",body="Lanun Frac",legs="Lanun trews",feet="Lak. Bottes +1"}
-    sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +1",body="Laksa. Frac +1",feet="Lanun bottes"}
-    sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +1",body="Lanun Frac",feet="Lak. Bottes +1"}
-    sets.precast.FoldDoubleBust = {head="Lanun Tricorne +1",body="Laksa. Frac +1", hands="Lanun Gants +1",feet="Lak. Bottes +1"}
+    sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +1",body="Lanun Frac +1",legs="Lanun trews +1",feet="Lak. Bottes +1"}
+    sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +1",body="Laksa. Frac +2",feet="Lanun bottes +1"}
+    sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +1",body="Lanun Frac +1",feet="Lak. Bottes +1"}
+    sets.precast.FoldDoubleBust = {head="Lanun Tricorne +1",body="Laksa. Frac +2", hands="Lanun Gants +1",feet="Lak. Bottes +1"}
 
     sets.precast.CorsairRoll = {range="Compensator",head="Lanun Tricorne +1", body="Meg. Cuirie +2", hands="Chasseur\'s Gants",
 			ring2="Barataria Ring",back=gear.harissa_mantle,waist="Flume Belt",legs="Herculean Trousers", feet="Mummu Gamash. +2"}
@@ -85,7 +85,7 @@ function init_gear_sets()
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur\'s Frac", feet="Chasseur\'s Bottes"})
-    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne", body="Lanun Frac"})
+    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne", body="Lanun Frac +1"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur\'s Frac"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur\'s Gants"})
     
@@ -96,7 +96,7 @@ function init_gear_sets()
 		
 	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne", body="Chasseur's Frac", legs="Chas. Culottes",feet="Chasseur\'s Bottes"})
 	
-    sets.precast.CorsairShot.Proc = set_combine(sets.precast.CorsairShot, {head="Laksa. Tricorne +1",waist="Flume Belt"})
+    sets.precast.CorsairShot.Proc = set_combine(sets.precast.CorsairShot, {head="Laksa. Tricorne +2",waist="Flume Belt"})
 
     sets.precast.CorsairShot['Light Shot'] = set_combine(sets.precast.CorsairShot, {})
 
