@@ -213,7 +213,7 @@ function init_gear_sets()
 		
     sets.precast.WS['Aeolian Edge'] = {ammo="Seeth. Bomblet +1",
         head="Herculean Helm",neck="Stoicheion Medal",ear1="Friomisi Earring",ear2="Hecate\'s Earring",
-        body="Mummu Jacket +2",hands="Meg. Gloves +2",ring1="Arvina Ringlet +1",ring2="Acumen Ring",
+        body="Herculean Vest",hands="Herculean Gloves",ring1="Arvina Ringlet +1",ring2="Acumen Ring",
         back="Vespid Mantle",waist="Artful Belt +1",legs="Herculean Trousers",feet="Herculean Boots"}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
