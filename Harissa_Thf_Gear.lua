@@ -262,9 +262,9 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {ammo="Staunch Tathlum",
-        head="Malignance Chapeau",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Malignance Tights",
+        head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Skd. Jambeaux +1",neck="Asperity Necklace",waist="Flume Belt",ear1="Steelflash Earring",
-		ear2="Bladeborn Earring",ring1="Apate Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
+		ear2="Bladeborn Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
@@ -282,13 +282,13 @@ function init_gear_sets()
 		ear2="Bladeborn Earring",ring1="Apate Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
-        head="Malignance Chapeau",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Malignance Tights",
+        head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt",ear1="Steelflash Earring",
 		ear2="Bladeborn Earring",ring1="Apate Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum",
 		head=gear.herculean_fc_head,neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-		body="Adhemar Jacket +1",hands="Malignance Gloves",ring1="Vengeful Ring",ring2="Purity Ring",
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Vengeful Ring",ring2="Purity Ring",
 		back="Mujin Mantle",waist="Engraved Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
 
