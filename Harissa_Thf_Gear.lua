@@ -54,7 +54,7 @@ function init_gear_sets()
 
 	sets.TreasureHunter = {hands="Plunderer's Armlets +1",waist="Chaac Belt",feet="Skulk. Poulaines"}
     sets.ExtraRegen = {}
-    sets.Kiting = {feet="Skd. Jambeaux +1"}
+    sets.Kiting = {feet="Jute Boots +1"}
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 	sets.buff.Sleep = {head="Frenzy Sallet"}
@@ -263,7 +263,7 @@ function init_gear_sets()
 
     sets.idle = {ammo="Staunch Tathlum",
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Skd. Jambeaux +1",neck="Asperity Necklace",waist="Flume Belt",ear1="Steelflash Earring",
+		feet="Jute Boots +1",neck="Asperity Necklace",waist="Flume Belt",ear1="Steelflash Earring",
 		ear2="Bladeborn Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
