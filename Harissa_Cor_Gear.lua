@@ -244,7 +244,7 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {ammo=gear.RAbullet,
 		head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Carmine Cuisses +1",
-		feet="Pursuer's Gaiters",neck="Asperity Necklace",waist="Flume Belt",ear1="Bladeborn Earring",
+		feet="Pursuer\'s Gaiters",neck="Asperity Necklace",waist="Flume Belt",ear1="Bladeborn Earring",
 		ear2="Steelflash Earring",ring1="Defending Ring",ring2="Meghanada Ring",back=gear.harissa_mantle}
 		
     sets.idle.PDT = {ammo=gear.RAbullet,
@@ -271,7 +271,7 @@ function init_gear_sets()
 		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt",ear1="Bladeborn Earring",
 		ear2="Steelflash Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 
-    sets.Kiting = {feet="Skd. Jambeaux +1"}
+    sets.Kiting = {legs="Carmine Cuisses +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring"}
 
