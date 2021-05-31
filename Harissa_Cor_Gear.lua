@@ -175,7 +175,7 @@ function init_gear_sets()
     sets.precast.WS['Split Shot'].Acc = sets.precast.WS['Last Stand'].Acc
 	
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
-        head="Herculean Helm",neck="Stoicheion medal",ear1="Moonshade Earring",ear2="Friomisi Earring",
+        head="Pixie Hairpin +1",neck="Stoicheion medal",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Herculean Vest",hands="Carmine Fin. Ga. +1",ring1="Arvina Ringlet +1", ring2="Acumen Ring",
         back=gear.harissa_mantle,waist="Ponente Sash",legs="Herculean Trousers",feet="Herculean Boots"}
 
