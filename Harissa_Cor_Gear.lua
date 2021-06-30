@@ -295,13 +295,13 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {
 		head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-        body="Adhemar Jacket +1",hands="Mummu Wrists +2",ring1="Apate Ring",ring2="Epona's Ring",
+        body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Chirich Ring +1",ring2="Epona's Ring",
         back="Bleating Mantle",waist="Sailfi Belt +1",legs="Meg. Chausses +2",feet="Herculean Boots"}
     
     sets.engaged.Acc = {
 	    head="Malignance Chapeau",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Meg. Chausses +2",
 		feet="Meg. Jam. +2",neck="Ej Necklace",waist="Sailfi Belt +1",ear1="Bladeborn Earring",
-		ear2="Steelflash Earring",ring1="Meghanada Ring",ring2="Mummu Ring",back="Bleating Mantle"}
+		ear2="Steelflash Earring",ring1="Chirich Ring +1",ring2="Chirich Ring +1",back="Bleating Mantle"}
 		
     sets.engaged.DT = {
        	head="Malignance Chapeau",body="Adhemar Jacket +1",hands="Malignance Gloves",legs="Malignance Tights",
@@ -321,7 +321,7 @@ function init_gear_sets()
     sets.engaged.DW.Acc = {		
 		head="Mummu Bonnet +2",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Meg. Chausses +2",
 		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Bladeborn Earring",
-		ear2="Steelflash Earring",ring1="Haverton Ring",ring2="Epona's Ring",back="Bleating Mantle"}
+		ear2="Steelflash Earring",ring1="Haverton Ring",ring2="Chirich Ring +1",back="Bleating Mantle"}
 		
     sets.engaged.DW.DT = {		
 		head="Malignance Chapeau",body="Adhemar Jacket +1",hands="Malignance Gloves",legs="Malignance Tights",
