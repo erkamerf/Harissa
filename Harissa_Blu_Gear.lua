@@ -1,16 +1,16 @@
 function user_job_setup()
 	-- Options: Override default values
-    state.OffenseMode:options('Fodder','Normal','Acc','FullAcc')
-	state.HybridMode:options('Normal','DT')
-    state.WeaponskillMode:options('Match','Normal','Acc','FullAcc','Fodder')
-    state.CastingMode:options('Normal','Resistant','Fodder','Proc')
-    state.IdleMode:options('Normal','Sphere','PDT','DTHippo')
-	state.PhysicalDefenseMode:options('PDT')
-	state.MagicalDefenseMode:options('MDT')
-	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('Tizalmace','Sequence','None','Almace','MagicWeapons','MeleeClubs','MaccWeapons','HybridWeapons')
+    state.OffenseMode:options('Fodder','Normal','Acc','FullAcc') --!f9
+	state.HybridMode:options('Normal','DT') --^f9
+    state.WeaponskillMode:options('Match','Normal','Acc','FullAcc','Fodder') --!f10
+    state.CastingMode:options('Normal','Resistant','Fodder','Proc') --@f10
+    state.IdleMode:options('Normal','Sphere','PDT','DTHippo') --f12
+	state.PhysicalDefenseMode:options('PDT') --~f10
+	state.MagicalDefenseMode:options('MDT') --^f11
+	state.ResistDefenseMode:options('MEVA') --^f12
+	state.Weapons:options('Tizalmace','Sequence','None','Almace','MagicWeapons','MeleeClubs','MaccWeapons','HybridWeapons') --f9
 
-    state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'}
+    state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'} --!f11
 
 	gear.da_jse_back = {name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}}
 	gear.stp_jse_back = {name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10',}}
@@ -30,7 +30,7 @@ function user_job_setup()
 	send_command('bind ^backspace input /ja "Unbridled Learning" <me>;wait 1;input /ja "Diffusion" <me>;wait 2;input /ma "Mighty Guard" <me>')
 	send_command('bind !backspace input /ja "Unbridled Learning" <me>;wait 1;input /ja "Diffusion" <me>;wait 2;input /ma "Carcharian Verve" <me>')
 	send_command('bind @backspace input /ja "Convergence" <me>')
-	send_command('bind @f10 gs c toggle LearningMode')
+	send_command('bind ^f10 gs c toggle LearningMode')
 	send_command('bind ^@!` gs c cycle MagicBurstMode')
 	send_command('bind @f8 gs c toggle AutoNukeMode')
 	send_command('bind !@^f7 gs c toggle AutoWSMode')
@@ -38,6 +38,17 @@ function user_job_setup()
 	send_command('bind @q gs c weapons MaccWeapons;gs c update')
 	send_command('bind ^q gs c weapons Almace;gs c update')
 	send_command('bind !q gs c weapons HybridWeapons;gs c update')
+  
+  --[[Binds you may want to change.
+	Bind special characters.
+	@ = Windows Key
+	% = Works only when text bar not up.
+	$ = Works only when text bar is up.
+	^ = Control Key
+	! = Alt Key
+	~ = Shift Key
+	# = Apps Key
+]]
 
 	select_default_macro_book()
 end
@@ -70,9 +81,9 @@ function init_gear_sets()
     sets.precast.Waltz = {ammo="Staunch Tathlum +1",
         head="Carmine Mask +1",neck="Unmoving Collar +1",ear1="Enchntr. Earring +1",ear2="Handler's Earring +1",
         body=gear.herculean_waltz_body,hands=gear.herculean_waltz_hands,ring1="Defending Ring",ring2="Valseur's Ring",
-        back="Moonlight Cape",waist="Chaac Belt",legs="Dashing Subligar",feet=gear.herculean_waltz_feet}
+        back="Moonlight Cape",waist="Chaac Belt",legs="Dashing Subligar",feet="Rawhide Boots"}
 	
-	sets.Self_Waltz = {body="Passion Jacket",ring1="Asklepian Ring"}
+	sets.Self_Waltz = {body="Passion Jacket",ring1="Asklepian Ring",waist="Chuq\'aba Belt", feet="Rawhide Boots"}
 
 	-- Don't need any special gear for Healing Waltz.
 	sets.precast.Waltz['Healing Waltz'] = {}
@@ -103,28 +114,28 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Aurgelmir Orb +1",
 				  head="Herculean Helm",neck="Sanctity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-                  body="Adhemar Jacket +1",hands="Herculean Gloves",ring1="Epona's Ring",ring2="Apate Ring",
+          body="Adhemar Jacket +1",hands="Herculean Gloves",ring1="Epona's Ring",ring2="Apate Ring",
 				  back="Buquwik Cape",waist="Chuq\'aba Belt",legs="Herculean Trousers",feet="Herculean Boots"}
 
 	sets.precast.WS.Acc = {ammo="Falcon Eye",
-				  head="Carmine Mask +1",neck="Fotia Gorget",ear1="Mache Earring +1",ear2="Telos Earring",
-				  body="Assim. Jubbah +3",hands="Assim. Bazu. +3",ring1="Epona's Ring",ring2="Chirich Ring +1",
-			      back=gear.da_jse_back,waist="Fotia Belt",legs="Carmine Cuisses +1",feet=gear.herculean_ta_feet}
+				  head="Herculean Helm",neck="Sanctity Necklace",ear1="Mache Earring +1",ear2="Odr Earring",
+				  body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Chirich Ring +1",
+          back="Vespid Mantle",waist="Artful Belt +1",legs="Carmine Cuisses +1",feet="Herculean Boots"}
 
 	sets.precast.WS.FullAcc = {ammo="Falcon Eye",
-				  head="Carmine Mask +1",neck="Mirage Stole +2",ear1="Mache Earring +1",ear2="Odr Earring",
-				  body="Assim. Jubbah +3",hands="Assim. Bazu. +3",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-			      back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+				  head="Malignance Chapeau",neck="Ej Necklace",ear1="Mache Earring +1",ear2="Odr Earring",
+				  body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
+          back="Vespid Mantle",waist="Artful Belt +1",legs="Malignance Tights",feet="Herculean Boots"}
 
 	sets.precast.WS.DT = {ammo="Aurgelmir Orb +1",
 				  head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-                  body="Malignance Tabard",hands="Assim. Bazu. +3",ring1="Defending Ring",ring2="Ilabrat Ring",
+          body="Malignance Tabard",hands="Assim. Bazu. +3",ring1="Defending Ring",ring2="Ilabrat Ring",
 				  back=gear.da_jse_back,waist="Fotia Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.precast.WS.Fodder = {ammo="Aurgelmir Orb +1",
-				  head="Lilitu Headpiece",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
-                  body="Adhemar Jacket +1",hands="Jhakri Cuffs +2",ring1="Epona's Ring",ring2="Apate Ring",
-				  back=gear.da_jse_back,waist="Fotia Belt",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
+				  head="Herculean Helm",neck="Sanctity Necklace",ear1="Suppanomimi",ear2="Brutal Earring",
+          body="Adhemar Jacket +1",hands="Herculean Gloves",ring1="Epona's Ring",ring2="Apate Ring",
+				  back="Buquwik Cape",waist="Chuq\'aba Belt",legs="Herculean Trousers",feet="Herculean Boots"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {head="Jhakri Coronal +2",ear1="Regal Earring",body="Jhakri Robe +2",ring2="Rufescent Ring",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"})
@@ -178,8 +189,8 @@ function init_gear_sets()
 	sets.precast.WS['Sanguine Blade'].DT = set_combine(sets.precast.WS.DT, {back=gear.nuke_jse_back})
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {ear1="Cessance Earring",ear2="Brutal Earring"}
-	sets.AccMaxTP = {ear1="Regal Earring",ear2="Telos Earring"}
+	sets.MaxTP = {ear1="Steelflash Earring",ear2="Brutal Earring"}
+	sets.AccMaxTP = {ear1="Steelflash Earring",ear2="Telos Earring"}
 
 	-- Midcast Sets
 	sets.midcast.FastRecast = {ammo="Hasty Pinion +1",
@@ -395,7 +406,7 @@ function init_gear_sets()
 	sets.NightIdle = {}
 
 	-- Gear for learning spells: +skill and AF hands.
-	sets.Learning = {hands="Assim. Bazu. +3"}
+	sets.Learning = {hands="Magus Bazubands"}
 
 	-- Resting sets
 	sets.resting = {main="Bolelabunga",sub="Genmei Shield",ammo="Falcon Eye",
@@ -406,7 +417,7 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum +1",
 			      head="Malignance Chapeau",neck="Asperity Necklace",ear1="Mache Earring +1", ear2="Odr Earring",
-			      body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Stikini Ring +1",
+			      body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Chirich Ring +1",
 			      back="Archon Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Herculean Boots"}
 
 	sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
@@ -440,7 +451,7 @@ function init_gear_sets()
 
     -- Extra Melee sets.  Apply these on top of melee sets.
     sets.Knockback = {}
-    sets.MP = {waist="Flume Belt +1",ear1="Suppanomimi", ear2="Ethereal Earring"}
+    sets.MP = {waist="Flume Belt",ear1="Suppanomimi", ear2="Ethereal Earring"}
     sets.MP_Knockback = {}
 	sets.SuppaBrutal = {ear1="Suppanomimi", ear2="Brutal Earring"}
 	sets.DWEarrings = {ear1="Dudgeon Earring",ear2="Heartseeker Earring"}
