@@ -263,8 +263,8 @@ function init_gear_sets()
 
     sets.idle = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Jute Boots +1",neck="Asperity Necklace",waist="Flume Belt",ear1="Steelflash Earring",
-		ear2="Bladeborn Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
+		feet="Jute Boots +1",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
@@ -278,13 +278,13 @@ function init_gear_sets()
 
     sets.defense.PDT = {ammo="Staunch Tathlum +1",
         head="Meghanada Visor +2",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt",ear1="Steelflash Earring",
-		ear2="Bladeborn Earring",ring1="Apate Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
+		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		ear2="Brutal Earring",ring1="Apate Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt",ear1="Steelflash Earring",
-		ear2="Bladeborn Earring",ring1="Apate Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
+		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		ear2="Brutal Earring",ring1="Apate Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
 		head=gear.herculean_fc_head,neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
@@ -299,8 +299,8 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {ammo="Staunch Tathlum +1",
         head="Adhemar Bonnet +1",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Meg. Chausses +2",
-		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Steelflash Earring",
-		ear2="Bladeborn Earring",ring1="Apate Ring",ring2="Epona's Ring",back="Bleating Mantle",}
+		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Cessance Earring",
+		ear2="Brutal Earring",ring1="Apate Ring",ring2="Epona's Ring",back="Bleating Mantle",}
 		
     sets.engaged.SomeAcc = {ammo="Aurgelmir Orb +1",
         head="Dampening Tam",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Mache Earring +1",
@@ -308,7 +308,7 @@ function init_gear_sets()
         back=gear.da_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
     
 	sets.engaged.Acc = {ammo="Yamarang",
-        head="Pill. Bonnet +3",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Mache Earring +1",
+        head="Pill. Bonnet +3",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Mache Earring +1",
         body="Mummu Jacket +2",hands="Floral Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
         back=gear.da_jse_back,waist="Olseni Belt",legs="Pill. Culottes +3",feet="Malignance Boots"}
 		
@@ -318,17 +318,17 @@ function init_gear_sets()
         back=gear.da_jse_back,waist="Olseni Belt",legs="Pill. Culottes +3",feet="Malignance Boots"}
 
     sets.engaged.Fodder = {ammo="Aurgelmir Orb +1",
-        head="Dampening Tam",neck="Iskur Gorget",ear1="Brutal Earring",ear2="Mache Earring +1",
+        head="Dampening Tam",neck="Iskur Gorget",ear1="Brutal Earring",ear2="Cessance Earring",
         body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Chirich Ring +1",ring2="Epona's Ring",
         back="Bleating Mantle",waist="Reiki Yotai",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
     sets.engaged.DT = {ammo="Aurgelmir Orb +1",
-        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Cessance Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Epona's Ring",
         back=gear.da_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.engaged.SomeAcc.DT = {ammo="Staunch Tathlum +1",
-        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Sherida Earring",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Cessance Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Chirich Ring +1",
         back="Moonlight Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 		
@@ -343,7 +343,7 @@ function init_gear_sets()
         back="Moonlight Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 		
     sets.engaged.Fodder.DT = {ammo="Staunch Tathlum +1",
-        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Sherida Earring",
+        head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Brutal Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Chirich Ring +1",
         back="Moonlight Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 end

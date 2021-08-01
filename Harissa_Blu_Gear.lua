@@ -133,7 +133,7 @@ function init_gear_sets()
 				  back=gear.da_jse_back,waist="Fotia Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.precast.WS.Fodder = {ammo="Aurgelmir Orb +1",
-				  head="Herculean Helm",neck="Sanctity Necklace",ear1="Suppanomimi",ear2="Brutal Earring",
+				  head="Herculean Helm",neck="Sanctity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
           body="Adhemar Jacket +1",hands="Herculean Gloves",ring1="Epona's Ring",ring2="Apate Ring",
 				  back="Buquwik Cape",waist="Chuq\'aba Belt",legs="Herculean Trousers",feet="Herculean Boots"}
 
@@ -189,8 +189,8 @@ function init_gear_sets()
 	sets.precast.WS['Sanguine Blade'].DT = set_combine(sets.precast.WS.DT, {back=gear.nuke_jse_back})
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {ear1="Steelflash Earring",ear2="Brutal Earring"}
-	sets.AccMaxTP = {ear1="Steelflash Earring",ear2="Telos Earring"}
+	sets.MaxTP = {ear1="Cessance Earring",ear2="Brutal Earring"}
+	sets.AccMaxTP = {ear1="Steelflash Earring",ear2="Cessance Earring"}
 
 	-- Midcast Sets
 	sets.midcast.FastRecast = {ammo="Hasty Pinion +1",
@@ -472,7 +472,7 @@ function init_gear_sets()
 	-- Engaged sets
 
 	sets.engaged = {ammo="Aurgelmir Orb +1",
-			    head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Mache Earring +1",ear2="Odr Earring",
+			    head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
 			    body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Apate Ring",
 			    back="Bleating Mantle",waist="Sailfi Belt +1",legs="Malignance Tights",feet="Herculean Boots"}
 
@@ -483,7 +483,7 @@ function init_gear_sets()
 
 
 	sets.engaged.Acc = {main="Tizona",sub="Almace",ammo="Falcon Eye",
-				head="Dampening Tam",neck="Mirage Stole +2",ear1="Cessance Earring",ear2="Telos Earring",
+				head="Dampening Tam",neck="Mirage Stole +2",ear1="Cessance Earring",ear2="Odr Earring",
 				body="Malignance Tabard",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
 				back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 
@@ -493,17 +493,17 @@ function init_gear_sets()
 			    back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 
 	sets.engaged.FullAcc = {main="Tizona",sub="Almace",ammo="Falcon Eye",
-				head="Carmine Mask +1",neck="Mirage Stole +2",ear1="Mache Earring +1",ear2="Telos Earring",
+				head="Carmine Mask +1",neck="Mirage Stole +2",ear1="Mache Earring +1",ear2="Odr Earring",
 				body="Malignance Tabard",hands="Assim. Bazu. +3",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 				back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 
 	sets.engaged.FullAcc.AM = {main="Tizona",sub="Almace",ammo="Falcon Eye",
-			    head="Carmine Mask +1",neck="Mirage Stole +2",ear1="Mache Earring +1",ear2="Telos Earring",
+			    head="Carmine Mask +1",neck="Mirage Stole +2",ear1="Mache Earring +1",ear2="Odr Earring",
 			    body="Malignance Tabard",hands="Assim. Bazu. +3",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 			    back=gear.stp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 
 	sets.engaged.Fodder = {main="Tizona",sub="Almace",ammo="Aurgelmir Orb +1",
-			    head="Dampening Tam",neck="Mirage Stole +2",ear1="Dedition Earring",ear2="Brutal Earring",
+			    head="Dampening Tam",neck="Mirage Stole +2",ear1="Cessance Earring",ear2="Brutal Earring",
 			    body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
 			    back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
@@ -523,7 +523,7 @@ function init_gear_sets()
 			    back=gear.stp_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.engaged.Acc.DT = {main="Tizona",sub="Almace",ammo="Falcon Eye",
-			    head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Telos Earring",
+			    head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Odr Earring",
 			    body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ilabrat Ring",
 			    back=gear.da_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 				

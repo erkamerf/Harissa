@@ -101,7 +101,7 @@ function init_gear_sets()
 
     sets.precast.CorsairShot['Light Shot'] = set_combine(sets.precast.CorsairShot, {})
 
-    sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot, {head="Pixie Hairpin +1"})
+    sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot, {head="Pixie Hairpin +1", ring1="Archon Ring"})
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {ring1="Defending Ring", feet="Rawhide Boots"}
@@ -176,7 +176,7 @@ function init_gear_sets()
 	
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
         head="Pixie Hairpin +1",neck="Stoicheion medal",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Herculean Vest",hands="Carmine Fin. Ga. +1",ring1="Arvina Ringlet +1", ring2="Acumen Ring",
+        body="Herculean Vest",hands="Carmine Fin. Ga. +1",ring1="Arvina Ringlet +1", ring2="Archon Ring",
         back=gear.harissa_mantle,waist="Ponente Sash",legs="Herculean Trousers",feet="Herculean Boots"}
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Animikii Bullet",
@@ -244,13 +244,13 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {ammo=gear.RAbullet,
 		head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Carmine Cuisses +1",
-		feet="Pursuer\'s Gaiters",neck="Asperity Necklace",waist="Flume Belt",ear1="Bladeborn Earring",
-		ear2="Steelflash Earring",ring1="Defending Ring",ring2="Meghanada Ring",back=gear.harissa_mantle}
+		feet="Pursuer\'s Gaiters",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back=gear.harissa_mantle}
 		
     sets.idle.PDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Lanun Bottes +1",neck="Asperity Necklace",waist="Flume Belt",ear1="Bladeborn Earring",
-		ear2="Steelflash Earring",ring1="Meghanada Ring",ring2="Defending Ring",back="Bleating Mantle"}
+		feet="Lanun Bottes +1",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back="Bleating Mantle"}
 		
     sets.idle.Refresh = {}
     
@@ -258,22 +258,22 @@ function init_gear_sets()
 	-- cntrl+F10 turns on PDT, shift+F10 is supposed to cycle thru PDT sets, alt+F12 to turn off
     sets.defense.PDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Meg. Jam. +2",neck="Sanctity Necklace",waist="Flume Belt",ear1="Bladeborn Earring",
-		ear2="Steelflash Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
+		feet="Meg. Jam. +2",neck="Sanctity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 	-- F11 to activate MDT
     sets.defense.MDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt",ear1="Bladeborn Earring",
-		ear2="Steelflash Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
+		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 		
     sets.defense.MEVA = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt",ear1="Bladeborn Earring",
-		ear2="Steelflash Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
+		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 
     sets.Kiting = {legs="Carmine Cuisses +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
-	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring"}
+	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket +1",hands="Floral Gauntlets",waist="Reiki Yotai"}
 
 	-- Weapons sets: F9 to toggle
 	sets.weapons.Default = {main="Naegling",sub="Tauret",range="Doomsday"}
@@ -294,44 +294,44 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged = {
-		head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+		head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
         body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Chirich Ring +1",ring2="Epona's Ring",
         back="Bleating Mantle",waist="Sailfi Belt +1",legs="Meg. Chausses +2",feet="Herculean Boots"}
     
     sets.engaged.Acc = {
 	    head="Malignance Chapeau",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Meg. Chausses +2",
-		feet="Meg. Jam. +2",neck="Ej Necklace",waist="Sailfi Belt +1",ear1="Bladeborn Earring",
-		ear2="Steelflash Earring",ring1="Chirich Ring +1",ring2="Chirich Ring +1",back="Bleating Mantle"}
+		feet="Meg. Jam. +2",neck="Ej Necklace",waist="Sailfi Belt +1",ear1="Cessance Earring",
+		ear2="Odr Earring",ring1="Chirich Ring +1",ring2="Chirich Ring +1",back="Bleating Mantle"}
 		
     sets.engaged.DT = {
        	head="Malignance Chapeau",body="Adhemar Jacket +1",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Herculean Boots",neck="Asperity Necklace",waist="Flume Belt",ear1="Bladeborn Earring",
-		ear2="Steelflash Earring",ring1="Meghanada Ring",ring2="Defending Ring",back="Bleating Mantle"}
+		feet="Herculean Boots",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back="Bleating Mantle"}
     
     sets.engaged.Acc.DT = {
 		head="Mummu Bonnet +2",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Meg. Chausses +2",
-		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Bladeborn Earring",
-		ear2="Steelflash Earring",ring1="Haverton Ring",ring2="Defending Ring",back="Bleating Mantle"}
+		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Cessance Earring",
+		ear2="Odr Earring",ring1="Haverton Ring",ring2="Defending Ring",back="Bleating Mantle"}
 
     sets.engaged.DW = {		
 		head="Adhemar Bonnet +1",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Meg. Chausses +2",
-		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Bladeborn Earring",
-		ear2="Steelflash Earring",ring1="Haverton Ring",ring2="Epona's Ring",back="Bleating Mantle"}
+		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Suppanomimi",
+		ear2="Brutal Earring",ring1="Haverton Ring",ring2="Epona's Ring",back="Bleating Mantle"}
     
     sets.engaged.DW.Acc = {		
 		head="Mummu Bonnet +2",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Meg. Chausses +2",
-		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Bladeborn Earring",
-		ear2="Steelflash Earring",ring1="Haverton Ring",ring2="Chirich Ring +1",back="Bleating Mantle"}
+		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Suppanomimi",
+		ear2="Brutal Earring",ring1="Haverton Ring",ring2="Chirich Ring +1",back="Bleating Mantle"}
 		
     sets.engaged.DW.DT = {		
 		head="Malignance Chapeau",body="Adhemar Jacket +1",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Herculean Boots",neck="Asperity Necklace",waist="Flume Belt",ear1="Bladeborn Earring",
-		ear2="Steelflash Earring",ring1="Haverton Ring",ring2="Defending Ring",back="Bleating Mantle"}
+		feet="Herculean Boots",neck="Asperity Necklace",waist="Flume Belt",ear1="Brutal Earring",
+		ear2="Suppanomimi",ring1="Haverton Ring",ring2="Defending Ring",back="Bleating Mantle"}
     
     sets.engaged.DW.Acc.DT = {		
 		head="Malignance Chapeau",body="Malignace Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Herculean Boots",neck="Asperity Necklace",waist="Flume Belt",ear1="Bladeborn Earring",
-		ear2="Steelflash Earring",ring1="Haverton Ring",ring2="Defending Ring",back="Bleating Mantle"}
+		feet="Herculean Boots",neck="Asperity Necklace",waist="Flume Belt",ear1="Suppanomimi",
+		ear2="Odr Earring",ring1="Haverton Ring",ring2="Defending Ring",back="Bleating Mantle"}
 end
 
 -- Select default macro book on initial load or subjob change.
