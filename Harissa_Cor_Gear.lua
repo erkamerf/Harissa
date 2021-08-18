@@ -133,7 +133,7 @@ function init_gear_sets()
     sets.precast.WS = {
 		head="Herculean Helm",neck="Asperity Necklace",ear1="Odr Earring",ear2="Moonshade Earring",
         body="Meg Cuirie +2",hands="Meg. Gloves +2",ring1="Apate Ring",ring2="Rajas Ring",
-        back=gear.harissa_mantle,waist="Ponente Sash",legs="Meg. Chausses +2",feet="Herculean Boots"}
+        back=gear.harissa_mantle,waist="Fotia Belt",legs="Meg. Chausses +2",feet="Herculean Boots"}
 		
     sets.precast.WS.Acc = {
         head="Malignance Chapeau",neck="Ej Necklace",ear1="Odr Earring",ear2="Moonshade Earring",
@@ -159,7 +159,7 @@ function init_gear_sets()
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Herculean Helm",neck="Marked Gorget",ear1="Moonshade Earring",ear2="Friomisi earring",
         body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Garuda Ring",
-        back=gear.harissa_mantle,waist="Ponente Sash",legs="Herculean Trousers",feet="Herculean Boots"}
+        back=gear.harissa_mantle,waist="Fotia Belt",legs="Herculean Trousers",feet="Herculean Boots"}
 
     sets.precast.WS['Last Stand'].Acc = set_combine(sets.precast.WS['Last Stand'], {legs="Meg. Chausses +2",feet="Meg. Jam. +2",ring1="Longshot Ring",ring2="Haverton Ring"})
 		
