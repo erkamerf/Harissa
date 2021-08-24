@@ -93,7 +93,7 @@ function init_gear_sets()
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
         head="Herculean Helm",neck="Stoicheion medal",ear1="Hecate\'s earring",ear2="Friomisi earring",
         body="Mummu Jacket +2",hands="Chasseur\'s Gants",ring1="Acumen ring",ring2="Arvina Ringlet +1",
-        back=gear.harissa_mantle,waist="Ponente Sash",legs="Herculean Trousers",feet="Herculean Boots"}
+        back=gear.harissa_mantle,waist="Hachirin-no-Obi",legs="Herculean Trousers",feet="Herculean Boots"}
 		
 	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne", body="Chasseur's Frac", legs="Chas. Culottes",feet="Chasseur\'s Bottes"})
 	
@@ -131,7 +131,7 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-		head="Herculean Helm",neck="Asperity Necklace",ear1="Odr Earring",ear2="Moonshade Earring",
+		head="Herculean Helm",neck="Fotia Gorget",ear1="Odr Earring",ear2="Moonshade Earring",
         body="Meg Cuirie +2",hands="Meg. Gloves +2",ring1="Apate Ring",ring2="Rajas Ring",
         back=gear.harissa_mantle,waist="Fotia Belt",legs="Meg. Chausses +2",feet="Herculean Boots"}
 		
@@ -157,7 +157,7 @@ function init_gear_sets()
         back="Vespid Mantle",waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 	
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
-        head="Herculean Helm",neck="Marked Gorget",ear1="Moonshade Earring",ear2="Friomisi earring",
+        head="Herculean Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Friomisi earring",
         body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Garuda Ring",
         back=gear.harissa_mantle,waist="Fotia Belt",legs="Herculean Trousers",feet="Herculean Boots"}
 
