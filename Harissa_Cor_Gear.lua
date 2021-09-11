@@ -80,7 +80,7 @@ function init_gear_sets()
 
     sets.precast.CorsairRoll = {range="Compensator",
       head="Lanun Tricorne +1", body="Malignance Tabard", hands="Chasseur\'s Gants", ring1="Defending Ring",
-			ring2="Barataria Ring",back=gear.harissa_mantle,waist="Flume Belt",legs="Herculean Trousers", feet="Mummu Gamash. +2"}
+			ring2="Barataria Ring",back=gear.harissa_mantle,waist="Flume Belt",legs="Desultor Tassets", feet="Mummu Gamash. +2"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
@@ -92,10 +92,10 @@ function init_gear_sets()
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
         head="Herculean Helm",neck="Stoicheion medal",ear1="Hecate\'s earring",ear2="Friomisi earring",
-        body="Mummu Jacket +2",hands="Chasseur\'s Gants",ring1="Acumen ring",ring2="Arvina Ringlet +1",
+        body="Mirke Wardecors",hands="Chasseur\'s Gants",ring1="Acumen ring",ring2="Arvina Ringlet +1",
         back=gear.harissa_mantle,waist="Hachirin-no-Obi",legs="Herculean Trousers",feet="Herculean Boots"}
 		
-	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne", body="Chasseur's Frac", legs="Chas. Culottes",feet="Chasseur\'s Bottes"})
+	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne", legs="Chas. Culottes",feet="Chasseur\'s Bottes"})
 	
     sets.precast.CorsairShot.Proc = set_combine(sets.precast.CorsairShot, {head="Laksa. Tricorne +2",waist="Flume Belt"})
 
