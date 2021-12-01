@@ -277,7 +277,7 @@ function init_gear_sets()
 
 	-- Weapons sets: F9 to toggle
 	sets.weapons.Default = {main="Naegling",sub="Tauret",range="Fomalhaut"}
-	sets.weapons.DualWeapons = {main="Tauret",sub="Naegling",range="Fomalhaut"}
+	sets.weapons.DualWeapons = {main="Naegling",sub="Tauret",range="Fomalhaut"}
 	sets.weapons.DualSavageWeapons = {main="Naegling",sub="Hep. Sapara +1",range="Doomsday"}
 	sets.weapons.DualLeadenRanged = {main="Naegling",sub="Tauret",range="Molybdosis"}
 	sets.weapons.DualLeadenMelee = {main="Tauret",sub="Naegling",range="Molybdosis"}
