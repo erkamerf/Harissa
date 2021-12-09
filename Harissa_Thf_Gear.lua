@@ -145,7 +145,7 @@ function init_gear_sets()
 
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="C. Palug Stone",
-        head="Mummu Bonnet +2",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Moonshade Earring",
+        head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Moonshade Earring",
         body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Garuda Ring",
         back="Vespid Mantle",waist="Sailfi Belt +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
 		
@@ -263,7 +263,7 @@ function init_gear_sets()
 
     sets.idle = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Jute Boots +1",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		feet="Jute Boots +1",neck="Twilight Torque",waist="Flume Belt",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
@@ -278,12 +278,12 @@ function init_gear_sets()
 
     sets.defense.PDT = {ammo="Staunch Tathlum +1",
         head="Meghanada Visor +2",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		feet="Meg. Jam. +2",neck="Twilight Torque",waist="Flume Belt",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		feet="Meg. Jam. +2",neck="Twilight Torque",waist="Flume Belt",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
@@ -299,11 +299,11 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {ammo="Staunch Tathlum +1",
         head="Adhemar Bonnet +1",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Meg. Chausses +2",
-		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Cessance Earring",
+		feet="Herculean Boots",neck="Erudit. Necklace",waist="Sailfi Belt +1",ear1="Cessance Earring",
 		ear2="Telos Earring",ring1="Apate Ring",ring2="Epona's Ring",back="Bleating Mantle",}
 		
     sets.engaged.SomeAcc = {ammo="Aurgelmir Orb +1",
-        head="Dampening Tam",neck="Combatant's Torque",ear1="Brutal Earring",ear2="Mache Earring +1",
+        head="Dampening Tam",neck="Erudit. Necklace",ear1="Brutal Earring",ear2="Mache Earring +1",
         body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Chirich Ring +1",ring2="Epona's Ring",
         back=gear.da_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
     
