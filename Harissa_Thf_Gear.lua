@@ -72,7 +72,7 @@ function init_gear_sets()
 	sets.Ambush = {} --body="Plunderer's Vest +1"
 	
 	-- Weapons sets
-	sets.weapons.Aeneas = {main="Aeneas",sub="Blurred Knife +1"}
+	sets.weapons.Aeneas = {main="Aeneas",sub="Shijo"}
 	sets.weapons.AccAeneas = {main="Aeneas",sub="Tauret"}
 	sets.weapons.Savage = {main="Naegling",sub="Tauret"}
 	sets.weapons.AccSavage = {main="Naegling",sub="Tauret"}
@@ -144,14 +144,14 @@ function init_gear_sets()
     -- Weaponskill sets
 
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="C. Palug Stone",
-        head="Mummu Bonnet +2",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Moonshade Earring",
+    sets.precast.WS = {ammo="Aurgelmir Orb +1",
+        head="Herculean Helm",neck="Fotia Gorget",ear1="Telos Earring",ear2="Moonshade Earring",
         body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Garuda Ring",
-        back="Vespid Mantle",waist="Sailfi Belt +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}
+        back="Vespid Mantle",waist="Fotia Belt",legs="Herculean Trousers",feet="Mummu Gamash. +2"}
 		
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {neck="Ej Necklace"})
-    sets.precast.WS.Acc = set_combine(sets.precast.WS, {neck="Ej Necklace",ear1="Mache Earring +1",ear2="Odr Earring",body="Meg. Cuirie +2",waist="Olseni Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"})
-	sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {head="Malignance Chapeau",neck="Ej Necklace",ear1="Mache Earring +1",ear2="Odr Earring",body="Meg. Cuirie +2",waist="Olseni Belt",legs="Meg. Chausses +2",feet="Malignance Boots"})
+    sets.precast.WS.Acc = set_combine(sets.precast.WS, {neck="Ej Necklace",ear1="Telos Earring",ear2="Odr Earring",body="Meg. Cuirie +2",waist="Olseni Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"})
+	sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {head="Malignance Chapeau",neck="Ej Necklace",ear1="Mache Earring +1",ear2="Telos Earring",body="Meg. Cuirie +2",waist="Olseni Belt",legs="Meg. Chausses +2",feet="Malignance Boots"})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {neck="Caro Necklace",ear1="",ear2="Ishvara Earring",body="Adhemar Jacket +1",back=""})
