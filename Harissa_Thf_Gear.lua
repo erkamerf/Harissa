@@ -304,7 +304,7 @@ function init_gear_sets()
 		
     sets.engaged.SomeAcc = {ammo="Aurgelmir Orb +1",
         head="Dampening Tam",neck="Erudit. Necklace",ear1="Brutal Earring",ear2="Mache Earring +1",
-        body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Chirich Ring +1",ring2="Epona's Ring",
+        body="Adhemar Jacket +1",hands="Floral Guantlets",ring1="Chirich Ring +1",ring2="Epona's Ring",
         back=gear.da_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
     
 	sets.engaged.Acc = {ammo="Yamarang",
