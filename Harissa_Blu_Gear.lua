@@ -115,17 +115,17 @@ function init_gear_sets()
 	sets.precast.WS = {ammo="Aurgelmir Orb +1",
 				  head="Herculean Helm",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
           body="Adhemar Jacket +1",hands="Herculean Gloves",ring1="Epona's Ring",ring2="Apate Ring",
-				  back="Buquwik Cape",waist="Fotia Belt",legs="Herculean Trousers",feet="Herculean Boots"}
+				  back="Rosmerta's Cape",waist="Fotia Belt",legs="Herculean Trousers",feet="Herculean Boots"}
 
 	sets.precast.WS.Acc = {ammo="Falcon Eye",
 				  head="Herculean Helm",neck="Fotia Gorget",ear1="Mache Earring +1",ear2="Odr Earring",
 				  body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Chirich Ring +1",
-          back="Vespid Mantle",waist="Fotia Belt",legs="Carmine Cuisses +1",feet="Herculean Boots"}
+          back="Rosmerta's Cape",waist="Fotia Belt",legs="Carmine Cuisses +1",feet="Herculean Boots"}
 
 	sets.precast.WS.FullAcc = {ammo="Falcon Eye",
 				  head="Malignance Chapeau",neck="Ej Necklace",ear1="Mache Earring +1",ear2="Odr Earring",
 				  body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
-          back="Vespid Mantle",waist="Artful Belt +1",legs="Malignance Tights",feet="Herculean Boots"}
+          back="Rosmerta's Cape",waist="Artful Belt +1",legs="Malignance Tights",feet="Herculean Boots"}
 
 	sets.precast.WS.DT = {ammo="Aurgelmir Orb +1",
 				  head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
@@ -135,7 +135,7 @@ function init_gear_sets()
 	sets.precast.WS.Fodder = {ammo="Aurgelmir Orb +1",
 				  head="Herculean Helm",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
           body="Adhemar Jacket +1",hands="Herculean Gloves",ring1="Epona's Ring",ring2="Apate Ring",
-				  back="Buquwik Cape",waist="Fotia Belt",legs="Herculean Trousers",feet="Herculean Boots"}
+				  back="Rosmerta's Cape",waist="Fotia Belt",legs="Herculean Trousers",feet="Herculean Boots"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {head="Jhakri Coronal +2",ear1="Regal Earring",body="Jhakri Robe +2",ring2="Rufescent Ring",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"})

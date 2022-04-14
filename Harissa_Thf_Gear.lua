@@ -147,7 +147,7 @@ function init_gear_sets()
     sets.precast.WS = {ammo="Aurgelmir Orb +1",
         head="Herculean Helm",neck="Fotia Gorget",ear1="Telos Earring",ear2="Moonshade Earring",
         body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Garuda Ring",
-        back="Vespid Mantle",waist="Fotia Belt",legs="Herculean Trousers",feet="Mummu Gamash. +2"}
+        back="Bleating Mantle",waist="Fotia Belt",legs="Herculean Trousers",feet="Mummu Gamash. +2"}
 		
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {neck="Ej Necklace"})
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {neck="Ej Necklace",ear1="Telos Earring",ear2="Odr Earring",body="Meg. Cuirie +2",waist="Olseni Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"})
@@ -214,7 +214,7 @@ function init_gear_sets()
     sets.precast.WS['Aeolian Edge'] = {ammo="Seeth. Bomblet +1",
         head="Herculean Helm",neck="Stoicheion Medal",ear1="Friomisi Earring",ear2="Hecate\'s Earring",
         body="Herculean Vest",hands="Herculean Gloves",ring1="Arvina Ringlet +1",ring2="Acumen Ring",
-        back="Vespid Mantle",waist="Artful Belt +1",legs="Herculean Trousers",feet="Herculean Boots"}
+        back="Bleating Mantle",waist="Artful Belt +1",legs="Herculean Trousers",feet="Herculean Boots"}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
@@ -264,7 +264,7 @@ function init_gear_sets()
     sets.idle = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Jute Boots +1",neck="Twilight Torque",waist="Flume Belt",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
+		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Archon Cape"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
@@ -279,12 +279,12 @@ function init_gear_sets()
     sets.defense.PDT = {ammo="Staunch Tathlum +1",
         head="Meghanada Visor +2",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Meg. Jam. +2",neck="Twilight Torque",waist="Flume Belt",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
+		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Archon Cape"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Meg. Jam. +2",neck="Twilight Torque",waist="Flume Belt",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Vespid Mantle"}
+		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Archon Cape"}
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
 		head=gear.herculean_fc_head,neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",

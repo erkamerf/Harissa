@@ -138,7 +138,7 @@ function init_gear_sets()
     sets.precast.WS.Acc = {
         head="Malignance Chapeau",neck="Ej Necklace",ear1="Telos Earring",ear2="Moonshade Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Meghanada Ring",ring2="Mummu Ring",
-        back="Vespid Mantle",waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}		
+        back="Camulus's Mantle",waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}		
 		
     sets.precast.WS.Proc = set_combine(sets.precast.WS.Acc, {})
 		
@@ -149,12 +149,12 @@ function init_gear_sets()
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
         head="Meghanada Visor +2",neck="Asperity Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
         body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Apate Ring",ring2="Rajas Ring",
-        back="Vespid Mantle",waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+        back="Camulus's Mantle",waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
     sets.precast.WS['Savage Blade'].Acc = {ammo=gear.WSbullet,
         head="Malignance Chapeau",neck="Ej Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
         body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Apate Ring",ring2="Rajas Ring",
-        back="Vespid Mantle",waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+        back="Camulus's Mantle",waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 	
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Herculean Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Telos earring",
@@ -198,7 +198,7 @@ function init_gear_sets()
     sets.precast.WS['Burning Blade'] = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
         body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-        back="Vespid Mantle",waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+        back="Camulus's Mantle",waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Hecate\'s earring", ear2="Friomisi earring"}
