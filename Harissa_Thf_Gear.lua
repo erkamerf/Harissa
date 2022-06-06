@@ -144,14 +144,14 @@ function init_gear_sets()
     -- Weaponskill sets
 
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="Aurgelmir Orb +1",
-        head="Herculean Helm",neck="Fotia Gorget",ear1="Telos Earring",ear2="Moonshade Earring",
+    sets.precast.WS = {ammo="Voluspa Tathlum",
+        head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Cessance Earring",
         body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Garuda Ring",
-        back="Bleating Mantle",waist="Fotia Belt",legs="Herculean Trousers",feet="Mummu Gamash. +2"}
+        back="Ik Cape",waist="Fotia Belt",legs="Herculean Trousers",feet="Mummu Gamash. +2"}
 		
-    sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {neck="Ej Necklace"})
-    sets.precast.WS.Acc = set_combine(sets.precast.WS, {neck="Ej Necklace",ear1="Telos Earring",ear2="Odr Earring",body="Meg. Cuirie +2",waist="Olseni Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"})
-	sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {head="Malignance Chapeau",neck="Ej Necklace",ear1="Mache Earring +1",ear2="Telos Earring",body="Meg. Cuirie +2",waist="Olseni Belt",legs="Meg. Chausses +2",feet="Malignance Boots"})
+    sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {neck="Subtlety Spec."})
+    sets.precast.WS.Acc = set_combine(sets.precast.WS, {neck="Subtlety Spec.",ear1="Telos Earring",ear2="Cessance Earring",body="Meg. Cuirie +2",legs="Meg. Chausses +2",feet="Meg. Jam. +2"})
+	sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {head="Malignance Chapeau",neck="Subtlety Spec.",ear1="Cessance Earring",ear2="Telos Earring",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Malignance Tights",feet="Meg. Jam. +2"})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {neck="Caro Necklace",ear1="",ear2="Ishvara Earring",body="Adhemar Jacket +1",back=""})
@@ -211,10 +211,10 @@ function init_gear_sets()
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Apate Ring",ring2="Regal Ring",
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Malignance Tights",feet="Malignance Boots"}
 		
-    sets.precast.WS['Aeolian Edge'] = {ammo="Seeth. Bomblet +1",
-        head="Herculean Helm",neck="Stoicheion Medal",ear1="Friomisi Earring",ear2="Hecate\'s Earring",
+    sets.precast.WS['Aeolian Edge'] = {ammo="Voluspa Tathlum",
+        head="Herculean Helm",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Moonshade Earring",
         body="Herculean Vest",hands="Herculean Gloves",ring1="Arvina Ringlet +1",ring2="Acumen Ring",
-        back="Bleating Mantle",waist="Artful Belt +1",legs="Herculean Trousers",feet="Herculean Boots"}
+        back="Toro Cape",waist="Eschan Stone",legs="Herculean Trousers",feet="Herculean Boots"}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
