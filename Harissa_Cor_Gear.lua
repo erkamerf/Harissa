@@ -115,13 +115,13 @@ function init_gear_sets()
     
     sets.precast.FC = {}
 
-    sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {ring1="Haverton Ring"})
+    sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {ring1="Garuda Ring"})
 	
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {})
 
     sets.precast.RA = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Marked Gorget", ear1="Beyla earring", ear2="Odr earring",
-        body="Adhemar Jacket +1",hands="Carmine Fin. Ga. +1",ring1="Haverton ring", ring2="Longshot Ring",
+        body="Adhemar Jacket +1",hands="Carmine Fin. Ga. +1",ring1="Karieyh Ring +1", ring2="Longshot Ring",
         back=gear.harissa_mantle,waist="Ponente Sash",legs="Pursuer\'s Pants",feet="Pursuer\'s Gaiters"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {})
@@ -132,12 +132,12 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
 		head="Herculean Helm",neck="Fotia Gorget",ear1="Telos Earring",ear2="Moonshade Earring",
-        body="Meg Cuirie +2",hands="Meg. Gloves +2",ring1="Apate Ring",ring2="Rajas Ring",
+        body="Meg Cuirie +2",hands="Meg. Gloves +2",ring1="Apate Ring",ring2="Karieyh Ring +1",
         back=gear.harissa_mantle,waist="Fotia Belt",legs="Meg. Chausses +2",feet="Herculean Boots"}
 		
     sets.precast.WS.Acc = {
         head="Malignance Chapeau",neck="Ej Necklace",ear1="Telos Earring",ear2="Moonshade Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Meghanada Ring",ring2="Mummu Ring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Meghanada Ring",ring2="Karieyh Ring +1",
         back="Camulus's Mantle",waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}		
 		
     sets.precast.WS.Proc = set_combine(sets.precast.WS.Acc, {})
@@ -146,10 +146,7 @@ function init_gear_sets()
 
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {})
 
-	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
-        head="Meghanada Visor +2",neck="Asperity Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
-        body="Meg. Cuirie +2",hands="Meg. Gloves +2",ring1="Apate Ring",ring2="Rajas Ring",
-        back="Camulus's Mantle",waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {ammo=gear.WSbullet,head="Meghanada Visor +2"})
 
     sets.precast.WS['Savage Blade'].Acc = {ammo=gear.WSbullet,
         head="Malignance Chapeau",neck="Ej Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
@@ -161,7 +158,7 @@ function init_gear_sets()
         body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Garuda Ring",
         back=gear.harissa_mantle,waist="Fotia Belt",legs="Herculean Trousers",feet="Herculean Boots"}
 
-    sets.precast.WS['Last Stand'].Acc = set_combine(sets.precast.WS['Last Stand'], {legs="Meg. Chausses +2",feet="Meg. Jam. +2",ring1="Longshot Ring",ring2="Haverton Ring"})
+    sets.precast.WS['Last Stand'].Acc = set_combine(sets.precast.WS['Last Stand'], {legs="Meg. Chausses +2",feet="Meg. Jam. +2",ring1="Longshot Ring",ring2="Karieyh Ring +1"})
 		
     sets.precast.WS['Detonator'] = sets.precast.WS['Last Stand']
     sets.precast.WS['Detonator'].Acc = sets.precast.WS['Last Stand'].Acc
@@ -185,11 +182,11 @@ function init_gear_sets()
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Herculean Trousers",feet="Herculean Boots"}
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
-        head="Herculean Helm", neck="Stoicheion medal", ear1="Hecate\'s earring", ear2="Friomisi earring",				       
-		body="Herculean Vest", hands="Carmine Fin. Ga. +1", ring1="Arvina Ringlet +1",ring2="Garuda ring",
+        head="Herculean Helm", neck="Stoicheion medal", ear1="Hecate's earring", ear2="Friomisi earring",				       
+		body="Herculean Vest", hands="Carmine Fin. Ga. +1", ring1="Arvina Ringlet +1",ring2="Karieyh ring +1",
 		back=gear.harissa_mantle, waist="Eschan Stone", legs="Herculean Trousers", feet="Herculean Boots"}
 
-    sets.precast.WS['Wildfire'].Acc = set_combine(sets.precast.WS['Wildfire'], {body="Meg. Cuirie +2",ring2="Haverton Ring"})
+    sets.precast.WS['Wildfire'].Acc = set_combine(sets.precast.WS['Wildfire'], {body="Meg. Cuirie +2"})
 		
     sets.precast.WS['Hot Shot'] = sets.precast.WS['Wildfire']
     sets.precast.WS['Hot Shot'].Acc = sets.precast.WS['Wildfire'].Acc
@@ -220,12 +217,12 @@ function init_gear_sets()
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Marked Gorget", ear1="Beyla earring", ear2="Telos earring",
-        body="Adhemar Jacket +1",hands="Carmine Fin. Ga. +1",ring1="Haverton ring", ring2="Longshot Ring",
+        body="Adhemar Jacket +1",hands="Carmine Fin. Ga. +1",ring1="Arvina Ringlet +1", ring2="Longshot Ring",
         back=gear.harissa_mantle,waist="Ponente Sash",legs="Pursuer\'s Pants",feet="Pursuer\'s Gaiters"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Marked Gorget",ear1="Beyla earring", ear2="Telos earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Haverton Ring",ring2="Longshot Ring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Arvina Ringlet +1",ring2="Longshot Ring",
         back=gear.harissa_mantle,waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 		
 	sets.buff['Triple Shot'] = {body="Chasseur's Frac"}
@@ -244,8 +241,8 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {ammo=gear.RAbullet,
 		head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Carmine Cuisses +1",
-		feet="Pursuer\'s Gaiters",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back=gear.harissa_mantle}
+		feet="Pursuer's Gaiters",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		ear2="Brutal Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back=gear.harissa_mantle}
 		
     sets.idle.PDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
@@ -311,27 +308,27 @@ function init_gear_sets()
     sets.engaged.Acc.DT = {
 		head="Mummu Bonnet +2",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Meg. Chausses +2",
 		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Cessance Earring",
-		ear2="Telos Earring",ring1="Haverton Ring",ring2="Defending Ring",back="Bleating Mantle"}
+		ear2="Telos Earring",ring1="Karieyh Ring +1",ring2="Defending Ring",back="Bleating Mantle"}
 
     sets.engaged.DW = {		
 		head="Adhemar Bonnet +1",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Meg. Chausses +2",
 		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Suppanomimi",
-		ear2="Brutal Earring",ring1="Haverton Ring",ring2="Epona's Ring",back="Bleating Mantle"}
+		ear2="Brutal Earring",ring1="Apate Ring",ring2="Epona's Ring",back="Bleating Mantle"}
     
     sets.engaged.DW.Acc = {		
 		head="Mummu Bonnet +2",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Meg. Chausses +2",
 		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Suppanomimi",
-		ear2="Telos Earring",ring1="Haverton Ring",ring2="Chirich Ring +1",back="Bleating Mantle"}
+		ear2="Telos Earring",ring1="Apate Ring",ring2="Chirich Ring +1",back="Bleating Mantle"}
 		
     sets.engaged.DW.DT = {		
 		head="Malignance Chapeau",body="Adhemar Jacket +1",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Herculean Boots",neck="Asperity Necklace",waist="Reiki Yotai",ear1="Brutal Earring",
-		ear2="Suppanomimi",ring1="Haverton Ring",ring2="Defending Ring",back="Bleating Mantle"}
+		ear2="Suppanomimi",ring1="Epona's Ring",ring2="Defending Ring",back="Bleating Mantle"}
     
     sets.engaged.DW.Acc.DT = {		
 		head="Malignance Chapeau",body="Malignace Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Herculean Boots",neck="Asperity Necklace",waist="Reiki Yotai",ear1="Suppanomimi",
-		ear2="Telos Earring",ring1="Haverton Ring",ring2="Defending Ring",back="Bleating Mantle"}
+		ear2="Telos Earring",ring1="Apate Ring",ring2="Defending Ring",back="Bleating Mantle"}
 end
 
 -- Select default macro book on initial load or subjob change.

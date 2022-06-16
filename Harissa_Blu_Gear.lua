@@ -114,12 +114,12 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Aurgelmir Orb +1",
 				  head="Herculean Helm",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
-          body="Adhemar Jacket +1",hands="Herculean Gloves",ring1="Epona's Ring",ring2="Apate Ring",
+          body="Adhemar Jacket +1",hands="Herculean Gloves",ring1="Epona's Ring",ring2="Karieyh Ring +1",
 				  back="Rosmerta's Cape",waist="Fotia Belt",legs="Herculean Trousers",feet="Herculean Boots"}
 
 	sets.precast.WS.Acc = {ammo="Falcon Eye",
 				  head="Herculean Helm",neck="Fotia Gorget",ear1="Mache Earring +1",ear2="Odr Earring",
-				  body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Chirich Ring +1",
+				  body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Karieyh Ring +1",ring2="Chirich Ring +1",
           back="Rosmerta's Cape",waist="Fotia Belt",legs="Carmine Cuisses +1",feet="Herculean Boots"}
 
 	sets.precast.WS.FullAcc = {ammo="Falcon Eye",
@@ -129,12 +129,12 @@ function init_gear_sets()
 
 	sets.precast.WS.DT = {ammo="Aurgelmir Orb +1",
 				  head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-          body="Malignance Tabard",hands="Assim. Bazu. +3",ring1="Defending Ring",ring2="Ilabrat Ring",
+          body="Malignance Tabard",hands="Assim. Bazu. +3",ring1="Defending Ring",ring2="Karieyh Ring +1",
 				  back=gear.da_jse_back,waist="Fotia Belt",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.precast.WS.Fodder = {ammo="Aurgelmir Orb +1",
 				  head="Herculean Helm",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
-          body="Adhemar Jacket +1",hands="Herculean Gloves",ring1="Epona's Ring",ring2="Apate Ring",
+          body="Adhemar Jacket +1",hands="Herculean Gloves",ring1="Epona's Ring",ring2="Karieyh Ring +1",
 				  back="Rosmerta's Cape",waist="Fotia Belt",legs="Herculean Trousers",feet="Herculean Boots"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -417,15 +417,15 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {ammo="Staunch Tathlum +1",
 			      head="Malignance Chapeau",neck="Asperity Necklace",ear1="Mache Earring +1", ear2="Odr Earring",
-			      body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Chirich Ring +1",
+			      body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Karieyh Ring +1",
 			      back="Archon Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Herculean Boots"}
 
 	sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
 	sets.idle.PDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 				head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Ethereal Earring",
-		        body="Jhakri Robe +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-				back="Moonlight Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+		        body="Jhakri Robe +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Shadow Ring",
+				back="Archon Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})
 
@@ -433,12 +433,12 @@ function init_gear_sets()
 	sets.defense.PDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 				head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
 		        body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Shadow Ring",
-				back="Shadow Mantle",waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
+				back="Archon Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
 	sets.defense.MDT = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 				head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
 		        body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Shadow Ring",
-				back="Moonlight Cape",waist="Carrier's Sash",legs="Malignance Tights",feet="Malignance Boots"}
+				back="Archon Cape",waist="Carrier's Sash",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.defense.MEVA = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
@@ -556,57 +556,7 @@ end
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
-	-- Default macro set/book
-	if player.sub_job == 'DNC' then
-		set_macro_page(1, 8)
-	elseif player.sub_job == 'NIN' then
-		set_macro_page(1, 8)
-	elseif player.sub_job == 'WAR' then
-		set_macro_page(1, 8)
-	elseif player.sub_job == 'RUN' then
-		set_macro_page(1, 8)
-	elseif player.sub_job == 'THF' then
-		set_macro_page(1, 8)
-	elseif player.sub_job == 'RDM' then
-		set_macro_page(1, 8)
-	else
-		set_macro_page(1, 8)
-	end
-end
 
---Job Specific Trust Override
-function check_trust()
-	if not moving then
-		if state.AutoTrustMode.value and not data.areas.cities:contains(world.area) and (buffactive['Elvorseal'] or buffactive['Reive Mark'] or not player.in_combat) then
-			local party = windower.ffxi.get_party()
-			if party.p5 == nil then
-				local spell_recasts = windower.ffxi.get_spell_recasts()
+	set_macro_page(1, 8)
 
-				if spell_recasts[980] < spell_latency and not have_trust("Yoran-Oran") then
-					windower.chat.input('/ma "Yoran-Oran (UC)" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				elseif spell_recasts[952] < spell_latency and not have_trust("Koru-Moru") then
-					windower.chat.input('/ma "Koru-Moru" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				elseif spell_recasts[967] < spell_latency and not have_trust("Qultada") then
-					windower.chat.input('/ma "Qultada" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				elseif spell_recasts[914] < spell_latency and not have_trust("Ulmia") then
-					windower.chat.input('/ma "Ulmia" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				elseif spell_recasts[979] < spell_latency and not have_trust("Selh'teus") then
-					windower.chat.input('/ma "Selh\'teus" <me>')
-					tickdelay = os.clock() + 3
-					return true
-				else
-					return false
-				end
-			end
-		end
-	end
-	return false
 end
