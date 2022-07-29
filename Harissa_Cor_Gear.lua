@@ -86,14 +86,14 @@ function init_gear_sets()
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes"})
-    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur\'s Frac", feet="Chasseur\'s Bottes"})
+    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac", feet="Chasseur's Bottes"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne", body="Lanun Frac +1"})
-    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur\'s Frac"})
-    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1s"})
+    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac"})
+    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1"})
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
         head="Herculean Helm",neck="Stoicheion medal",ear1="Hecate\'s earring",ear2="Friomisi earring",
-        body="Mirke Wardecors",hands="Chasseur's Gants +1s",ring1="Acumen ring",ring2="Arvina Ringlet +1",
+        body="Mirke Wardecors",hands="Chasseur's Gants +1",ring1="Acumen ring",ring2="Arvina Ringlet +1",
         back=gear.harissa_mantle,waist="Hachirin-no-Obi",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 		
 	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne", waist="Eschan Stone", legs="Chas. Culottes",feet="Chasseur\'s Bottes"})
