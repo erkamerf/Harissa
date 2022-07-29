@@ -93,8 +93,8 @@ function init_gear_sets()
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
         head="Herculean Helm",neck="Stoicheion medal",ear1="Hecate\'s earring",ear2="Friomisi earring",
-        body="Mirke Wardecors",hands="Chasseur's Gants +1",ring1="Acumen ring",ring2="Arvina Ringlet +1",
-        back=gear.harissa_mantle,waist="Hachirin-no-Obi",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
+        body="Herculean Vest",hands="Chasseur's Gants +1",ring1="Acumen ring",ring2="Arvina Ringlet +1",
+        back="Gunslinger's Cape",waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 		
 	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne", waist="Eschan Stone", legs="Chas. Culottes",feet="Chasseur\'s Bottes"})
 	
