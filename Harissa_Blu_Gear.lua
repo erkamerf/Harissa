@@ -17,6 +17,7 @@ function user_job_setup()
 	gear.crit_jse_back = {name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}}
 	gear.wsd_jse_back = {name="Rosmerta's Cape",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
 	gear.nuke_jse_back = {name="Rosmerta's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}}
+	gear.herculean_nuke_legs = {name="Herculean Trousers", augments={'"Mag.Atk.Bns."+12','Rng.Atk.+27','Accuracy+12 Attack+12','Mag. Acc.+19 "Mag.Atk.Bns."+19',}}
 
 	gear.obi_cure_waist = "Luminary Sash"
 	gear.obi_nuke_waist = "Yamabuki-no-Obi"
@@ -115,7 +116,7 @@ function init_gear_sets()
 	sets.precast.WS = {ammo="Aurgelmir Orb +1",
 				  head="Herculean Helm",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
           body="Adhemar Jacket +1",hands="Herculean Gloves",ring1="Epona's Ring",ring2="Karieyh Ring +1",
-				  back="Rosmerta's Cape",waist="Fotia Belt",legs="Herculean Trousers",feet="Herculean Boots"}
+				  back="Rosmerta's Cape",waist="Fotia Belt",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 
 	sets.precast.WS.Acc = {ammo="Falcon Eye",
 				  head="Herculean Helm",neck="Fotia Gorget",ear1="Mache Earring +1",ear2="Odr Earring",
@@ -135,7 +136,7 @@ function init_gear_sets()
 	sets.precast.WS.Fodder = {ammo="Aurgelmir Orb +1",
 				  head="Herculean Helm",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
           body="Adhemar Jacket +1",hands="Herculean Gloves",ring1="Epona's Ring",ring2="Karieyh Ring +1",
-				  back="Rosmerta's Cape",waist="Fotia Belt",legs="Herculean Trousers",feet="Herculean Boots"}
+				  back="Rosmerta's Cape",waist="Fotia Belt",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {head="Jhakri Coronal +2",ear1="Regal Earring",body="Jhakri Robe +2",ring2="Rufescent Ring",legs="Jhakri Slops +1",feet="Jhakri Pigaches +1"})

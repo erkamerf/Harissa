@@ -151,7 +151,7 @@ function init_gear_sets()
     sets.precast.WS = {ammo="Voluspa Tathlum",
         head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Cessance Earring",
         body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Karieyh Ring +1",
-        back="Ik Cape",waist="Fotia Belt",legs="Herculean Trousers",feet="Mummu Gamash. +2"}
+        back="Ik Cape",waist="Fotia Belt",legs=gear.herculean_nuke_legs,feet="Mummu Gamash. +2"}
 		
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {neck="Subtlety Spec."})
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {neck="Subtlety Spec.",ear1="Telos Earring",ear2="Cessance Earring",body="Meg. Cuirie +2",legs="Meg. Chausses +2",feet="Meg. Jam. +2"})
@@ -218,7 +218,7 @@ function init_gear_sets()
     sets.precast.WS['Aeolian Edge'] = {ammo="Voluspa Tathlum",
         head="Herculean Helm",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Moonshade Earring",
         body="Herculean Vest",hands="Herculean Gloves",ring1="Arvina Ringlet +1",ring2="Acumen Ring",
-        back="Toro Cape",waist="Eschan Stone",legs="Herculean Trousers",feet="Herculean Boots"}
+        back="Toro Cape",waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 

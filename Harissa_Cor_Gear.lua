@@ -26,6 +26,7 @@ function user_job_setup()
 	gear.magic_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}
 	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
 	gear.harissa_mantle = {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Damage taken-2%',}}
+    gear.herculean_nuke_legs = {name="Herculean Trousers", augments={'"Mag.Atk.Bns."+12','Rng.Atk.+27','Accuracy+12 Attack+12','Mag. Acc.+19 "Mag.Atk.Bns."+19',}}
 ---------------------------------------------------------------------------------------------------------
     -- Additional local binds
 	send_command('bind ^` gs c cycle ElementalMode')
@@ -72,14 +73,14 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
 
-	sets.precast.JA['Triple Shot'] = {body="Chasseur\'s Frac"}
+	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac"}
     sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +1",body="Lanun Frac +1",legs="Lanun trews +1",feet="Lak. Bottes +1"}
     sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +1",body="Laksa. Frac +2",feet="Lanun bottes +1"}
     sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +1",body="Lanun Frac +1",feet="Lak. Bottes +1"}
     sets.precast.FoldDoubleBust = {head="Lanun Tricorne +1",body="Laksa. Frac +2", hands="Lanun Gants +1",feet="Lak. Bottes +1"}
 
     sets.precast.CorsairRoll = {range="Compensator",
-      head="Lanun Tricorne +1", body="Malignance Tabard", hands="Chasseur\'s Gants", ring1="Defending Ring",
+      head="Lanun Tricorne +1", body="Malignance Tabard", hands="Chasseur's Gants +1", ring1="Defending Ring",
 			ring2="Barataria Ring",back=gear.harissa_mantle,waist="Flume Belt",legs="Desultor Tassets", feet="Mummu Gamash. +2"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
@@ -88,12 +89,12 @@ function init_gear_sets()
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur\'s Frac", feet="Chasseur\'s Bottes"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne", body="Lanun Frac +1"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur\'s Frac"})
-    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur\'s Gants"})
+    sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1s"})
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
         head="Herculean Helm",neck="Stoicheion medal",ear1="Hecate\'s earring",ear2="Friomisi earring",
-        body="Mirke Wardecors",hands="Chasseur\'s Gants",ring1="Acumen ring",ring2="Arvina Ringlet +1",
-        back=gear.harissa_mantle,waist="Hachirin-no-Obi",legs="Herculean Trousers",feet="Herculean Boots"}
+        body="Mirke Wardecors",hands="Chasseur's Gants +1s",ring1="Acumen ring",ring2="Arvina Ringlet +1",
+        back=gear.harissa_mantle,waist="Hachirin-no-Obi",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 		
 	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne", waist="Eschan Stone", legs="Chas. Culottes",feet="Chasseur\'s Bottes"})
 	
@@ -156,7 +157,7 @@ function init_gear_sets()
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head="Herculean Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Telos earring",
         body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Garuda Ring",
-        back=gear.harissa_mantle,waist="Fotia Belt",legs="Herculean Trousers",feet="Herculean Boots"}
+        back=gear.harissa_mantle,waist="Fotia Belt",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 
     sets.precast.WS['Last Stand'].Acc = set_combine(sets.precast.WS['Last Stand'], {legs="Meg. Chausses +2",feet="Meg. Jam. +2",ring1="Longshot Ring",ring2="Karieyh Ring +1"})
 		
@@ -174,17 +175,17 @@ function init_gear_sets()
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
         head="Pixie Hairpin +1",neck="Stoicheion medal",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Herculean Vest",hands="Carmine Fin. Ga. +1",ring1="Arvina Ringlet +1", ring2="Archon Ring",
-        back=gear.harissa_mantle,waist="Eschan Stone",legs="Herculean Trousers",feet="Herculean Boots"}
+        back=gear.harissa_mantle,waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Animikii Bullet",
         head="Herculean Helm",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
         body="Herculean Vest",hands="Carmine Fin. Ga. +1",ring1="Metamor. Ring +1",ring2="Dingir Ring",
-        back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="Herculean Trousers",feet="Herculean Boots"}
+        back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
         head="Herculean Helm", neck="Stoicheion medal", ear1="Hecate's earring", ear2="Friomisi earring",				       
 		body="Herculean Vest", hands="Carmine Fin. Ga. +1", ring1="Arvina Ringlet +1",ring2="Karieyh ring +1",
-		back=gear.harissa_mantle, waist="Eschan Stone", legs="Herculean Trousers", feet="Herculean Boots"}
+		back=gear.harissa_mantle, waist="Eschan Stone", legs=gear.herculean_nuke_legs, feet="Herculean Boots"}
 
     sets.precast.WS['Wildfire'].Acc = set_combine(sets.precast.WS['Wildfire'], {body="Meg. Cuirie +2"})
 		
