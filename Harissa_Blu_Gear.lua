@@ -419,7 +419,7 @@ function init_gear_sets()
 	sets.idle = {ammo="Staunch Tathlum +1",
 			      head="Malignance Chapeau",neck="Asperity Necklace",ear1="Mache Earring +1", ear2="Odr Earring",
 			      body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Karieyh Ring +1",
-			      back="Archon Cape",waist="Flume Belt",legs="Carmine Cuisses +1",feet="Herculean Boots"}
+			      back="Archon Cape",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Herculean Boots"}
 
 	sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
@@ -452,7 +452,7 @@ function init_gear_sets()
 
     -- Extra Melee sets.  Apply these on top of melee sets.
     sets.Knockback = {}
-    sets.MP = {waist="Flume Belt",ear1="Suppanomimi", ear2="Ethereal Earring"}
+    sets.MP = {waist="Flume Belt +1",ear1="Suppanomimi", ear2="Ethereal Earring"}
     sets.MP_Knockback = {}
 	sets.SuppaBrutal = {ear1="Suppanomimi", ear2="Brutal Earring"}
 	sets.DWEarrings = {ear1="Dudgeon Earring",ear2="Heartseeker Earring"}

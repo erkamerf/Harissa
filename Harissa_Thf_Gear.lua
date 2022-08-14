@@ -149,7 +149,7 @@ function init_gear_sets()
 
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Voluspa Tathlum",
-        head="Adhemar Bonnet",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Cessance Earring",
+        head="Herculean Helm",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Cessance Earring",
         body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Karieyh Ring +1",
         back="Ik Cape",waist="Fotia Belt",legs=gear.herculean_nuke_legs,feet="Mummu Gamash. +2"}
 		
@@ -267,7 +267,7 @@ function init_gear_sets()
 
     sets.idle = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Jute Boots +1",neck="Twilight Torque",waist="Flume Belt",ear1="Cessance Earring",
+		feet="Jute Boots +1",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back="Archon Cape"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
@@ -282,12 +282,12 @@ function init_gear_sets()
 
     sets.defense.PDT = {ammo="Staunch Tathlum +1",
         head="Meghanada Visor +2",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Meg. Jam. +2",neck="Twilight Torque",waist="Flume Belt",ear1="Cessance Earring",
+		feet="Meg. Jam. +2",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Archon Cape"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Meg. Jam. +2",neck="Twilight Torque",waist="Flume Belt",ear1="Cessance Earring",
+		feet="Meg. Jam. +2",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Archon Cape"}
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum +1",

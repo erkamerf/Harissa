@@ -81,7 +81,7 @@ function init_gear_sets()
 
     sets.precast.CorsairRoll = {range="Compensator",
       head="Lanun Tricorne +1", body="Malignance Tabard", hands="Chasseur's Gants +1", ring1="Defending Ring",
-			ring2="Barataria Ring",back=gear.harissa_mantle,waist="Flume Belt",legs="Desultor Tassets", feet="Mummu Gamash. +2"}
+			ring2="Barataria Ring",back=gear.harissa_mantle,waist="Flume Belt +1",legs="Desultor Tassets", feet="Mummu Gamash. +2"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
@@ -98,7 +98,7 @@ function init_gear_sets()
 		
 	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne", waist="Eschan Stone", legs="Chas. Culottes",feet="Chasseur\'s Bottes"})
 	
-    sets.precast.CorsairShot.Proc = set_combine(sets.precast.CorsairShot, {head="Laksa. Tricorne +2",waist="Flume Belt"})
+    sets.precast.CorsairShot.Proc = set_combine(sets.precast.CorsairShot, {head="Laksa. Tricorne +2",waist="Flume Belt +1"})
 
     sets.precast.CorsairShot['Light Shot'] = set_combine(sets.precast.CorsairShot, {ear1="Telos Earring", waist="Eschan Stone"})
 
@@ -196,7 +196,7 @@ function init_gear_sets()
     sets.precast.WS['Burning Blade'] = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
         body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-        back="Camulus's Mantle",waist="Flume Belt",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+        back="Camulus's Mantle",waist="Flume Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Hecate\'s earring", ear2="Friomisi earring"}
@@ -242,12 +242,12 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {ammo=gear.RAbullet,
 		head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Carmine Cuisses +1",
-		feet="Pursuer's Gaiters",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		feet="Pursuer's Gaiters",neck="Asperity Necklace",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back=gear.harissa_mantle}
 		
     sets.idle.PDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Lanun Bottes +1",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		feet="Lanun Bottes +1",neck="Asperity Necklace",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back="Bleating Mantle"}
 		
     sets.idle.Refresh = {}
@@ -256,17 +256,17 @@ function init_gear_sets()
 	-- cntrl+F10 turns on PDT, shift+F10 is supposed to cycle thru PDT sets, alt+F12 to turn off
     sets.defense.PDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Meg. Jam. +2",neck="Sanctity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		feet="Meg. Jam. +2",neck="Sanctity Necklace",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 	-- F11 to activate MDT
     sets.defense.MDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 		
     sets.defense.MEVA = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		feet="Meg. Jam. +2",neck="Asperity Necklace",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 
     sets.Kiting = {legs="Carmine Cuisses +1"}
@@ -303,7 +303,7 @@ function init_gear_sets()
 		
     sets.engaged.DT = {
        	head="Malignance Chapeau",body="Adhemar Jacket +1",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Herculean Boots",neck="Asperity Necklace",waist="Flume Belt",ear1="Cessance Earring",
+		feet="Herculean Boots",neck="Asperity Necklace",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back="Bleating Mantle"}
     
     sets.engaged.Acc.DT = {
