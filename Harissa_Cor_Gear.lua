@@ -73,7 +73,7 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
 
-	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac"}
+	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}
     sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +1",body="Lanun Frac +1",legs="Lanun trews +1",feet="Lak. Bottes +1"}
     sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +1",body="Laksa. Frac +2",feet="Lanun bottes +1"}
     sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +1",body="Lanun Frac +1",feet="Lak. Bottes +1"}
@@ -86,17 +86,23 @@ function init_gear_sets()
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes"})
-    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac", feet="Chasseur's Bottes"})
-    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne", body="Lanun Frac +1"})
-    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac"})
+    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1", feet="Chass. Bottes +1"})
+    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1", body="Lanun Frac +1"})
+    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1"})
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
-        head="Herculean Helm",neck="Stoicheion medal",ear1="Hecate\'s earring",ear2="Friomisi earring",
+       head="Herculean Helm",neck="Stoicheion medal",ear1="Hecate's earring",ear2="Friomisi earring",
         body="Herculean Vest",hands="Chasseur's Gants +1",ring1="Acumen ring",ring2="Arvina Ringlet +1",
         back="Gunslinger's Cape",waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
+
+    -- sets.precast.CorsairShot = {ammo=gear.QDbullet,
+    --     head="Chass. Tricorne +1",neck="Stoicheion medal",ear1="Hecate's earring",ear2="Friomisi earring",
+    --     body="Chasseur's Frac +1",hands="Chasseur's Gants +1",ring1="Acumen ring",ring2="Arvina Ringlet +1",
+    --     back="Gunslinger's Cape",waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Chass. Bottes +1"}
 		
-	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne", waist="Eschan Stone", legs="Chas. Culottes",feet="Chasseur\'s Bottes"})
+	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne +1",body="Chasseur's Frac +1", 
+        legs="Chas. Culottes",feet="Chass. Bottes +1"})
 	
     sets.precast.CorsairShot.Proc = set_combine(sets.precast.CorsairShot, {head="Laksa. Tricorne +2",waist="Flume Belt +1"})
 
@@ -123,7 +129,7 @@ function init_gear_sets()
     sets.precast.RA = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Marked Gorget", ear1="Beyla earring", ear2="Odr earring",
         body="Adhemar Jacket +1",hands="Carmine Fin. Ga. +1",ring1="Karieyh Ring +1", ring2="Longshot Ring",
-        back=gear.harissa_mantle,waist="Ponente Sash",legs="Pursuer\'s Pants",feet="Pursuer\'s Gaiters"}
+        back=gear.harissa_mantle,waist="Ponente Sash",legs="Pursuer's Pants",feet="Pursuer's Gaiters"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {})
 	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {})
@@ -226,7 +232,7 @@ function init_gear_sets()
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Arvina Ringlet +1",ring2="Longshot Ring",
         back=gear.harissa_mantle,waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 		
-	sets.buff['Triple Shot'] = {body="Chasseur's Frac"}
+	sets.buff['Triple Shot'] = {body="Chasseur's Frac +1"}
     
     -- Sets to return to when not performing an action.
 	
