@@ -85,14 +85,14 @@ function init_gear_sets()
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
-    sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes"})
+    sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +1"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1", feet="Chass. Bottes +1"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1", body="Lanun Frac +1"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1"})
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
-       head="Herculean Helm",neck="Stoicheion medal",ear1="Hecate's earring",ear2="Friomisi earring",
+       head=gear.herculean_nuke_head,neck="Stoicheion medal",ear1="Hecate's earring",ear2="Friomisi earring",
         body="Herculean Vest",hands="Chasseur's Gants +1",ring1="Acumen ring",ring2="Arvina Ringlet +1",
         back="Gunslinger's Cape",waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 
@@ -102,7 +102,7 @@ function init_gear_sets()
     --     back="Gunslinger's Cape",waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Chass. Bottes +1"}
 		
 	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne +1",body="Chasseur's Frac +1", 
-        legs="Chas. Culottes",feet="Chass. Bottes +1"})
+        legs="Chas. Culottes +1",feet="Chass. Bottes +1"})
 	
     sets.precast.CorsairShot.Proc = set_combine(sets.precast.CorsairShot, {head="Laksa. Tricorne +2",waist="Flume Belt +1"})
 
@@ -138,7 +138,7 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-		head="Herculean Helm",neck="Fotia Gorget",ear1="Telos Earring",ear2="Moonshade Earring",
+		head=gear.herculean_ws_head,neck="Fotia Gorget",ear1="Telos Earring",ear2="Moonshade Earring",
         body="Meg Cuirie +2",hands="Meg. Gloves +2",ring1="Apate Ring",ring2="Karieyh Ring +1",
         back=gear.harissa_mantle,waist="Fotia Belt",legs="Meg. Chausses +2",feet="Herculean Boots"}
 		
@@ -161,7 +161,7 @@ function init_gear_sets()
         back="Camulus's Mantle",waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 	
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
-        head="Herculean Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Telos earring",
+        head=gear.herculean_ws_head,neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Telos earring",
         body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Garuda Ring",
         back=gear.harissa_mantle,waist="Fotia Belt",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 
@@ -184,12 +184,12 @@ function init_gear_sets()
         back=gear.harissa_mantle,waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Animikii Bullet",
-        head="Herculean Helm",neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
+        head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
         body="Herculean Vest",hands="Carmine Fin. Ga. +1",ring1="Metamor. Ring +1",ring2="Dingir Ring",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
-        head="Herculean Helm", neck="Stoicheion medal", ear1="Hecate's earring", ear2="Friomisi earring",				       
+        head=gear.herculean_nuke_head, neck="Stoicheion medal", ear1="Hecate's earring", ear2="Friomisi earring",				       
 		body="Herculean Vest", hands="Carmine Fin. Ga. +1", ring1="Arvina Ringlet +1",ring2="Karieyh ring +1",
 		back=gear.harissa_mantle, waist="Eschan Stone", legs=gear.herculean_nuke_legs, feet="Herculean Boots"}
 
