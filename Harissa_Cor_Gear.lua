@@ -185,7 +185,7 @@ function init_gear_sets()
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Animikii Bullet",
         head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Friomisi Earring",
-        body="Herculean Vest",hands="Carmine Fin. Ga. +1",ring1="Metamor. Ring +1",ring2="Dingir Ring",
+        body="Herculean Vest",hands="Carmine Fin. Ga. +1",ring1="Metamorph Ring",ring2="Karieyh ring +1",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
@@ -225,7 +225,7 @@ function init_gear_sets()
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Marked Gorget", ear1="Beyla earring", ear2="Telos earring",
         body="Adhemar Jacket +1",hands="Carmine Fin. Ga. +1",ring1="Arvina Ringlet +1", ring2="Longshot Ring",
-        back=gear.harissa_mantle,waist="Ponente Sash",legs="Pursuer\'s Pants",feet="Pursuer\'s Gaiters"}
+        back=gear.harissa_mantle,waist="Ponente Sash",legs="Pursuer's Pants",feet="Pursuer's Gaiters"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Marked Gorget",ear1="Beyla earring", ear2="Telos earring",
