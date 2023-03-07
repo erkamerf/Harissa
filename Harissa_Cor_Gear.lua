@@ -10,12 +10,12 @@ function user_job_setup()
     state.IdleMode:options('Normal', 'PDT', 'Refresh') -- F12 to cycle
 	state.HybridMode:options('Normal','DT') -- ctrl+F9 to cycle
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'} -- alt+f11 to cycle
-	state.Weapons:options('Default','DualWeapons','DualSavageWeapons','DualLeadenRanged','DualLeadenMelee','DualAeolian','DualLeadenMeleeAcc','DualRanged','None') --F9 to cycle
+	state.Weapons:options('Fomal','DeathPenalty','AeolianMolybdosis') --F9 to cycle
 	state.CompensatorMode:options('Always','300','1000','Never')
 
     gear.RAbullet = "Chrono Bullet"
     gear.WSbullet = "Chrono Bullet"
-    gear.MAbullet = "Orichalc. Bullet" --For MAB WS, do not put single-use bullets here. Orichalc. Bullet preferred
+    gear.MAbullet = "Living Bullet" --For MAB WS, do not put single-use bullets here. Orichalc. Bullet preferred
     gear.QDbullet = "Hauksbok Bullet" --Animikii bullet was default here
     options.ammo_warning_limit = 10
 
@@ -42,10 +42,10 @@ function user_job_setup()
 	send_command('bind ^@!\\\\ gs c toggle LuzafRing')
 	send_command('bind @f7 gs c toggle RngHelper')
 
-	send_command('bind !r gs c weapons DualSavageWeapons;gs c update')
+	--send_command('bind !r gs c weapons DualSavageWeapons;gs c update')
 	--send_command('bind ^q gs c weapons DualAeolian;gs c update')
-	send_command('bind @q gs c weapons DualKustawi;gs c update')
-	send_command('bind !q gs c weapons DualLeadenRanged;gs c update')
+	--send_command('bind @q gs c weapons DualKustawi;gs c update')
+	--send_command('bind !q gs c weapons DualLeadenRanged;gs c update')
 	send_command('bind @pause roller roll')
 	
 	--[[Binds you may want to change.
@@ -276,18 +276,13 @@ function init_gear_sets()
 		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 
     sets.Kiting = {legs="Carmine Cuisses +1"}
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
+	sets.TreasureHunter = set_combine(sets.TreasureHunter, {}) -- control + T to activate
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket +1",hands="Floral Gauntlets",waist="Reiki Yotai"}
 
 	-- Weapons sets: F9 to toggle
-	sets.weapons.Default = {main="Naegling",sub="Tauret",range="Fomalhaut"}
-	sets.weapons.DualWeapons = {main="Naegling",sub="Tauret",range="Fomalhaut"}
-	sets.weapons.DualSavageWeapons = {main="Naegling",sub="Hep. Sapara +1",range="Doomsday"}
-	sets.weapons.DualLeadenRanged = {main="Naegling",sub="Tauret",range="Molybdosis"}
-	sets.weapons.DualLeadenMelee = {main="Tauret",sub="Naegling",range="Molybdosis"}
-	sets.weapons.DualAeolian = {main="Tauret",sub="Naegling",range="Molybdosis"}
-	sets.weapons.DualLeadenMeleeAcc = {main="Naegling",sub="Hep. Sapara +1",range="Compensator"}
-	sets.weapons.DualRanged = {main="Naegling",sub="Tauret",range="Compensator"}
+	sets.weapons.Fomal = {main="Naegling",sub="Tauret",range="Fomalhaut"}
+	sets.weapons.DeathPenalty = {main="Naegling",sub="Tauret",range="Death Penalty"}
+	sets.weapons.AeolianMolybdosis = {main="Tauret",sub="Naegling",range="Molybdosis"}
 	
     -- Engaged sets
 
