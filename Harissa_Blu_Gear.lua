@@ -24,21 +24,21 @@ function user_job_setup()
 	gear.obi_cure_back = "Tempered Cape +1"
 
 	-- Additional local binds
-	send_command('bind ^` input /ja "Chain Affinity" <me>')
-	send_command('bind @` input /ja "Efflux" <me>')
-	send_command('bind !` input /ja "Burst Affinity" <me>')
+	--send_command('bind ^` input /ja "Chain Affinity" <me>')
+	--send_command('bind @` input /ja "Efflux" <me>')
+	--send_command('bind !` input /ja "Burst Affinity" <me>')
 	send_command('bind ^@!` gs c cycle SkillchainMode')
-	send_command('bind ^backspace input /ja "Unbridled Learning" <me>;wait 1;input /ja "Diffusion" <me>;wait 2;input /ma "Mighty Guard" <me>')
-	send_command('bind !backspace input /ja "Unbridled Learning" <me>;wait 1;input /ja "Diffusion" <me>;wait 2;input /ma "Carcharian Verve" <me>')
-	send_command('bind @backspace input /ja "Convergence" <me>')
+	--send_command('bind ^backspace input /ja "Unbridled Learning" <me>;wait 1;input /ja "Diffusion" <me>;wait 2;input /ma "Mighty Guard" <me>')
+	--send_command('bind !backspace input /ja "Unbridled Learning" <me>;wait 1;input /ja "Diffusion" <me>;wait 2;input /ma "Carcharian Verve" <me>')
+	--send_command('bind @backspace input /ja "Convergence" <me>')
 	send_command('bind ^f10 gs c toggle LearningMode')
 	send_command('bind ^@!` gs c cycle MagicBurstMode')
 	send_command('bind @f8 gs c toggle AutoNukeMode')
 	send_command('bind !@^f7 gs c toggle AutoWSMode')
-	send_command('bind !r gs c weapons None;gs c update')
-	send_command('bind @q gs c weapons MaccWeapons;gs c update')
-	send_command('bind ^q gs c weapons Almace;gs c update')
-	send_command('bind !q gs c weapons HybridWeapons;gs c update')
+	--send_command('bind !r gs c weapons None;gs c update')
+	--send_command('bind @q gs c weapons MaccWeapons;gs c update')
+	--send_command('bind ^q gs c weapons Almace;gs c update')
+	--send_command('bind !q gs c weapons HybridWeapons;gs c update')
   
   --[[Binds you may want to change.
 	Bind special characters.
@@ -101,7 +101,7 @@ function init_gear_sets()
 
 	-- Fast cast sets for spells
 
-	sets.precast.FC = {main="Vampirism",sub="Vampirism",ammo="Impatiens",
+	sets.precast.FC = {
 		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body="Luhlaza Jubbah +2",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Lebeche Ring",
 		back="Perimede Cape",waist="Witful Belt",legs="Psycloth Lappas",feet="Carmine Greaves +1"}
