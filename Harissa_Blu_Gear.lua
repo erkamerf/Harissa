@@ -196,7 +196,7 @@ function init_gear_sets()
 	-- Midcast Sets
 	sets.midcast.FastRecast = {ammo="Hasty Pinion +1",
 		head="Carmine Mask +1",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Luhlaza Jubbah +2",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
+		body="Luhlaza Jubbah +2",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring",
 		back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Carmine Greaves +1"}
 
 	sets.midcast['Blue Magic'] = {}
@@ -205,22 +205,22 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].Physical = {ammo="Mavi Tathlum",
 		head="Lilitu Headpiece",neck="Mirage Stole +2",ear1="Suppanomimi",ear2="Telos Earring",
-		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Ilabrat Ring",
+		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Apate Ring",
 		back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Jhakri Slops +2",feet="Jhakri Pigaches +1"}
 
 	sets.midcast['Blue Magic'].Physical.Resistant = {ammo="Falcon Eye",
 		head="Jhakri Coronal +2",neck="Mirage Stole +2",ear1="Regal Earring",ear2="Telos Earring",
-	    body="Assim. Jubbah +2",hands="Assim. Bazu. +2",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
+	    body="Assim. Jubbah +2",hands="Assim. Bazu. +2",ring1="Ifrit Ring +1",ring2="Stikini Ring +1",
 	    back=gear.da_jse_back,waist="Grunfeld Rope",legs="Jhakri Slops +2",feet="Jhakri Pigaches +1"}
 
 	sets.midcast['Blue Magic'].Physical.Fodder = {ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +2",neck="Mirage Stole +2",ear1="Suppanomimi",ear2="Telos Earring",
-		body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Ilabrat Ring",
+		body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Shiva Ring +1",
 		back="Cornflower Cape",waist="Grunfeld Rope",legs="Hashishin Tayt +1",feet="Luhlaza Charuqs +2"}
 
 	sets.midcast['Blue Magic'].PhysicalAcc = {ammo="Falcon Eye",
 		head="Jhakri Coronal +2",neck="Mirage Stole +2",ear1="Regal Earring",ear2="Telos Earring",
-	    body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
+	    body="Assim. Jubbah +2",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Stikini Ring +1",
 	    back=gear.da_jse_back,waist="Grunfeld Rope",legs="Jhakri Slops +2",feet="Malignance Boots"}
 
 	sets.midcast['Blue Magic'].PhysicalAcc.Resistant = set_combine(sets.midcast['Blue Magic'].PhysicalAcc, {})
@@ -271,18 +271,18 @@ function init_gear_sets()
     waist="Eschan Stone",
     left_ear="Hecate's Earring",
     right_ear="Friomisi Earring",
-    left_ring="Acumen Ring",
-    right_ring="Metamorph Ring",
+    left_ring="Shiva Ring +1",
+    right_ring="Acumen Ring",
     back="Toro Cape",
 	}
 					 
 	sets.midcast['Blue Magic'].Magical.Proc = {ammo="Staunch Tathlum +1",
 		head="Carmine Mask +1",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Luhlaza Jubbah +2",hands="Leyline Gloves",ring1="Kishar Ring",ring2="Prolix Ring",
+		body="Luhlaza Jubbah +2",hands="Leyline Gloves",ring1="Lebeche Ring",ring2="Prolix Ring",
 		back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Carmine Greaves +1"}
 					 
 	sets.midcast['Blue Magic'].Magical.Resistant = set_combine(sets.midcast['Blue Magic'].Magical,
-		{neck="Mirage Stole +2",ring1="Stikini Ring +1",ring2="Stikini Ring +1",waist="Yamabuki-no-Obi"})
+		{neck="Mirage Stole +2",ring2="Stikini Ring +1",waist="Yamabuki-no-Obi"})
 
 	sets.midcast['Blue Magic'].Magical.Fodder = set_combine(sets.midcast['Blue Magic'].Magical, {})
 
@@ -328,7 +328,7 @@ function init_gear_sets()
 
 	sets.midcast.Cure = {ammo="Pemphredo Tathlum",
 		head="Carmine Mask +1",neck="Incanter's Torque",ear1="Etiolation Earring",ear2="Mendi. Earring",
-		body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Janniston Ring",ring2="Menelaus's Ring",
+		body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Lebeche Ring",ring2="Stikini Ring +1",
 		back=gear.ElementalCape,waist=gear.ElementalObi,legs="Carmine Cuisses +1",feet="Medium's Sabots"}
 
 	sets.midcast.Cursna =  set_combine(sets.midcast.Cure, {neck="Debilis Medallion",hands="Hieros Mittens",
@@ -338,7 +338,7 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].Breath = {ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +2",neck="Mirage Stole +2",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Assim. Jubbah +2",hands="Luh. Bazubands +2",ring1="Kunaji Ring",ring2="Meridian Ring",
+		body="Assim. Jubbah +2",hands="Luh. Bazubands +2",ring1="Shiva Ring +1",ring2="Lebeche Ring",
 		back="Cornflower Cape",legs="Hashishin Tayt +1",feet="Luhlaza Charuqs +2"}
 
 	-- Physical Added Effect Spells most notably "Stun" spells --
@@ -461,7 +461,7 @@ function init_gear_sets()
 
 	sets.engaged = {ammo="Aurgelmir Orb +1",
 			    head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-			    body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Apate Ring",
+			    body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
 			    back="Bleating Mantle",waist="Sailfi Belt +1",legs="Malignance Tights",feet="Herculean Boots"}
 
 	sets.engaged.AM = {main="Tizona",sub="Almace",ammo="Aurgelmir Orb +1",
