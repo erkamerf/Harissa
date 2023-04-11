@@ -83,8 +83,8 @@ function init_gear_sets()
 	sets.weapons.ProcWeapons = {main="Blurred Knife +1",sub="Atoyac"}
 	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
 	sets.weapons.Evisceration = {main="Tauret",sub="Shijo"}
-	sets.weapons.Throwing = {main="Aeneas",sub="Blurred Knife +1",range="Raider's Bmrng.",ammo=empty}
-	sets.weapons.SwordThrowing = {main="Naegling",sub="Blurred Knife +1",range="Raider's Bmrng.",ammo=empty}
+	sets.weapons.Throwing = {main="Aeneas",sub="Blurred Knife +1",range="Wingcutter",ammo=empty}
+	sets.weapons.SwordThrowing = {main="Naegling",sub="Blurred Knife +1",range="Wingcutter",ammo=empty}
 	sets.weapons.Bow = {main="Aeneas",sub="Kustawi +1",range="Tsoa. Crossbow",ammo="Eminent Bolt"}
 	
     -- Actions we want to use to tag TH.
