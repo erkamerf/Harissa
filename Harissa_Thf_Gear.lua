@@ -10,7 +10,7 @@ function user_job_setup()
 	state.MagicalDefenseMode:options('MDT') --F11 to lock in, cntrl+F11 to cycle
 	state.ResistDefenseMode:options('MEVA') --cntrl+F12
 		-- alt+F12 to turn off the PDT or MDT set!
-	state.Weapons:options('Aeneas','AccAeneas','Savage','AccSavage','ProcWeapons','MagicWeapons','Evisceration','Throwing','SwordThrowing','Bow')
+	state.Weapons:options('Aeneas','Savage','Evisceration','Throwing','SwordThrowing','Gun')
 		--F9 to cycle weapon sets
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWMax','Parry'} --alt+F11
 	state.AmbushMode = M(false, 'Ambush Mode') --windows+F10
@@ -77,15 +77,11 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.Aeneas = {main="Aeneas",sub="Shijo"}
-	sets.weapons.AccAeneas = {main="Aeneas",sub="Tauret"}
-	sets.weapons.Savage = {main="Naegling",sub="Tauret"}
-	sets.weapons.AccSavage = {main="Naegling",sub="Tauret"}
-	sets.weapons.ProcWeapons = {main="Blurred Knife +1",sub="Atoyac"}
-	sets.weapons.MagicWeapons = {main="Malevolence",sub="Malevolence"}
+	sets.weapons.Savage = {main="Naegling",sub="Aeneas"}
 	sets.weapons.Evisceration = {main="Tauret",sub="Shijo"}
-	sets.weapons.Throwing = {main="Aeneas",sub="Blurred Knife +1",range="Wingcutter",ammo=empty}
-	sets.weapons.SwordThrowing = {main="Naegling",sub="Blurred Knife +1",range="Wingcutter",ammo=empty}
-	sets.weapons.Bow = {main="Aeneas",sub="Kustawi +1",range="Tsoa. Crossbow",ammo="Eminent Bolt"}
+	sets.weapons.Throwing = {main="Aeneas",sub="Shijo",range="Wingcutter",ammo=empty}
+	sets.weapons.SwordThrowing = {main="Naegling",sub="Tauret",range="Wingcutter",ammo=empty}
+	sets.weapons.Gun = {main="Aeneas",sub="Shijo",range="Silver Gun +1",ammo="Bronze Bullet"}
 	
     -- Actions we want to use to tag TH.
     sets.precast.Step = {ammo="C. Palug Stone",
