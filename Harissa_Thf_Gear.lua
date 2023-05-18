@@ -144,7 +144,7 @@ function init_gear_sets()
     -- Weaponskill sets
 
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="Voluspa Tathlum",
+    sets.precast.WS = {ammo="Seeth. Bomblet +1",
         head="Herculean Helm",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Cessance Earring",
         body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Karieyh Ring +1",
         back="Ik Cape",waist="Fotia Belt",legs=gear.herculean_nuke_legs,feet="Mummu Gamash. +2"}
@@ -211,7 +211,7 @@ function init_gear_sets()
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Apate Ring",ring2="Regal Ring",
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Malignance Tights",feet="Malignance Boots"}
 		
-    sets.precast.WS['Aeolian Edge'] = {ammo="Voluspa Tathlum",
+    sets.precast.WS['Aeolian Edge'] = {
         head="Herculean Helm",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Moonshade Earring",
         body="Herculean Vest",hands="Herculean Gloves",ring1="Arvina Ringlet +1",ring2="Acumen Ring",
         back="Toro Cape",waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
@@ -297,7 +297,7 @@ function init_gear_sets()
     --------------------------------------
 
     -- Normal melee group
-    sets.engaged = {ammo="Staunch Tathlum +1",
+    sets.engaged = {ammo="Aurgelmir Orb +1",
         head="Adhemar Bonnet +1",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Meg. Chausses +2",
 		feet="Herculean Boots",neck="Erudit. Necklace",waist="Sailfi Belt +1",ear1="Cessance Earring",
 		ear2="Telos Earring",ring1="Apate Ring",ring2="Epona's Ring",back="Bleating Mantle",}
@@ -307,7 +307,7 @@ function init_gear_sets()
         body="Adhemar Jacket +1",hands="Floral Guantlets",ring1="Chirich Ring +1",ring2="Epona's Ring",
         back=gear.da_jse_back,waist="Reiki Yotai",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
     
-	sets.engaged.Acc = {ammo="Yamarang",
+	sets.engaged.Acc = {ammo="Seeth. Bomblet +1",
         head="Pill. Bonnet +3",neck="Combatant's Torque",ear1="Cessance Earring",ear2="Telos Earring",
         body="Mummu Jacket +2",hands="Floral Gauntlets",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
         back=gear.da_jse_back,waist="Olseni Belt",legs="Pill. Culottes +3",feet="Malignance Boots"}
