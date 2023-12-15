@@ -120,7 +120,9 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
     
-    sets.precast.FC = {}
+    sets.precast.FC = {head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
+    body="Luhlaza Jubbah +2",hands="Leyline Gloves",ring1="Prolix Ring",ring2="Lebeche Ring",
+    back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Carmine Greaves +1"}
 
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {ring1="Garuda Ring"})
 	
@@ -209,7 +211,9 @@ function init_gear_sets()
 	sets.AccMaxTP = {ear1="Hecate\'s earring", ear2="Friomisi earring"}
         
     -- Midcast Sets
-    sets.midcast.FastRecast = {}
+    sets.midcast.FastRecast = {head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
+    body="Luhlaza Jubbah +2",hands="Leyline Gloves",ring1="Prolix Ring",ring2="Lebeche Ring",
+    back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Carmine Greaves +1"}
         
     -- Specific spells
 
