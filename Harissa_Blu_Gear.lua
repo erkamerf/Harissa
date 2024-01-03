@@ -16,7 +16,7 @@ function user_job_setup()
 	gear.stp_jse_back = {name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10',}}
 	gear.crit_jse_back = {name="Rosmerta's Cape",augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}}
 	gear.wsd_jse_back = {name="Rosmerta's Cape",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
-	gear.nuke_jse_back = {name="Rosmerta's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10',}}
+	gear.nuke_jse_back = {name="Rosmerta's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
 	gear.herculean_nuke_legs = {name="Herculean Trousers", augments={'"Mag.Atk.Bns."+12','Rng.Atk.+27','Accuracy+12 Attack+12','Mag. Acc.+19 "Mag.Atk.Bns."+19',}}
 
 	gear.obi_cure_waist = "Luminary Sash"
@@ -273,7 +273,7 @@ function init_gear_sets()
     right_ear="Friomisi Earring",
     left_ring="Shiva Ring +1",
     right_ring="Acumen Ring",
-    back="Toro Cape",
+    back=gear.nuke_jse_back,
 	}
 					 
 	sets.midcast['Blue Magic'].Magical.Proc = {ammo="Staunch Tathlum +1",
@@ -438,7 +438,7 @@ function init_gear_sets()
 	sets.Kiting = {legs="Carmine Cuisses +1"}
 
     -- Extra Melee sets.  Apply these on top of melee sets.
-    sets.Knockback = {}
+    sets.Knockback = {legs="Dashing Subligar",}
     sets.MP = {waist="Flume Belt +1",ear1="Suppanomimi", ear2="Ethereal Earring"}
     sets.MP_Knockback = {}
 	sets.SuppaBrutal = {ear1="Suppanomimi", ear2="Brutal Earring"}

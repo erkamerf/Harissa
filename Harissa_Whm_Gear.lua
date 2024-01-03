@@ -53,8 +53,8 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
 		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
-		body="Inyanga Jubbah +2",hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Lebeche Ring",
-		back="Perimede Cape",waist="Witful Belt",legs="Lengo Pants",feet="Regal Pumps +1"}
+		body="Vedic Coat",hands="Gende. Gages +1",ring1="Prolix Ring",ring2="Lebeche Ring",
+		back="Swith Cape +1",waist="Witful Belt",legs="Gyve Trousers",feet="Regal Pumps +1"}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 	
@@ -399,9 +399,9 @@ function init_gear_sets()
 
     -- Basic set for if no TP weapon is defined.
     sets.engaged = {ammo="Staunch Tathlum +1",
-        head="Aya. Zucchetto +2",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",Ring2="Ilabrat Ring",
-        back="Kayapa Cape",waist="Windbuffet Belt +1",legs="Aya. Cosciales +2",feet="Battlecast Gaiters"}
+		head="Nahtirah Hat", body="Vedic Coat", hands="Yaoyotl Gloves", legs="Gyve Trousers", feet="Regal Pumps +1",
+   	 	neck="Asperity Necklace", waist="Cetl Belt", left_ear="Telos Earring", right_ear="Cessance Earring", left_ring="Petrov Ring",
+    	right_ring="Chirich Ring +1", cback="Toro Cape",}
 
     sets.engaged.Acc = {ammo="Hasty Pinion +1",
         head="Aya. Zucchetto +2",neck="Combatant's Torque",ear1="Telos Earring",ear2="Brutal Earring",
