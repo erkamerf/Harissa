@@ -250,12 +250,12 @@ function init_gear_sets()
     
 
     -- Idle sets
-    sets.idle = {ammo=gear.RAbullet,
+    sets.idle = {
 		head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Carmine Cuisses +1",
 		feet="Pursuer's Gaiters",neck="Asperity Necklace",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back=gear.harissa_mantle}
 		
-    sets.idle.PDT = {ammo=gear.RAbullet,
+    sets.idle.PDT = {
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Lanun Bottes +1",neck="Asperity Necklace",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back="Bleating Mantle"}
@@ -285,7 +285,7 @@ function init_gear_sets()
 
 	-- Weapons sets: F9 to toggle
 	sets.weapons.Fomal = {main="Naegling",sub="Tauret",range="Fomalhaut"}
-	sets.weapons.DeathPenalty = {main="Naegling",sub="Tauret",range="Death Penalty"}
+	sets.weapons.DeathPenalty = {range="Death Penalty",ammo="Living Bullet",main="Naegling",sub="Tauret",}
 	sets.weapons.AeolianMolybdosis = {main="Tauret",sub="Naegling",range="Molybdosis"}
 	
     -- Engaged sets
