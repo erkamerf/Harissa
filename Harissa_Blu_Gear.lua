@@ -116,7 +116,7 @@ function init_gear_sets()
 	sets.precast.WS = {ammo="Aurgelmir Orb +1",
 				  head="Herculean Helm",neck="Fotia Gorget",ear1="Cessance Earring",ear2="Brutal Earring",
           body="Adhemar Jacket +1",hands="Herculean Gloves",ring1="Epona's Ring",ring2="Karieyh Ring +1",
-				  back="Rosmerta's Cape",waist="Fotia Belt",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
+				  back="Rosmerta's Cape",waist="Fotia Belt",legs="Luhlaza Shalwar +3",feet="Herculean Boots"}
 
 	sets.precast.WS.Acc = {ammo="Falcon Eye",
 				  head="Herculean Helm",neck="Fotia Gorget",ear1="Mache Earring +1",ear2="Odr Earring",
@@ -265,7 +265,7 @@ function init_gear_sets()
     head={ name="Herculean Helm", augments={'INT+8','"Mag.Atk.Bns."+26','Accuracy+19 Attack+19','Mag. Acc.+17 "Mag.Atk.Bns."+17',}},
     body={ name="Herculean Vest", augments={'"Mag.Atk.Bns."+23','Mag. Acc.+24 "Mag.Atk.Bns."+24','Chance of successful block +4',}},
     hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
-    legs={ name="Luhlaza Shalwar +2", augments={'Enhances "Assimilation" effect',}},
+    legs={ name="Luhlaza Shalwar +3", augments={'Enhances "Assimilation" effect',}},
     feet={ name="Herculean Boots", augments={'Attack+13','"Mag.Atk.Bns."+25','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     neck="Sanctity Necklace",
     waist="Eschan Stone",
