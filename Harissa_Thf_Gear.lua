@@ -262,7 +262,7 @@ function init_gear_sets()
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
     sets.idle = {ammo="Staunch Tathlum +1",
-        head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
+        head="Nyame Helm",body="Nyame Mail",hands="Nyame Gauntlets",legs="Nyame Flanchard",
 		feet="Jute Boots +1",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back="Archon Cape"}
 		
@@ -298,9 +298,18 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {ammo="Aurgelmir Orb +1",
-        head="Adhemar Bonnet +1",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Meg. Chausses +2",
-		feet="Herculean Boots",neck="Erudit. Necklace",waist="Sailfi Belt +1",ear1="Cessance Earring",
-		ear2="Telos Earring",ring1="Apate Ring",ring2="Epona's Ring",back="Bleating Mantle",}
+                    head="Nyame Helm",
+                    body="Nyame Mail",
+                    hands="Nyame Gauntlets",
+                    legs="Nyame Flanchard",
+                    feet="Nyame Sollerets",
+                    neck="Asperity Necklace",
+                    waist="Sarissapho. Belt",
+                    left_ear="Cessance Earring",
+                    right_ear="Telos Earring",
+                    left_ring="Epona's Ring",
+                    right_ring="Petrov Ring",
+                    back="Bleating Mantle",}
 		
     sets.engaged.SomeAcc = {ammo="Aurgelmir Orb +1",
         head="Dampening Tam",neck="Erudit. Necklace",ear1="Brutal Earring",ear2="Mache Earring +1",
