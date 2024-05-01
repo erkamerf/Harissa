@@ -156,7 +156,7 @@ function init_gear_sets()
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {})
 
 	sets.precast.WS['Savage Blade'] = {head="Nyame Helm",body="Nyame Mail",hands="Meg. Gloves +2",legs="Nyame Flanchard",feet="Nyame Sollerets",
-    neck={ name="Comm. Charm +1", augments={'Path: A',}},waist="Chuq'aba Belt",left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+    neck={ name="Comm. Charm +1", augments={'Path: A',}},waist="Sailfi Belt +1",left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     right_ear="Lifestorm Earring",left_ring="Sroda Ring",right_ring="Karieyh Ring +1",
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Damage taken-2%',}},}
 
