@@ -22,7 +22,7 @@ function user_job_setup()
 	gear.tp_ranger_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}}
 	gear.snapshot_jse_back = {name="Camulus's Mantle",augments={'"Snapshot"+10',}}
 	gear.tp_jse_back = {name="Camulus's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10',}}
-	gear.ranger_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}}
+	--gear.ranger_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}}
 	gear.magic_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}}
 	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
 	gear.harissa_mantle = {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Damage taken-2%',}}
@@ -147,7 +147,7 @@ function init_gear_sets()
     sets.precast.WS.Acc = {
         head="Malignance Chapeau",neck="Ej Necklace",ear1="Telos Earring",ear2="Moonshade Earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Meghanada Ring",ring2="Karieyh Ring +1",
-        back="Camulus's Mantle",waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}		
+        back=gear.tp_jse_back,waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}		
 		
     sets.precast.WS.Proc = set_combine(sets.precast.WS.Acc, {})
 		
@@ -158,7 +158,7 @@ function init_gear_sets()
 	sets.precast.WS['Savage Blade'] = {head="Nyame Helm",body="Nyame Mail",hands="Meg. Gloves +2",legs="Nyame Flanchard",feet="Nyame Sollerets",
     neck={ name="Comm. Charm +1", augments={'Path: A',}},waist="Sailfi Belt +1",left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     right_ear="Lifestorm Earring",left_ring="Sroda Ring",right_ring="Karieyh Ring +1",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Damage taken-2%',}},}
+    back=gear.harissa_mantle,}
 
     sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS['Savage Blade'], {
         head="Malignance Chapeau",ear2="Telos Earring",
@@ -207,7 +207,7 @@ function init_gear_sets()
     sets.precast.WS['Burning Blade'] = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
         body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-        back="Camulus's Mantle",waist="Flume Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+        back=gear.harissa_mantle,waist="Flume Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Hecate\'s earring", ear2="Friomisi earring"}
@@ -256,7 +256,7 @@ function init_gear_sets()
     sets.idle = {
 		head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Carmine Cuisses +1",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back=gear.harissa_mantle}
+		ear2="Brutal Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back=gear.tp_jse_back}
 		
     sets.idle.PDT = {
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Carmine Cuisses +1",
@@ -275,12 +275,12 @@ function init_gear_sets()
     sets.defense.MDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
+		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.tp_jse_back}
 		
     sets.defense.MEVA = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
+		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.tp_jse_back}
 
     sets.Kiting = {legs="Carmine Cuisses +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {}) -- control + T to activate
@@ -303,22 +303,22 @@ function init_gear_sets()
     sets.engaged = {
 		head="Adhemar Bonnet +1",neck="Defiant Collar",ear1="Cessance Earring",ear2="Telos Earring",
         body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Chirich Ring +1",ring2="Epona's Ring",
-        back="Bleating Mantle",waist="Sailfi Belt +1",legs="Meg. Chausses +2",feet="Herculean Boots"}
+        back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Meg. Chausses +2",feet="Herculean Boots"}
     
     sets.engaged.Acc = {
 	    head="Malignance Chapeau",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Meg. Chausses +2",
 		feet="Meg. Jam. +2",neck="Ej Necklace",waist="Sailfi Belt +1",ear1="Cessance Earring",
-		ear2="Telos Earring",ring1="Chirich Ring +1",ring2="Chirich Ring +1",back="Bleating Mantle"}
+		ear2="Telos Earring",ring1="Chirich Ring +1",ring2="Chirich Ring +1",back=gear.tp_jse_back}
 		
     sets.engaged.DT = {
        	head="Malignance Chapeau",body="Adhemar Jacket +1",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Herculean Boots",neck="Asperity Necklace",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back="Bleating Mantle"}
+		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
     
     sets.engaged.Acc.DT = {
 		head="Mummu Bonnet +2",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Meg. Chausses +2",
 		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Cessance Earring",
-		ear2="Telos Earring",ring1="Karieyh Ring +1",ring2="Defending Ring",back="Bleating Mantle"}
+		ear2="Telos Earring",ring1="Karieyh Ring +1",ring2="Defending Ring",back=gear.harissa_mantle}
 
     sets.engaged.DW = {		
 		head="Adhemar Bonnet +1",neck="Defiant Collar",ear1="Cessance Earring",ear2="Telos Earring",
@@ -328,17 +328,17 @@ function init_gear_sets()
     sets.engaged.DW.Acc = {		
 		head="Mummu Bonnet +2",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Meg. Chausses +2",
 		feet="Herculean Boots",neck="Asperity Necklace",waist="Sailfi Belt +1",ear1="Suppanomimi",
-		ear2="Telos Earring",ring1="Apate Ring",ring2="Chirich Ring +1",back="Bleating Mantle"}
+		ear2="Telos Earring",ring1="Apate Ring",ring2="Chirich Ring +1",back=gear.tp_jse_back}
 		
     sets.engaged.DW.DT = {		
 		head="Malignance Chapeau",body="Adhemar Jacket +1",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Herculean Boots",neck="Asperity Necklace",waist="Reiki Yotai",ear1="Brutal Earring",
-		ear2="Suppanomimi",ring1="Epona's Ring",ring2="Defending Ring",back="Bleating Mantle"}
+		ear2="Suppanomimi",ring1="Epona's Ring",ring2="Defending Ring",back=gear.harissa_mantle}
     
     sets.engaged.DW.Acc.DT = {		
 		head="Malignance Chapeau",body="Malignace Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Herculean Boots",neck="Asperity Necklace",waist="Reiki Yotai",ear1="Suppanomimi",
-		ear2="Telos Earring",ring1="Apate Ring",ring2="Defending Ring",back="Bleating Mantle"}
+		ear2="Telos Earring",ring1="Apate Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 end
 
 -- Select default macro book on initial load or subjob change.
