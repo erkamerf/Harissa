@@ -30,7 +30,7 @@ function user_job_setup()
 ---------------------------------------------------------------------------------------------------------
     -- Additional local binds
 	send_command('bind ^` gs c cycle ElementalMode') --ctrl + backtick, choose element
-	send_command('bind ~` gs c elemental quickdraw') --shift + backtick, fire quickdraw
+	send_command('bind ^q gs c elemental quickdraw') --ctrl + q key fire quickdraw
 	
 	--send_command('bind ^backspace input /ja "Double-up" <me>')
 	--send_command('bind @backspace input /ja "Snake Eye" <me>')
@@ -74,13 +74,13 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
 
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}
-    sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +1",body="Lanun Frac +1",legs="Lanun trews +1",feet="Lak. Bottes +1"}
-    sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +1",body="Laksa. Frac +2",feet="Lanun bottes +1"}
-    sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +1",body="Lanun Frac +1",feet="Lak. Bottes +1"}
-    sets.precast.FoldDoubleBust = {head="Lanun Tricorne +1",body="Laksa. Frac +2", hands="Lanun Gants +1",feet="Lak. Bottes +1"}
+    sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +2",body="Lanun Frac +1",legs="Lanun trews +1",feet="Lak. Bottes +1"}
+    sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +2",body="Laksa. Frac +2",feet="Lanun bottes +1"}
+    sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +2",body="Lanun Frac +1",feet="Lak. Bottes +1"}
+    sets.precast.FoldDoubleBust = {head="Lanun Tricorne +2",body="Laksa. Frac +2", hands="Lanun Gants +2",feet="Lak. Bottes +1"}
 
     sets.precast.CorsairRoll = {
-      head="Lanun Tricorne +1",neck="Twilight Torque", body="Nyame Mail", hands="Chasseur's Gants +1", ring1="Defending Ring",
+      head="Lanun Tricorne +2",neck="Twilight Torque", body="Nyame Mail", hands="Chasseur's Gants +1", ring1="Defending Ring",
 			ring2="Barataria Ring",back=gear.harissa_mantle,waist="Flume Belt +1",legs="Desultor Tassets", feet="Nyame Sollerets"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
