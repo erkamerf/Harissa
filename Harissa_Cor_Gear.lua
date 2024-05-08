@@ -10,7 +10,7 @@ function user_job_setup()
     state.IdleMode:options('Normal', 'PDT', 'Refresh') -- F12 to cycle
 	state.HybridMode:options('Normal','DT') -- ctrl+F9 to cycle
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'} -- alt+f11 to cycle
-	state.Weapons:options('Fomal','DeathPenalty','AeolianMolybdosis','Dynamis') --F9 to cycle
+	state.Weapons:options('Fomal','DeathPenalty','AeolianMolybdosis','Dynamis','DynamisFomal') --F9 to cycle
 	state.CompensatorMode:options('Always','300','1000','Never') --gs c cycle compensatormode (in-game macro)
 
     gear.RAbullet = "Chrono Bullet"
@@ -275,7 +275,7 @@ function init_gear_sets()
     sets.defense.MDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.tp_jse_back}
+		ear2="Telos Earring",ring1="Chirich Ring +1",ring2="Defending Ring",back=gear.tp_jse_back}
 		
     sets.defense.MEVA = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
@@ -291,6 +291,7 @@ function init_gear_sets()
 	sets.weapons.DeathPenalty = {range="Death Penalty",ammo="Living Bullet",main="Naegling",sub="Tauret",}
 	sets.weapons.AeolianMolybdosis = {main="Tauret",sub="Naegling",range="Death Penalty",ammo="Living Bullet"}
     sets.weapons.Dynamis = {main="Lanun Knife",sub="Tauret",range="Death Penalty",ammo="Living Bullet"}
+    sets.weapons.DynamisFomal = {main="Lanun Knife",sub="Tauret",range="Fomalhaut",ammo="Chrono Bullet"}
 	
     -- Engaged sets
 
@@ -312,8 +313,8 @@ function init_gear_sets()
 		
     sets.engaged.DT = {
        	head="Malignance Chapeau",body="Adhemar Jacket +1",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Herculean Boots",neck="Asperity Necklace",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
+		feet="Nyame Sollerets",neck="Asperity Necklace",waist="Flume Belt +1",ear1="Cessance Earring",
+		ear2="Brutal Earring",ring1="Chirich Ring +1",ring2="Defending Ring",back=gear.harissa_mantle}
     
     sets.engaged.Acc.DT = {
 		head="Mummu Bonnet +2",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Meg. Chausses +2",
