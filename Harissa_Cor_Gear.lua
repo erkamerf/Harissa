@@ -74,20 +74,20 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
 
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}
-    sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +2",body="Lanun Frac +1",legs="Lanun trews +1",feet="Lak. Bottes +1"}
-    sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +2",body="Laksa. Frac +2",feet="Lanun bottes +1"}
-    sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +2",body="Lanun Frac +1",feet="Lak. Bottes +1"}
-    sets.precast.FoldDoubleBust = {head="Lanun Tricorne +2",body="Laksa. Frac +2", hands="Lanun Gants +2",feet="Lak. Bottes +1"}
+    sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +3",body="Lanun Frac +3",legs="Lanun Trews +3",feet="Laksa. Bottes +2"}
+    sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +3",body="Laksa. Frac +2",feet="Lanun Bottes +3"}
+    sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +3",body="Lanun Frac +3",feet="Laksa. Bottes +2"}
+    sets.precast.FoldDoubleBust = {head="Lanun Tricorne +3",body="Laksa. Frac +2", hands="Lanun Gants+3",feet="Laksa. Bottes +2"}
 
     sets.precast.CorsairRoll = {
-      head="Lanun Tricorne +2",neck="Twilight Torque", body="Nyame Mail", hands="Chasseur's Gants +1", ring1="Defending Ring",
+      head="Lanun Tricorne +3",neck="Twilight Torque", body="Nyame Mail", hands="Chasseur's Gants +1", ring1="Defending Ring",
 			ring2="Barataria Ring",back=gear.harissa_mantle,waist="Flume Belt +1",legs="Desultor Tassets", feet="Nyame Sollerets"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +1"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1", feet="Chass. Bottes +1"})
-    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1", body="Lanun Frac +1"})
+    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1", body="Lanun Frac +3"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1"})
     
