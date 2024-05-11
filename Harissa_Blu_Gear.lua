@@ -439,9 +439,9 @@ function init_gear_sets()
 				back="Archon Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.defense.MDT = {ammo="Staunch Tathlum +1",
-				head="Nyame Helm",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-		        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shadow Ring",
-				back="Archon Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+				head="Nyame Helm",neck="Mirage Stole +1",ear1="Cessance Earring",ear2="Telos Earring",
+		        body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Shadow Ring",
+				back="Archon Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Nyame Sollerets"}
 
     sets.defense.MEVA = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
