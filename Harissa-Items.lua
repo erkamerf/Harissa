@@ -11,7 +11,7 @@ sets.TreasureHunter = {ammo="Per. Lucky Egg",head="Wh. Rarab Cap +1",
     feet="Skulk. Poulaines"}
 
 sets.precast.Item['Hallowed Water'] = {}
-sets.precast.Item['Holy Water'] = {}
+sets.precast.Item['Holy Water'] = {neck="Nicander's Necklace"}
 
 --Augmented items that you'll use among multiple jobs.
 
