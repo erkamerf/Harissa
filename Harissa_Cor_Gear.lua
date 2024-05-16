@@ -93,7 +93,7 @@ function init_gear_sets()
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
        head=gear.herculean_nuke_head,neck="Comm. Charm +1",ear1="Hecate's earring",ear2="Friomisi earring",
-        body="Herculean Vest",hands="Chasseur's Gants +1",ring1="Acumen ring",ring2="Arvina Ringlet +1",
+        body="Lanun Frac +3",hands="Chasseur's Gants +1",ring1="Acumen ring",ring2="Arvina Ringlet +1",
         back="Gunslinger's Cape",waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 
     -- sets.precast.CorsairShot = {ammo=gear.QDbullet,
