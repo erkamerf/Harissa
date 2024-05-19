@@ -103,7 +103,7 @@ function init_gear_sets()
 
 	sets.precast.FC = {ammo="Impatiens",
 		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Luhlaza Jubbah +2",hands="Hashi. Bazu. +1",ring1="Prolix Ring",ring2="Lebeche Ring",
+		body="Luhlaza Jubbah +2",hands="Hashi. Bazu. +1",ring1="Prolix Ring",ring2="Kishar Ring",
 		back="Swith Cape +1",waist="Witful Belt",legs="Gyve Trousers",feet="Carmine Greaves +1"}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {body="Passion Jacket"})
@@ -290,7 +290,7 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].MagicAccuracy = set_combine(sets.midcast['Blue Magic'].Magical, {})
 
-	sets.midcast['Enfeebling Magic'] = set_combine(sets.midcast['Blue Magic'].Magical, {})
+	sets.midcast['Enfeebling Magic'] = set_combine(sets.midcast['Blue Magic'].Magical, {ring1="Kishar Ring"})
 
 	sets.midcast['Dark Magic'] = set_combine(sets.midcast['Blue Magic'].Magical, {head="Pixie Hairpin +1", ring2="Archon Ring"})
 
