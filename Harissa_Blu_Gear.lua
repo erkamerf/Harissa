@@ -103,7 +103,7 @@ function init_gear_sets()
 
 	sets.precast.FC = {ammo="Impatiens",
 		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Luhlaza Jubbah +2",hands="Hashi. Bazu. +1",ring1="Prolix Ring",ring2="Kishar Ring",
+		body="Luhlaza Jubbah +2",hands="Hashi. Bazu. +1",ring1="Prolix Ring",ring2="Lebeche Ring",
 		back="Swith Cape +1",waist="Witful Belt",legs="Gyve Trousers",feet="Carmine Greaves +1"}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {body="Passion Jacket"})
@@ -196,7 +196,7 @@ function init_gear_sets()
 	-- Midcast Sets
 	sets.midcast.FastRecast = {ammo="Hasty Pinion +1",
 		head="Carmine Mask +1",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Hashishan Mintan +1",hands="Hashi. Bazu. +1",ring1="Lebeche Ring",ring2="Prolix Ring",
+		body="Hashishan Mintan +1",hands="Hashi. Bazu. +1",ring1="Kishar Ring",ring2="Prolix Ring",
 		back="Swith Cape +1",waist="Witful Belt",legs="Gyve Trousers",feet="Carmine Greaves +1"}
 
 	sets.midcast['Blue Magic'] = {}
@@ -290,7 +290,7 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].MagicAccuracy = set_combine(sets.midcast['Blue Magic'].Magical, {})
 
-	sets.midcast['Enfeebling Magic'] = set_combine(sets.midcast['Blue Magic'].Magical, {ring1="Kishar Ring"})
+	sets.midcast['Enfeebling Magic'] = set_combine(sets.midcast['Blue Magic'].Magical, {hands="Regal Cuffs",ring1="Kishar Ring"})
 
 	sets.midcast['Dark Magic'] = set_combine(sets.midcast['Blue Magic'].Magical, {head="Pixie Hairpin +1", ring2="Archon Ring"})
 
@@ -427,7 +427,7 @@ function init_gear_sets()
 					left_ear="Mache Earring +1",
 					right_ear="Cessance Earring",
 					left_ring="Defending Ring",
-					right_ring="Karieyh Ring +1",
+					right_ring="Warden's Ring",
 					back="Archon Cape",}
 
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})
@@ -435,7 +435,7 @@ function init_gear_sets()
 	-- Defense sets
 	sets.defense.PDT = {ammo="Staunch Tathlum +1",
 				head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-		        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Shadow Ring",
+		        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
 				back="Archon Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.defense.MDT = {ammo="Staunch Tathlum +1",

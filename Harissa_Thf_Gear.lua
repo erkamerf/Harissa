@@ -279,7 +279,7 @@ function init_gear_sets()
     sets.defense.PDT = {ammo="Staunch Tathlum +1",
         head="Meghanada Visor +2",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Meg. Jam. +2",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Archon Cape"}
+		ear2="Brutal Earring",ring1="Defending Ring",ring2="Warden's Ring",back="Archon Cape"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",

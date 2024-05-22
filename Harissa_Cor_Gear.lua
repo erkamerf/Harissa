@@ -121,7 +121,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
     sets.precast.FC = {ammo="Impatiens",head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-    body="Dread Jupon",hands="Leyline Gloves",ring1="Prolix Ring",ring2="Lebeche Ring",
+    body="Dread Jupon",hands="Leyline Gloves",ring1="Prolix Ring",ring2="Kishar Ring",
     back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Carmine Greaves +1"}
 
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {ring1="Garuda Ring"})
@@ -262,7 +262,7 @@ function init_gear_sets()
     sets.idle.PDT = {
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Carmine Cuisses +1",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back=gear.harissa_mantle}
+		ear2="Brutal Earring",ring1="Defending Ring",ring2="Warden's Ring",back=gear.harissa_mantle}
 		
     sets.idle.Refresh = {}
     
@@ -271,7 +271,7 @@ function init_gear_sets()
     sets.defense.PDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
+		ear2="Brutal Earring",ring1="Warden's Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 	-- F11 to activate MDT
     sets.defense.MDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
