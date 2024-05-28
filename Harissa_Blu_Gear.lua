@@ -268,7 +268,7 @@ function init_gear_sets()
     legs="Amalric Slops +1",
     feet="Amalric Nails +1",
     neck="Deviant Necklace",
-    waist="Eschan Stone",
+    waist="Orpheus's Sash",
     left_ear="Hecate's Earring",
     right_ear="Friomisi Earring",
     left_ring="Shiva Ring +1",
@@ -313,14 +313,14 @@ function init_gear_sets()
 
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Blue Magic'].Magical, {})
 
-	sets.midcast['Elemental Magic'] = set_combine(sets.midcast['Blue Magic'].Magical, {})
+	sets.midcast['Elemental Magic'] = set_combine(sets.midcast['Blue Magic'].Magical, {waist="Orpheus's Sash"})
 
 	sets.midcast['Elemental Magic'].Resistant = set_combine(sets.midcast['Blue Magic'].Magical, {})
 
 	sets.midcast.Helix = sets.midcast['Elemental Magic']
 	sets.midcast.Helix.Resistant = sets.midcast['Elemental Magic'].Resistant
 
-	sets.element.Dark = {head="Pixie Hairpin +1",ring2="Archon Ring"}
+	sets.element.Dark = {head="Pixie Hairpin +1",ring2="Archon Ring",waist="Orpheus's Sash"}
 	sets.element.Light = {} --ring2="Weatherspoon Ring"
 
 	sets.midcast.Cure = {ammo="Pemphredo Tathlum",
