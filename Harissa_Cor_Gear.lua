@@ -257,12 +257,12 @@ function init_gear_sets()
     sets.idle = {
 		head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Carmine Cuisses +1",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back=gear.tp_jse_back}
+		ear2="Etiolation Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back=gear.tp_jse_back}
 		
     sets.idle.PDT = {
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Carmine Cuisses +1",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Warden's Ring",back=gear.harissa_mantle}
+		ear2="Etiolation Earring",ring1="Defending Ring",ring2="Warden's Ring",back=gear.harissa_mantle}
 		
     sets.idle.Refresh = {}
     
@@ -271,11 +271,11 @@ function init_gear_sets()
     sets.defense.PDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Warden's Ring",ring2="Defending Ring",back=gear.harissa_mantle}
+		ear2="Etiolation Earring",ring1="Warden's Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 	-- F11 to activate MDT
     sets.defense.MDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
+		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Etiolation Earring",
 		ear2="Telos Earring",ring1="Chirich Ring +1",ring2="Defending Ring",back=gear.tp_jse_back}
 		
     sets.defense.MEVA = {ammo=gear.RAbullet,
