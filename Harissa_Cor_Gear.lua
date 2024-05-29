@@ -38,7 +38,7 @@ function user_job_setup()
 	--send_command('bind ^@!backspace input /ja "Crooked Cards" <me>')
 	
 	--send_command('bind ^\\\\ input /ja "Random Deal" <me>')
-    send_command('bind !\\\\ input /ja "Bolter\'s Roll" <me>')
+    --send_command('bind !\\\\ input /ja "Bolter\'s Roll" <me>')
 	send_command('bind ^@!\\\\ gs c toggle LuzafRing') --ctrl + win + alt + backslash
 	send_command('bind @f7 gs c toggle RngHelper')
 
@@ -46,7 +46,7 @@ function user_job_setup()
 	--send_command('bind ^q gs c weapons DualAeolian;gs c update')
 	--send_command('bind @q gs c weapons DualKustawi;gs c update')
 	--send_command('bind !q gs c weapons DualLeadenRanged;gs c update')
-	send_command('bind @pause roller roll')
+	--send_command('bind @pause roller roll')
 	
 	--[[Binds you may want to change.
 	Bind special characters.
@@ -94,7 +94,7 @@ function init_gear_sets()
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
        head=gear.herculean_nuke_head,neck="Comm. Charm +1",ear1="Hecate's earring",ear2="Friomisi earring",
         body="Lanun Frac +3",hands="Chasseur's Gants +1",ring1="Acumen ring",ring2="Arvina Ringlet +1",
-        back="Gunslinger's Cape",waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
+        back="Gunslinger's Cape",waist="Orpheus's Sash",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 
     -- sets.precast.CorsairShot = {ammo=gear.QDbullet,
     --     head="Chass. Tricorne +1",neck="Stoicheion medal",ear1="Hecate's earring",ear2="Friomisi earring",
@@ -186,17 +186,17 @@ function init_gear_sets()
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
         head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Herculean Vest",hands="Carmine Fin. Ga. +1",ring1="Arvina Ringlet +1", ring2="Archon Ring",
-        back=gear.harissa_mantle,waist="Eschan Stone",legs="Nyame Flanchard",feet="Herculean Boots"}
+        back=gear.harissa_mantle,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Herculean Boots"}
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Hauksbok Bullet",
         head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Herculean Vest",hands="Nyame Gauntlets",ring1="Metamorph Ring",ring2="Karieyh ring +1",
-        back="Gunslinger's Cape",waist="Eschan Stone",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back="Gunslinger's Cape",waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
         head=gear.herculean_nuke_head, neck="Sanctity Necklace", ear1="Hecate's earring", ear2="Friomisi earring",				       
 		body="Herculean Vest", hands="Carmine Fin. Ga. +1", ring1="Arvina Ringlet +1",ring2="Karieyh ring +1",
-		back=gear.harissa_mantle, waist="Eschan Stone", legs="Nyame Flanchard", feet="Herculean Boots"}
+		back=gear.harissa_mantle, waist="Orpheus's Sash", legs="Nyame Flanchard", feet="Herculean Boots"}
 
     sets.precast.WS['Wildfire'].Acc = set_combine(sets.precast.WS['Wildfire'], {body="Meg. Cuirie +2"})
 		
@@ -210,8 +210,8 @@ function init_gear_sets()
         back=gear.harissa_mantle,waist="Flume Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
-	sets.MaxTP = {ear1="Hecate\'s earring", ear2="Friomisi earring"}
-	sets.AccMaxTP = {ear1="Hecate\'s earring", ear2="Friomisi earring"}
+	sets.MaxTP = {ear1="Hecate's earring", ear2="Friomisi earring"}
+	sets.AccMaxTP = {ear1="Hecate's earring", ear2="Friomisi earring"}
         
     -- Midcast Sets
     sets.midcast.FastRecast = {ammo="Hasty Pinion +1",
@@ -232,7 +232,7 @@ function init_gear_sets()
     -- Ranged gear
     sets.midcast.RA = {ammo=gear.RAbullet,
         head="Meghanada Visor +2",neck="Marked Gorget", ear1="Beyla earring", ear2="Telos earring",
-        body="Adhemar Jacket +1",hands="Carmine Fin. Ga. +1",ring1="Arvina Ringlet +1", ring2="Longshot Ring",
+        body="Nisroch Jerkin",hands="Carmine Fin. Ga. +1",ring1="Arvina Ringlet +1", ring2="Longshot Ring",
         back=gear.harissa_mantle,waist="Ponente Sash",legs="Pursuer's Pants",feet="Pursuer's Gaiters"}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
