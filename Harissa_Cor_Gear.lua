@@ -80,8 +80,8 @@ function init_gear_sets()
     sets.precast.FoldDoubleBust = {head="Lanun Tricorne +3",body="Laksa. Frac +2", hands="Lanun Gants+3",feet="Laksa. Bottes +2"}
 
     sets.precast.CorsairRoll = {
-      head="Lanun Tricorne +3",neck="Twilight Torque", body="Nyame Mail", hands="Chasseur's Gants +1", ring1="Defending Ring",
-			ring2="Barataria Ring",back=gear.harissa_mantle,waist="Flume Belt +1",legs="Desultor Tassets", feet="Nyame Sollerets"}
+      head="Lanun Tricorne +3",neck="Regal Necklace",ear2="",body="Nyame Mail",hands="Chasseur's Gants +1",ring1="Defending Ring",
+			ring2="Warden's Ring",back=gear.harissa_mantle,waist="Flume Belt +1",legs="Nyame Flanchard", feet="Nyame Sollerets"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
