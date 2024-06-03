@@ -10,7 +10,7 @@ function user_job_setup()
     state.IdleMode:options('Normal', 'PDT', 'Refresh') -- F12 to cycle
 	state.HybridMode:options('Normal','DT') -- ctrl+F9 to cycle
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'} -- alt+f11 to cycle
-	state.Weapons:options('Fomal','DeathPenalty','AeolianMolybdosis','Dynamis','DynamisFomal') --F9 to cycle
+	state.Weapons:options('DeathPenalty','Fomal','AeolianMolybdosis','Dynamis','DynamisFomal') --F9 to cycle
 	state.CompensatorMode:options('Always','300','1000','Never') --gs c cycle compensatormode (in-game macro)
 
     gear.RAbullet = "Chrono Bullet"
@@ -79,7 +79,7 @@ function init_gear_sets()
     sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +3",body="Lanun Frac +3",feet="Laksa. Bottes +2"}
     sets.precast.FoldDoubleBust = {head="Lanun Tricorne +3",body="Laksa. Frac +2", hands="Lanun Gants+3",feet="Laksa. Bottes +2"}
 
-    sets.precast.CorsairRoll = {
+    sets.precast.CorsairRoll = {main="Lanun Knife",
       head="Lanun Tricorne +3",neck="Regal Necklace",ear2="",body="Nyame Mail",hands="Chasseur's Gants +1",ring1="Defending Ring",
 			ring2="Warden's Ring",back=gear.harissa_mantle,waist="Flume Belt +1",legs="Nyame Flanchard", feet="Nyame Sollerets"}
 
