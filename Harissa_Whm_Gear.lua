@@ -52,8 +52,7 @@ function init_gear_sets()
     -- Precast Sets
 
     -- Fast cast sets for spells
-    sets.precast.FC = {main="Oranyan",sub="Clerisy Strap +1",ammo="Impatiens",
-		ammo="Staunch Tathlum +1",
+    sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
 		head="Vanya Hood",
 		body="Inyanga Jubbah +2",
 		hands="Gende. Gages +1",
@@ -63,7 +62,7 @@ function init_gear_sets()
 		waist="Embla Sash",
 		left_ear="Enchntr. Earring +1",
 		right_ear="Malignance Earring",
-		left_ring="Prolix Ring",
+		left_ring="Kishar Ring",
 		right_ring="Lebeche Ring",
 		back="Swith Cape +1",}
 

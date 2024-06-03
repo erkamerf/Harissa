@@ -15,17 +15,20 @@ sets.precast.Item['Holy Water'] = {neck="Nicander's Necklace"}
 
 --Augmented items that you'll use among multiple jobs.
 
-gear.gada_enhancing_club = {name="Gada",augments={'Enh. Mag. eff. dur. +6','STR+3','Mag. Acc.+8','"Mag.Atk.Bns."+17','DMG:+7',}}
+gear.gada_enhancing_club = {name="Gada", augments={'Mag. Acc.+23','"Conserve MP"+2','Attack+5',}}
 gear.gada_healing_club = {name="Gada",augments={'"Cure" potency +9%','Mag. Acc.+11','"Mag.Atk.Bns."+13','DMG:+3',}}
+gear.gada_enfeebling_club= {name="Gada", augments={'Mag. Acc.+23','"Conserve MP"+2','Attack+5',}}
 gear.grioavolr_nuke_staff = {name="Grioavolr",augments={'Potency of "Cure" effect received+5%','Mag. Acc.+26','"Fast Cast"+5','Magic Damage +4',}}
 gear.grioavolr_fc_staff = {name="Grioavolr",augments={'Potency of "Cure" effect received+5%','Mag. Acc.+26','"Fast Cast"+5','Magic Damage +4',}}
 gear.grioavolr_pet_staff = {name="Grioavolr",augments={'Blood Pact Dmg.+8','Pet: STR+10','Pet: Mag. Acc.+19','Pet: "Mag.Atk.Bns."+30',}}
 
-gear.chironic_enfeeble_hands = {name="Chironic Gloves",augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','MND+10','Mag. Acc.+15',}}
-gear.chironic_refresh_hands = {name="Chironic Gloves",augments={'"Counter"+4','DEX+4','"Refresh"+2','Accuracy+19 Attack+19','Mag. Acc.+13 "Mag.Atk.Bns."+13',}}
+gear.chironic_nuke_body = {name="Chironic Doublet", augments={'"Conserve MP"+5','Mag. Acc.+9','Mag. Acc.+20 "Mag.Atk.Bns."+20',}}
+gear.chironic_phalanx_body = {name="Chironic Doublet", augments={'Crit.hit rate+2','MND+11','Phalanx +5','Accuracy+15 Attack+15',}}
+gear.chironic_enfeeble_hands = {name="Chironic Gloves", augments={'Mag. Acc.+24','STR+5','Mag. Acc.+20 "Mag.Atk.Bns."+20',}}
+gear.chironic_refresh_hands = {name="Gende. Gages +1", augments={'Phys. dmg. taken -4%','Magic dmg. taken -2%','"Cure" spellcasting time -5%',}}
 gear.chironic_treasure_feet = {name="Chironic Slippers",augments={'"Occult Acumen"+8','MND+7','"Treasure Hunter"+2',}}
-gear.chironic_nuke_feet = {name="Chironic Slippers",augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','"Drain" and "Aspir" potency +10','CHR+6','"Mag.Atk.Bns."+15',}}
-gear.chironic_refresh_feet ={name="Chironic Slippers", augments={'Pet: Attack+23 Pet: Rng.Atk.+23','Pet: Haste+1','"Refresh"+2','Accuracy+10 Attack+10',}}
+gear.chironic_nuke_feet = {name="Chironic Slippers", augments={'Accuracy+8','Mag. Acc.+24 "Mag.Atk.Bns."+24','Accuracy+11 Attack+11',}}
+gear.chironic_refresh_feet ={name="Chironic Slippers", augments={'Weapon skill damage +4%','MND+6','"Refresh"+2','Mag. Acc.+15 "Mag.Atk.Bns."+15',}}
 
 gear.herculean_fc_head = {name="Herculean Helm",augments={'"Fast Cast"+6','"Mag.Atk.Bns."+13',}}
 gear.herculean_ws_head = {name="Herculean Helm", augments={'AGI+2','Magic dmg. taken -4%','Weapon skill damage +9%','Accuracy+11 Attack+11',}}
