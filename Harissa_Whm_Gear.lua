@@ -52,21 +52,21 @@ function init_gear_sets()
     -- Precast Sets
 
     -- Fast cast sets for spells
-    sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
-		head="Vanya Hood",
-		body="Inyanga Jubbah +2",
-		hands="Gende. Gages +1",
-		legs="Aya. Cosciales +2",
-		feet="Regal Pumps +1",
-		neck="Voltsurge Torque",
-		waist="Embla Sash",
-		left_ear="Enchntr. Earring +1",
-		right_ear="Malignance Earring",
-		left_ring="Kishar Ring",
-		right_ring="Lebeche Ring",
-		back="Swith Cape +1",}
+    sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Enki Strap",ammo="Impatiens",
+    	head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}},
+    	body="Inyanga Jubbah +2",
+    	hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -4%','Magic dmg. taken -2%','"Cure" spellcasting time -5%',}},
+    	legs="Aya. Cosciales +2",
+    	feet="Volte Gaiters",
+    	neck="Orison Locket",
+    	waist="Witful Belt",
+    	left_ear="Enchntr. Earring +1",
+    	right_ear="Malignance Earring",
+    	left_ring="Kishar Ring",
+    	right_ring="Lebeche Ring",
+    	back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10',}},}
 
-    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {main="Oranyan",waist="Siegel Sash"})
+    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {main="Oranyan",waist="Embla Sash"})
 	
     sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {})
 
@@ -251,7 +251,7 @@ function init_gear_sets()
 		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back="Perimede Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +1"}
 
-	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
+	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Embla Sash",legs="Shedir Seraweels"})
 
 	sets.midcast.Auspice = set_combine(sets.midcast['Enhancing Magic'], {feet="Ebers Duckbills +1"})
 
