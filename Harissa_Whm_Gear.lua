@@ -6,7 +6,7 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('None','DualWeapons','MeleeWeapons','Yagrush')
+	state.Weapons:options('None','DualWeapons','MeleeWeaponStaff','MeleeWeaponClub','Yagrush')
 
 	gear.obi_cure_waist = "Austerity Belt +1"
 	gear.obi_cure_back = "Alaunus's Cape"
@@ -42,7 +42,8 @@ function init_gear_sets()
     --------------------------------------
 
 	-- Weapons sets
-	sets.weapons.MeleeWeapons = {main="Malignance Pole",sub="Duplus Grip"}
+	sets.weapons.MeleeWeaponStaff = {main="Malignance Pole",sub="Duplus Grip"}
+	sets.weapons.MeleeWeaponClub = {main="Maxentius",sub="Culminus"}
 	sets.weapons.DualWeapons = {main="Maxentius",sub="Izcalli"}
 	sets.weapons.Yagrush = {main="Yagrush", sub="Sors Shield"}
 	
