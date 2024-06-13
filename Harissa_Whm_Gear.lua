@@ -150,12 +150,12 @@ function init_gear_sets()
 
 	sets.midcast['Full Cure'] = sets.midcast.FastRecast
 	
-	sets.midcast.Cure = {main=gear.gada_enhancing_club,sub="Sors Shield",ammo="Pemphredo Tathlum",
+	sets.midcast.Cure = {main="Daybreak",sub="Sors Shield",ammo="Pemphredo Tathlum",
 		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Regal Earring",ear2="Glorious Earring",
 		body="Theo. Bliaut +1",hands="Theo. Mitts +1",ring1="Janniston Ring",ring2="Menelaus's Ring",
 		back="Alaunus's Cape",waist="Luminary Sash",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
 		
-	sets.midcast.CureSolace = {main=gear.gada_enhancing_club,sub="Sors Shield",ammo="Pemphredo Tathlum",
+	sets.midcast.CureSolace = {main="Daybreak",sub="Sors Shield",ammo="Pemphredo Tathlum",
 		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Regal Earring",ear2="Glorious Earring",
 		body="Ebers Bliaut +1",hands="Theo. Mitts +1",ring1="Janniston Ring",ring2="Menelaus's Ring",
 		back="Alaunus's Cape",waist="Luminary Sash",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
@@ -170,17 +170,17 @@ function init_gear_sets()
 		body="Ebers Bliaut +1",hands="Theo. Mitts +1",ring1="Janniston Ring",ring2="Lebeche Ring",
 		back="Alaunus's Cape",waist="Hachirin-no-Obi",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
 		
-	sets.midcast.LightDayCureSolace = {main=gear.gada_enhancing_club,sub="Sors Shield",ammo="Pemphredo Tathlum",
+	sets.midcast.LightDayCureSolace = {main="Daybreak",sub="Sors Shield",ammo="Pemphredo Tathlum",
 		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Regal Earring",ear2="Glorious Earring",
 		body="Ebers Bliaut +1",hands="Theo. Mitts +1",ring1="Janniston Ring",ring2="Menelaus's Ring",
 		back="Alaunus's Cape",waist="Hachirin-no-Obi",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
 
-	sets.midcast.LightDayCure = {main=gear.gada_enhancing_club,sub="Sors Shield",ammo="Pemphredo Tathlum",
+	sets.midcast.LightDayCure = {main="Daybreak",sub="Sors Shield",ammo="Pemphredo Tathlum",
 		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Nourish. Earring +1",ear2="Glorious Earring",
 		body="Theo. Bliaut +1",hands="Theo. Mitts +1",ring1="Janniston Ring",ring2="Menelaus's Ring",
 		back="Twilight Cape",waist="Hachirin-no-Obi",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
 
-	sets.midcast.Curaga = {main=gear.gada_enhancing_club,sub="Sors Shield",ammo="Pemphredo Tathlum",
+	sets.midcast.Curaga = {main="Daybreak",sub="Sors Shield",ammo="Pemphredo Tathlum",
 		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Regal Earring",ear2="Glorious Earring",
 		body="Theo. Bliaut +1",hands="Theo. Mitts +1",ring1="Janniston Ring",ring2="Menelaus's Ring",
 		back="Alaunus's Cape",waist="Luminary Sash",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
@@ -190,7 +190,7 @@ function init_gear_sets()
 		body="Kaykaus Bliaut",hands="Theo. Mitts +1",ring1="Janniston Ring",ring2="Lebeche Ring",
 		back="Twilight Cape",waist="Hachirin-no-Obi",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
 		
-	sets.midcast.LightDayCuraga = {main=gear.gada_enhancing_club,sub="Sors Shield",ammo="Pemphredo Tathlum",
+	sets.midcast.LightDayCuraga = {main="Daybreak",sub="Sors Shield",ammo="Pemphredo Tathlum",
 		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Nourish. Earring +1",ear2="Glorious Earring",
 		body="Theo. Bliaut +1",hands="Theo. Mitts +1",ring1="Janniston Ring",ring2="Menelaus's Ring",
 		back="Twilight Cape",waist="Hachirin-no-Obi",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
@@ -364,7 +364,7 @@ function init_gear_sets()
 		back="Umbra Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-	sets.idle = {main="Bolelabunga",sub="Genmei Shield",ammo="Homiliary",
+	sets.idle = {main="Daybreak",sub="Culminus",ammo="Homiliary",
     			head="Inyanga Tiara +2",
     			body={ name="Witching Robe", augments={'MP+45','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
     			hands="Inyan. Dastanas +2",
@@ -454,7 +454,7 @@ function init_gear_sets()
 		body="Zendik Robe",hands="Hieros Mittens",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
 		back="Swith Cape +1",waist="Flax Sash",legs="Shedir Seraweels",feet=""}
 
-	sets.HPCure = {main=gear.gada_enhancing_club,sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+	sets.HPCure = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Blistering Sallet +1",neck="Nodens Gorget",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Kaykaus Bliaut",hands="Kaykaus Cuffs",ring1="Kunaji Ring",ring2="Meridian Ring",
 		back="Alaunus's Cape",waist="Eschan Stone",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
