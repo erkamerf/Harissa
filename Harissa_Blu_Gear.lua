@@ -63,7 +63,7 @@ function init_gear_sets()
 	sets.buff['Burst Affinity'] = {feet="Hashi. Basmak +1"}
 	sets.buff['Chain Affinity'] = {feet="Assim. Charuqs +2"}
 	sets.buff.Convergence = {head="Luh. Keffiyeh +2"}
-	sets.buff.Diffusion = {feet="Luhlaza Charuqs +2"}
+	sets.buff.Diffusion = {feet="Luhlaza Charuqs +3"}
 	sets.buff.Enchainment = {}
 	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt +1"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
@@ -216,7 +216,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].Physical.Fodder = {ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +2",neck="Mirage Stole +1",ear1="Suppanomimi",ear2="Telos Earring",
 		body="Assim. Jubbah +3",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Shiva Ring +1",
-		back="Cornflower Cape",waist="Grunfeld Rope",legs="Hashishin Tayt +1",feet="Luhlaza Charuqs +2"}
+		back="Cornflower Cape",waist="Grunfeld Rope",legs="Hashishin Tayt +1",feet="Luhlaza Charuqs +3"}
 
 	sets.midcast['Blue Magic'].PhysicalAcc = {ammo="Falcon Eye",
 		head="Jhakri Coronal +2",neck="Mirage Stole +1",ear1="Regal Earring",ear2="Telos Earring",
@@ -336,7 +336,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].Breath = {ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +2",neck="Mirage Stole +1",ear1="Regal Earring",ear2="Digni. Earring",
 		body="Assim. Jubbah +3",hands="Luh. Bazubands +2",ring1="Shiva Ring +1",ring2="Lebeche Ring",
-		back="Cornflower Cape",legs="Hashishin Tayt +1",feet="Luhlaza Charuqs +2"}
+		back="Cornflower Cape",legs="Hashishin Tayt +1",feet="Luhlaza Charuqs +3"}
 
 	-- Physical Added Effect Spells most notably "Stun" spells --
 
@@ -372,7 +372,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +2",neck="Mirage Stole +1",ear1="Gifted Earring",ear2="Loquac. Earring",
 		body="Assim. Jubbah +3",hands="Rawhide Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +1",feet="Luhlaza Charuqs +2"}
+		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +1",feet="Luhlaza Charuqs +3"}
 
 	sets.midcast['Blue Magic'].Buff = {ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +2",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Loquac. Earring",
