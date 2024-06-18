@@ -52,7 +52,7 @@ function init_gear_sets()
     -- Special sets (required by rules)
     --------------------------------------
 
-	sets.TreasureHunter = {head="Wh. Rarab Cap +1",
+	sets.TreasureHunter = {head="Wh. Rarab Cap +1", ammo="Per. Lucky Egg",
     hands={ name="Herculean Gloves", augments={'"Mag.Atk.Bns."+4','Weapon skill damage +3%','"Treasure Hunter"+1','Accuracy+15 Attack+15','Mag. Acc.+17 "Mag.Atk.Bns."+17',}},
     waist="Chaac Belt",
     legs={ name="Herculean Trousers", augments={'AGI+1','"Dbl.Atk."+2','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
@@ -144,10 +144,19 @@ function init_gear_sets()
     -- Weaponskill sets
 
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="Seeth. Bomblet +1",
-        head="Herculean Helm",neck="Fotia Gorget",ear1="Brutal Earring",ear2="Skulker's Earring",
-        body="Adhemar Jacket +1",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Karieyh Ring +1",
-        back="Ik Cape",waist="Fotia Belt",legs=gear.herculean_nuke_legs,feet="Mummu Gamash. +2"}
+    sets.precast.WS = {    ammo="Seeth. Bomblet +1",
+        head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
+        body="Mummu Jacket +2",
+        hands="Mummu Wrists +2",
+        legs="Mummu Kecks +2",
+        feet="Mummu Gamash. +2",
+        neck="Fotia Gorget",
+        waist="Fotia Belt",
+        left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+        right_ear="Odr Earring",
+        left_ring="Apate Ring",
+        right_ring="Karieyh Ring +1",
+        back="Bleating Mantle",}
 		
     sets.precast.WS.SomeAcc = set_combine(sets.precast.WS, {neck="Erudit. Necklace"})
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {neck="Erudit. Necklace",ear1="Telos Earring",ear2="Cessance Earring",body="Meg. Cuirie +2",legs="Meg. Chausses +2",feet="Meg. Jam. +2"})
@@ -211,10 +220,19 @@ function init_gear_sets()
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Apate Ring",ring2="Regal Ring",
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Malignance Tights",feet="Malignance Boots"}
 		
-    sets.precast.WS['Aeolian Edge'] = {
-        head="Herculean Helm",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Moonshade Earring",
-        body="Herculean Vest",hands="Herculean Gloves",ring1="Arvina Ringlet +1",ring2="Acumen Ring",
-        back="Toro Cape",waist="Eschan Stone",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
+    sets.precast.WS['Aeolian Edge'] = {ammo="Seeth. Bomblet +1",
+        head={ name="Herculean Helm", augments={'INT+8','"Mag.Atk.Bns."+26','Accuracy+19 Attack+19','Mag. Acc.+17 "Mag.Atk.Bns."+17',}},
+        body={ name="Herculean Vest", augments={'"Mag.Atk.Bns."+23','Mag. Acc.+24 "Mag.Atk.Bns."+24','Chance of successful block +4',}},
+        hands="Nyame Gauntlets",
+        legs="Nyame Flanchard",
+        feet={ name="Herculean Boots", augments={'Attack+13','"Mag.Atk.Bns."+25','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
+        neck="Sanctity Necklace",
+        waist="Eschan Stone",
+        left_ear="Friomisi Earring",
+        right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+        left_ring="Arvina Ringlet +1",
+        right_ring="Karieyh Ring +1",
+        back="Toro Cape",}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
@@ -278,12 +296,12 @@ function init_gear_sets()
 
     sets.defense.PDT = {ammo="Staunch Tathlum +1",
         head="Meghanada Visor +2",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Meg. Jam. +2",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
+		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Defending Ring",ring2="Warden's Ring",back="Archon Cape"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Meg. Jam. +2",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
+		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Brutal Earring",ring1="Defending Ring",ring2="Meghanada Ring",back="Archon Cape"}
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
@@ -305,8 +323,8 @@ function init_gear_sets()
                     feet="Nyame Sollerets",
                     neck="Asperity Necklace",
                     waist="Sarissapho. Belt",
-                    left_ear="Cessance Earring",
-                    right_ear="Telos Earring",
+                    left_ear="Sherida Earring",
+                    right_ear="Skulker's Earring",
                     left_ring="Epona's Ring",
                     right_ring="Petrov Ring",
                     back="Bleating Mantle",}
