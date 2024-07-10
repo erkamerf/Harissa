@@ -60,8 +60,8 @@ function init_gear_sets()
 	-- Start defining the sets
 	--------------------------------------
 
-	sets.buff['Burst Affinity'] = {feet="Hashi. Basmak +1"}
-	sets.buff['Chain Affinity'] = {feet="Assim. Charuqs +2"}
+	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar +3",feet="Hashi. Basmak +1"}
+	sets.buff['Chain Affinity'] = {feet="Assim. Charuqs +3"}
 	sets.buff.Convergence = {head="Luh. Keffiyeh +2"}
 	sets.buff.Diffusion = {feet="Luhlaza Charuqs +3"}
 	sets.buff.Enchainment = {}
@@ -556,7 +556,7 @@ function init_gear_sets()
 	sets.Self_Healing = {neck="Phalaina Locket",hands="Buremte Gloves",legs="Gyve Trousers",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	sets.Cure_Received = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	sets.Self_Refresh = {back="Grapevine Cape",waist="Gishdubar Sash"}
-	sets.MagicBurst = {body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Locus Ring"}
+	sets.MagicBurst = {body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Locus Ring",legs="Assim. Shalwar +3"}
 	sets.Phalanx_Received = {hands=gear.herculean_phalanx_hands,feet=gear.herculean_nuke_feet}
 end
 
