@@ -15,8 +15,6 @@ function user_job_setup()
 	gear.obi_high_nuke_waist = "Yamabuki-no-Obi"
 	gear.obi_nuke_back = "Toro Cape"
 
-	--testing testing
-
 		-- Additional local binds
 	send_command('bind ^` input /ma "Arise" <t>')
 	send_command('bind !` input /ja "Penury" <me>')
