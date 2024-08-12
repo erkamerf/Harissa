@@ -142,7 +142,7 @@ function init_gear_sets()
     sets.precast.WS = {
 		head=gear.herculean_ws_head,neck="Fotia Gorget",ear1="Telos Earring",ear2="Moonshade Earring",
         body="Meg Cuirie +2",hands="Meg. Gloves +2",ring1="Apate Ring",ring2="Karieyh Ring +1",
-        back=gear.harissa_mantle,waist="Fotia Belt",legs="Meg. Chausses +2",feet="Herculean Boots"}
+        back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet="Herculean Boots"}
 		
     sets.precast.WS.Acc = {
         head="Malignance Chapeau",neck="Ej Necklace",ear1="Telos Earring",ear2="Moonshade Earring",
@@ -158,7 +158,7 @@ function init_gear_sets()
 	sets.precast.WS['Savage Blade'] = {head="Nyame Helm",body="Nyame Mail",hands="Meg. Gloves +2",legs="Nyame Flanchard",feet="Nyame Sollerets",
     neck={ name="Comm. Charm +1", augments={'Path: A',}},waist="Sailfi Belt +1",left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     right_ear="Lifestorm Earring",left_ring="Sroda Ring",right_ring="Karieyh Ring +1",
-    back=gear.harissa_mantle,}
+    back=gear.str_wsd_jse_back,}
 
     sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS['Savage Blade'], {
         head="Malignance Chapeau",ear2="Telos Earring",
@@ -191,7 +191,7 @@ function init_gear_sets()
     sets.precast.WS['Aeolian Edge'] = {ammo="Hauksbok Bullet",
         head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Friomisi Earring",
         body="Herculean Vest",hands="Nyame Gauntlets",ring1="Metamorph Ring",ring2="Karieyh ring +1",
-        back="Gunslinger's Cape",waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+        back=gear.harissa_mantle,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
         head=gear.herculean_nuke_head, neck="Sanctity Necklace", ear1="Hecate's earring", ear2="Friomisi earring",				       
