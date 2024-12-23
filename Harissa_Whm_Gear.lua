@@ -6,7 +6,7 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
-	state.Weapons:options('None','DualWeapons','MeleeWeaponStaff','MeleeWeaponClub','Yagrush')
+	state.Weapons:options('None','DualWeapons','MeleeWeaponStaff','Cpalug','MeleeWeaponClub','Yagrush')
 
 	gear.obi_cure_waist = "Austerity Belt +1"
 	gear.obi_cure_back = {name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10',}}
@@ -44,6 +44,7 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.MeleeWeaponStaff = {main="Malignance Pole",sub="Duplus Grip"}
 	sets.weapons.MeleeWeaponClub = {main="Maxentius",sub="Culminus"}
+	sets.weapons.Cpalug = {main="C. Palug Hammer", sub="Culminus"}
 	sets.weapons.DualWeapons = {main="Maxentius",sub="Izcalli"}
 	sets.weapons.Yagrush = {main="Yagrush", sub="Sors Shield"}
 	
@@ -247,10 +248,10 @@ function init_gear_sets()
 	sets.midcast.Erase = set_combine(sets.midcast.StatusRemoval, {neck="Cleric's Torque"})
 
     -- 110 total Enhancing Magic Skill; caps even without Light Arts
-	sets.midcast['Enhancing Magic'] = {main=gear.gada_enhancing_club, sub="Culminus",ammo="Hasty Pinion +1",
+	sets.midcast['Enhancing Magic'] = {main="Oranyan", sub="Clerisy Strap +1",ammo="Hasty Pinion +1",
 		head="Telchine Cap",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
 		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back="Perimede Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Theo. Duckbills +1"}
+		back="Perimede Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Telchine Pigaches"}
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Embla Sash",legs="Shedir Seraweels"})
 
@@ -400,7 +401,7 @@ function init_gear_sets()
 		body="Vrikodara Jupon",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Warden's Ring",
 		back="Moonlight Cape",waist="Flax Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 
-	sets.defense.MDT = {main="C. Palug Hammer",sub="Genmei Shield",ammo="Staunch Tathlum +1",
+	sets.defense.MDT = {main="C. Palug Hammer",sub="Culminus",ammo="Staunch Tathlum +1",
 		head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
 		body="Inyanga Jubbah +2",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Shadow Ring",
 		back="Moonlight Cape",waist="Flax Sash",legs="Theo. Pant. +1",feet="Gende. Galosh. +1"}
