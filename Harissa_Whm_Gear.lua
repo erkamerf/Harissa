@@ -45,7 +45,7 @@ function init_gear_sets()
 	sets.weapons.MeleeWeaponStaff = {main="Malignance Pole",sub="Duplus Grip"}
 	sets.weapons.MeleeWeaponClub = {main="Maxentius",sub="Culminus"}
 	sets.weapons.Cpalug = {main="C. Palug Hammer", sub="Culminus"}
-	sets.weapons.DualWeapons = {main="Maxentius",sub="Izcalli"}
+	sets.weapons.DualWeapons = {main="Yagrush",sub="Feline Hagoita +1"}
 	sets.weapons.Yagrush = {main="Yagrush", sub="Sors Shield"}
 	
     sets.buff.Sublimation = {waist="Embla Sash"}
@@ -98,10 +98,21 @@ function init_gear_sets()
     -- Weaponskill sets
 
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="Hasty Pinion +1",
-		head="Nyame Helm",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Telos Earring",
-		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Stikini Ring +1",ring2="Chirich Ring +1",
-		back="Buquwik Cape",waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+    sets.precast.WS = {
+		ammo="Homiliary",
+		head="Nyame Helm",
+		body={ name="Chironic Doublet", augments={'Crit.hit rate+2','MND+11','Phalanx +5','Accuracy+15 Attack+15',}},
+		hands="Nyame Gauntlets",
+		legs={ name="Chironic Hose", augments={'MND+12','Attack+22','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
+		feet="Volte Gaiters",
+		neck="Fotia Gorget",
+		waist="Fotia Belt",
+		left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+		right_ear="Malignance Earring",
+		left_ring="Stikini Ring +1",
+		right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+		back={ name="Alaunus's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','"Fast Cast"+10',}},
+	}
 		
     sets.precast.WS.Dagan = {ammo="Hasty Pinion +1",
 		head="Befouled Crown",neck="Asperity Necklace",ear1="Etiolation Earring",ear2="Moonshade Earring",

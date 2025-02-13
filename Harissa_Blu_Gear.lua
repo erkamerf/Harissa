@@ -294,7 +294,10 @@ function init_gear_sets()
 
 	sets.midcast['Dark Magic'] = set_combine(sets.midcast['Blue Magic'].Magical, {head="Pixie Hairpin +1", ring2="Archon Ring"})
 
-	sets.midcast['Enhancing Magic'] = set_combine(sets.midcast['Blue Magic'].Magical, {})
+	sets.midcast['Enhancing Magic'] = {ammo="Hasty Pinion +1",
+	head="Telchine Cap",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
+	body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
+	back="Perimede Cape",waist="Olympus Sash",legs="Telchine Braconi",feet="Telchine Pigaches"}
 		
 	sets.midcast['Phalanx'] = set_combine(sets.midcast['Enhancing Magic'],{head="Carmine Mask +1",legs="Carmine Cuisses +1",})
 
