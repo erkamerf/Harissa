@@ -115,7 +115,7 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Aurgelmir Orb +1",
 				  head="Hashishin Kavuk +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
-          body="Assim. Jubbah +3",hands="Herculean Gloves",ring1="Epona's Ring",ring2="Karieyh Ring +1",
+          body="Assim. Jubbah +3",hands="Herculean Gloves",ring1="Sroda's Ring",ring2="Karieyh Ring +1",
 				  back=gear.wsd_jse_back,waist="Fotia Belt",legs="Luhlaza Shalwar +3",feet="Herculean Boots"}
 
 	sets.precast.WS.Acc = {ammo="Falcon Eye",
@@ -157,7 +157,7 @@ function init_gear_sets()
 	sets.precast.WS['Chant du Cygne'].DT = set_combine(sets.precast.WS.DT, {back=gear.crit_jse_back})
 	sets.precast.WS['Chant du Cygne'].Fodder = set_combine(sets.precast.WS['Chant du Cygne'], {})
 
-	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {neck="Mirage Stole +1",ear2="Ishvara Earring",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Rufescent Ring",waist="Sailfi Belt +1",feet=gear.herculean_wsd_feet})
+	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {neck="Mirage Stole +1",ear2="Ishvara Earring",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Sroda Ring",waist="Sailfi Belt +1",feet=gear.herculean_wsd_feet})
 	sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {ear1="Moonshade Earring",hands="Jhakri Cuffs +2",back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Carmine Cuisses +1",feet=gear.herculean_wsd_feet})
 	sets.precast.WS['Savage Blade'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Savage Blade'].DT = set_combine(sets.precast.WS.DT, {back=gear.wsd_jse_back})
@@ -203,25 +203,25 @@ function init_gear_sets()
 
 	-- Physical Spells --
 
-	sets.midcast['Blue Magic'].Physical = {ammo="Mavi Tathlum",
-		head="Lilitu Headpiece",neck="Mirage Stole +1",ear1="Suppanomimi",ear2="Telos Earring",
-		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Apate Ring",
-		back=gear.wsd_jse_back,waist="Grunfeld Rope",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
+	sets.midcast['Blue Magic'].Physical = {ammo="Aurgelmir Orb +1",
+    	head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
+    	body={ name="Luhlaza Jubbah +2", augments={'Enhances "Enchainment" effect',}},
+    	hands={ name="Luh. Bazubands +2", augments={'Enhances "Azure Lore" effect',}},
+    	legs="Hashishin Tayt +2",
+    	feet="Assim. Charuqs +3",
+    	neck={ name="Mirage Stole +1", augments={'Path: A',}},
+    	waist="Prosilio Belt +1",
+    	left_ear="Telos Earring",
+    	right_ear={ name="Hashishin Earring", augments={'System: 1 ID: 1676 Val: 0','Accuracy+9','Mag. Acc.+9',}},
+    	left_ring="Ifrit Ring +1",
+    	right_ring="Sroda Ring",
+    	back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},}
 
-	sets.midcast['Blue Magic'].Physical.Resistant = {ammo="Falcon Eye",
-		head="Jhakri Coronal +2",neck="Mirage Stole +1",ear1="Regal Earring",ear2="Telos Earring",
-	    body="Assim. Jubbah +3",hands="Assim. Bazu. +3",ring1="Ifrit Ring +1",ring2="Stikini Ring +1",
-	    back=gear.da_jse_back,waist="Grunfeld Rope",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
+	sets.midcast['Blue Magic'].Physical.Resistant = set_combine(sets.midcast['Blue Magic'].Physical, {})
 
-	sets.midcast['Blue Magic'].Physical.Fodder = {ammo="Mavi Tathlum",
-		head="Luh. Keffiyeh +2",neck="Mirage Stole +1",ear1="Suppanomimi",ear2="Telos Earring",
-		body="Assim. Jubbah +3",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Shiva Ring +1",
-		back="Cornflower Cape",waist="Grunfeld Rope",legs="Hashishin Tayt +2",feet="Luhlaza Charuqs +3"}
+	sets.midcast['Blue Magic'].Physical.Fodder = set_combine(sets.midcast['Blue Magic'].Physical, {})
 
-	sets.midcast['Blue Magic'].PhysicalAcc = {ammo="Falcon Eye",
-		head="Jhakri Coronal +2",neck="Mirage Stole +1",ear1="Regal Earring",ear2="Telos Earring",
-	    body="Assim. Jubbah +3",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Stikini Ring +1",
-	    back=gear.da_jse_back,waist="Grunfeld Rope",legs="Jhakri Slops +2",feet="Nyame Sollerets"}
+	sets.midcast['Blue Magic'].PhysicalAcc = set_combine(sets.midcast['Blue Magic'].Physical, {})
 
 	sets.midcast['Blue Magic'].PhysicalAcc.Resistant = set_combine(sets.midcast['Blue Magic'].PhysicalAcc, {})
 	sets.midcast['Blue Magic'].PhysicalAcc.Fodder = sets.midcast['Blue Magic'].Fodder

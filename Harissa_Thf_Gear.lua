@@ -154,7 +154,7 @@ function init_gear_sets()
         waist="Fotia Belt",
         left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         right_ear="Odr Earring",
-        left_ring="Apate Ring",
+        left_ring="Sroda Ring",
         right_ring="Karieyh Ring +1",
         back="Bleating Mantle",}
 		
