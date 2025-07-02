@@ -2,15 +2,16 @@
 function user_job_setup()
     state.OffenseMode:options('Normal','Acc') -- alt+F9 to cycle
     state.RangedMode:options('Normal', 'Acc') -- F10 to cycle
-	-- cntrl+F10 turns on PDT, shift+F10 is supposed to cycle thru PDT sets
+	-- alt+F10 turns on PDT, shift+F10 is supposed to cycle thru PDT sets
 	-- F11 turns on MDT
 	-- alt+F12 to turn off the PDT or MDT set!
-    state.WeaponskillMode:options('Match','Normal', 'Acc','Proc') -- alt+F10 to cycle
+    state.PhysicalDefenseMode:options('PDT', 'MEVA')
+    state.WeaponskillMode:options('Match','Normal', 'Acc','Proc') -- shift+F9 to cycle
     state.CastingMode:options('Normal', 'Resistant') -- win+F10 to cycle
     state.IdleMode:options('Normal', 'PDT', 'Refresh') -- F12 to cycle
-	state.HybridMode:options('Normal','DT') -- ctrl+F9 to cycle
+	state.HybridMode:options('Normal','DT') -- win+F9 to cycle
 	state.ExtraMeleeMode = M{['description']='Extra Melee Mode', 'None', 'DWMax'} -- alt+f11 to cycle
-	state.Weapons:options('DeathPenalty','Fomal','AeolianMolybdosis','Dynamis','DynamisFomal') --F9 to cycle
+	state.Weapons:options('None','SavageDP','SavageFomal','AeolianDP','DynamisDP','DynamisFomal') --F9 to cycle
 	state.CompensatorMode:options('Always','300','1000','Never') --gs c cycle compensatormode (in-game macro)
 
     gear.RAbullet = "Chrono Bullet"
@@ -120,9 +121,21 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
     
-    sets.precast.FC = {ammo="Impatiens",head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-    body="Dread Jupon",hands="Leyline Gloves",ring1="Prolix Ring",ring2="Kishar Ring",
-    back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Carmine Greaves +1"}
+    sets.precast.FC = {main="Erudite's Staff +1",
+        sub="Umbra Strap",
+        ammo="Impatiens",
+        head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+        body="Dread Jupon",
+        hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+        legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+12','Rng.Atk.+27','Accuracy+12 Attack+12','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
+        feet={ name="Carmine Greaves +1", augments={'HP+80','MP+80','Phys. dmg. taken -4',}},
+        neck="Voltsurge Torque",
+        waist="Orpheus's Sash",
+        left_ear="Enchntr. Earring +1",
+        right_ear="Loquac. Earring",
+        left_ring="Prolix Ring",
+        right_ring="Kishar Ring",
+        back={ name="Gunslinger's Cape", augments={'Enmity-1','"Mag.Atk.Bns."+3','"Phantom Roll" ability delay -1','Weapon skill damage +2%',}},}
 
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {ring1="Garuda Ring"})
 	
@@ -214,10 +227,21 @@ function init_gear_sets()
 	sets.AccMaxTP = {ear1="Hecate's earring", ear2="Friomisi earring"}
         
     -- Midcast Sets
-    sets.midcast.FastRecast = {ammo="Hasty Pinion +1",
-        head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-        body="Luhlaza Jubbah +2",hands="Leyline Gloves",ring1="Prolix Ring",ring2="Lebeche Ring",
-        back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Carmine Greaves +1"}
+    sets.midcast.FastRecast = {main="Erudite's Staff +1",
+        sub="Umbra Strap",
+        ammo="Impatiens",
+        head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}},
+        body="Dread Jupon",
+        hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+        legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+12','Rng.Atk.+27','Accuracy+12 Attack+12','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
+        feet={ name="Carmine Greaves +1", augments={'HP+80','MP+80','Phys. dmg. taken -4',}},
+        neck="Voltsurge Torque",
+        waist="Orpheus's Sash",
+        left_ear="Enchntr. Earring +1",
+        right_ear="Loquac. Earring",
+        left_ring="Prolix Ring",
+        right_ring="Kishar Ring",
+        back={ name="Gunslinger's Cape", augments={'Enmity-1','"Mag.Atk.Bns."+3','"Phantom Roll" ability delay -1','Weapon skill damage +2%',}},}
         
     -- Specific spells
 
@@ -254,44 +278,44 @@ function init_gear_sets()
     
 
     -- Idle sets
-    sets.idle = {
+    sets.idle = {main="Lanun Knife",sub="Regis",range="Fomalhaut",ammo=gear.MAbullet,
 		head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Carmine Cuisses +1",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Etiolation Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back=gear.tp_jse_back}
+		ear2="Etiolation Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back=gear.harissa_mantle}
 		
     sets.idle.PDT = {
-        head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Carmine Cuisses +1",
+        head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Nyame Flanchard",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Etiolation Earring",ring1="Defending Ring",ring2="Warden's Ring",back=gear.harissa_mantle}
 		
     sets.idle.Refresh = {}
     
     -- Defense sets
-	-- cntrl+F10 turns on PDT, shift+F10 is supposed to cycle thru PDT sets, alt+F12 to turn off
+	-- alt+F10 turns on PDT, shift+F10 is supposed to cycle thru PDT sets, alt+F12 to turn off
     sets.defense.PDT = {ammo=gear.RAbullet,
-        head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
+        head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Nyame Flanchard",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Etiolation Earring",ring1="Warden's Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 	-- F11 to activate MDT
     sets.defense.MDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Etiolation Earring",
-		ear2="Telos Earring",ring1="Chirich Ring +1",ring2="Defending Ring",back=gear.tp_jse_back}
+		ear2="Telos Earring",ring1="Chirich Ring +1",ring2="Defending Ring",back=gear.harissa_mantle}
 		
     sets.defense.MEVA = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.tp_jse_back}
+		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 
     sets.Kiting = {legs="Carmine Cuisses +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {}) -- control + T to activate
 	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket +1",hands="Floral Gauntlets",waist="Reiki Yotai"}
 
 	-- Weapons sets: F9 to toggle
-	sets.weapons.Fomal = {main="Naegling",sub="Tauret",range="Fomalhaut",ammo="Chrono Bullet"}
-	sets.weapons.DeathPenalty = {range="Death Penalty",ammo="Living Bullet",main="Naegling",sub="Tauret",}
-	sets.weapons.AeolianMolybdosis = {main="Tauret",sub="Naegling",range="Death Penalty",ammo="Living Bullet"}
-    sets.weapons.Dynamis = {main="Lanun Knife",sub="Tauret",range="Death Penalty",ammo="Living Bullet"}
+	sets.weapons.SavageFomal = {main="Naegling",sub="Tauret",range="Fomalhaut",ammo="Chrono Bullet"}
+	sets.weapons.SavageDP = {range="Death Penalty",ammo="Living Bullet",main="Naegling",sub="Tauret",}
+	sets.weapons.AeolianDP = {main="Tauret",sub="Naegling",range="Death Penalty",ammo="Living Bullet"}
+    sets.weapons.DynamisDP = {main="Lanun Knife",sub="Tauret",range="Death Penalty",ammo="Living Bullet"}
     sets.weapons.DynamisFomal = {main="Lanun Knife",sub="Tauret",range="Fomalhaut",ammo="Chrono Bullet"}
 	
     -- Engaged sets
@@ -302,7 +326,7 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
     
     -- Normal melee group
-    sets.engaged = {
+    sets.engaged = {main="Lanun Knife",range="Fomalhaut",ammo=gear.MAbullet,
 		head="Adhemar Bonnet +1",neck="Defiant Collar",ear1="Cessance Earring",ear2="Telos Earring",
         body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Chirich Ring +1",ring2="Epona's Ring",
         back=gear.tp_jse_back,waist="Sailfi Belt +1",legs="Meg. Chausses +2",feet="Herculean Boots"}

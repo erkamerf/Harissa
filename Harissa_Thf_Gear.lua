@@ -2,13 +2,13 @@
 function user_job_setup()
 	-- Options: Override default values
     state.OffenseMode:options('Normal','SomeAcc','Acc','FullAcc','Fodder') --alt+F9
-    state.HybridMode:options('Normal','DT') --cntrl+F9
+    state.HybridMode:options('Normal','DT') --win+F9
     state.RangedMode:options('Normal', 'Acc') --F10
-    state.WeaponskillMode:options('Match','Normal','SomeAcc','Acc','FullAcc','Fodder','Proc') --alt+F10
+    state.WeaponskillMode:options('Match','Normal','SomeAcc','Acc','FullAcc','Fodder','Proc') --shift+F9
 	state.IdleMode:options('Normal', 'Sphere') --F12
-    state.PhysicalDefenseMode:options('PDT') --cntrl+F10 to lock in, shift+F10 to cycle
+    state.PhysicalDefenseMode:options('PDT') --alt+F10 to lock in, shift+F10 to cycle
 	state.MagicalDefenseMode:options('MDT') --F11 to lock in, cntrl+F11 to cycle
-	state.ResistDefenseMode:options('MEVA') --cntrl+F12
+	state.ResistDefenseMode:options('MEVA') --win+F12
 		-- alt+F12 to turn off the PDT or MDT set!
 	state.Weapons:options('Aeneas','Savage','Evisceration','Throwing','SwordThrowing','Gun')
 		--F9 to cycle weapon sets

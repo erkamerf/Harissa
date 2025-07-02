@@ -1,13 +1,13 @@
 function user_job_setup()
 	-- Options: Override default values
     state.OffenseMode:options('Fodder','Normal','Acc','FullAcc') --!f9
-	state.HybridMode:options('Normal','DT') --^f9
+	state.HybridMode:options('Normal','DT') --@f9
     state.WeaponskillMode:options('Match','Normal','Acc','FullAcc','Fodder') --!f10
     state.CastingMode:options('Normal','Resistant','Fodder','Proc') --@f10
     state.IdleMode:options('Normal','Sphere','PDT','DTHippo') --f12
 	state.PhysicalDefenseMode:options('PDT') --~f10
 	state.MagicalDefenseMode:options('MDT') --^f11
-	state.ResistDefenseMode:options('MEVA') --^f12
+	state.ResistDefenseMode:options('MEVA') 
 	state.Weapons:options('Tizalmace','Sequence','None','RangedWeap','Clubs') --f9
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'} --!f11
