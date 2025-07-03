@@ -114,7 +114,7 @@ function init_gear_sets()
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Aurgelmir Orb +1",
-				  head="Hashishin Kavuk +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
+				  head="Hashishin Kavuk +3",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
           body="Assim. Jubbah +3",hands="Herculean Gloves",ring1="Sroda's Ring",ring2="Karieyh Ring +1",
 				  back=gear.wsd_jse_back,waist="Fotia Belt",legs="Luhlaza Shalwar +3",feet="Herculean Boots"}
 
