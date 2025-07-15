@@ -227,11 +227,11 @@ function init_gear_sets()
         legs="Nyame Flanchard",
         feet={ name="Herculean Boots", augments={'Attack+13','"Mag.Atk.Bns."+25','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
         neck="Sanctity Necklace",
-        waist="Eschan Stone",
+        waist="Orpheus's Sash",
         left_ear="Friomisi Earring",
-        right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Arvina Ringlet +1",
-        right_ring="Karieyh Ring +1",
+        right_ear="Hecate's Earring",
+        left_ring="Metamor. Ring +1",
+        right_ring="Garuda Ring",
         back="Toro Cape",}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
