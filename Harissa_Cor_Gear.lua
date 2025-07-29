@@ -75,9 +75,9 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
 
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}
-    sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +3",body="Lanun Frac +3",legs="Lanun Trews +3",feet="Laksa. Bottes +3"}
+    sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +3",body="Lanun Frac +4",legs="Lanun Trews +3",feet="Laksa. Bottes +3"}
     sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +3",body="Laksa. Frac +3",feet="Lanun Bottes +4"}
-    sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +3",body="Lanun Frac +3",feet="Laksa. Bottes +3"}
+    sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +3",body="Lanun Frac +4",feet="Laksa. Bottes +3"}
     sets.precast.FoldDoubleBust = {head="Lanun Tricorne +3",body="Laksa. Frac +3", hands="Lanun Gants+3",feet="Laksa. Bottes +3"}
 
     sets.precast.CorsairRoll = {main="Lanun Knife",
@@ -88,13 +88,13 @@ function init_gear_sets()
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +1"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1", feet="Chass. Bottes +1"})
-    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1", body="Lanun Frac +3"})
+    sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +1", body="Lanun Frac +4"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +1"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +1"})
     
     sets.precast.CorsairShot = {ammo=gear.QDbullet,
        head=gear.herculean_nuke_head,neck="Comm. Charm +1",ear1="Hecate's earring",ear2="Friomisi earring",
-        body="Lanun Frac +3",hands="Carmine Fin. Ga. +1",ring1="Shiva Ring +1",ring2="Arvina Ringlet +1",
+        body="Lanun Frac +4",hands="Carmine Fin. Ga. +1",ring1="Shiva Ring +1",ring2="Arvina Ringlet +1",
         back="Gunslinger's Cape",waist="Eschan Stone",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     -- sets.precast.CorsairShot = {ammo=gear.QDbullet,
@@ -197,7 +197,7 @@ function init_gear_sets()
 	
     sets.precast.WS['Leaden Salute'] = {ammo=gear.MAbullet,
         head="Pixie Hairpin +1",
-        body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
+        body={ name="Lanun Frac +4", augments={'Enhances "Loaded Deck" effect',}},
         hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
         legs="Nyame Flanchard",
         feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
@@ -211,12 +211,12 @@ function init_gear_sets()
 
     sets.precast.WS['Aeolian Edge'] = {ammo="Hauksbok Bullet",
         head=gear.herculean_nuke_head,neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Friomisi Earring",
-        body="Lanun Frac +3",hands="Nyame Gauntlets",ring1="Metamorph Ring",ring2="Karieyh ring +1",
+        body="Lanun Frac +4",hands="Nyame Gauntlets",ring1="Metamorph Ring",ring2="Karieyh ring +1",
         back=gear.magic_wsd_jse_back,waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet,
         head={ name="Herculean Helm", augments={'INT+8','"Mag.Atk.Bns."+26','Accuracy+19 Attack+19','Mag. Acc.+17 "Mag.Atk.Bns."+17',}},
-        body={ name="Lanun Frac +3", augments={'Enhances "Loaded Deck" effect',}},
+        body={ name="Lanun Frac +4", augments={'Enhances "Loaded Deck" effect',}},
         hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
         legs="Nyame Flanchard",
         feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
