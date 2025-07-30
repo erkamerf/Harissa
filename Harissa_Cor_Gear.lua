@@ -24,7 +24,7 @@ function user_job_setup()
 	gear.snapshot_jse_back = {name="Camulus's Mantle",augments={'"Snapshot"+10',}}
 	gear.tp_jse_back = {name="Camulus's Mantle",augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10',}}
 	--gear.ranger_wsd_jse_back = {name="Camulus's Mantle",augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}}
-	gear.magic_wsd_jse_back = {name="Camulus's Mantle",augments={'Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+	gear.magic_wsd_jse_back = {name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+6','Weapon skill damage +10%',}}
 	gear.str_wsd_jse_back = {name="Camulus's Mantle",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
 	gear.harissa_mantle = {name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Damage taken-2%',}}
     gear.herculean_nuke_legs = {name="Herculean Trousers", augments={'"Mag.Atk.Bns."+12','Rng.Atk.+27','Accuracy+12 Attack+12','Mag. Acc.+19 "Mag.Atk.Bns."+19',}}
@@ -226,7 +226,7 @@ function init_gear_sets()
         right_ear="Friomisi Earring",
         left_ring="Arvina Ringlet +1",
         right_ring="Shiva Ring +1",
-        back=gear.magic_wsd_jse_back,}
+        back=gear.harissa_mantle,}
 
     sets.precast.WS['Wildfire'].Acc = set_combine(sets.precast.WS['Wildfire'], {body="Meg. Cuirie +2"})
 		
@@ -260,7 +260,7 @@ function init_gear_sets()
         right_ring="Kishar Ring",
         back=gear.magic_wsd_jse_back}
 
-    sets.midcast['Elemental Magic'] = set_combine(sets.precast.WS['Wildfire'], {})
+    sets.midcast['Elemental Magic'] = set_combine(sets.precast.WS['Wildfire'], {back=gear.magic_wsd_jse_back})
         
     -- Specific spells
 
