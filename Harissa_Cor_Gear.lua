@@ -259,6 +259,8 @@ function init_gear_sets()
         left_ring="Prolix Ring",
         right_ring="Kishar Ring",
         back=gear.magic_wsd_jse_back}
+
+    sets.midcast['Elemental Magic'] = set_combine(sets.precast.WS['Wildfire'], {})
         
     -- Specific spells
 
