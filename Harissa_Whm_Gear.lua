@@ -74,7 +74,7 @@ function init_gear_sets()
 	
     sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {legs="Doyen Pants"})
 
-    sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {legs="Ebers Pant. +1"})
+    sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {right_ear="Ebers Earring +1",legs="Ebers Pant. +1"})
 
     sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 	
@@ -165,17 +165,17 @@ function init_gear_sets()
 	sets.midcast['Full Cure'] = sets.midcast.FastRecast
 	
 	sets.midcast.Cure = {main="Daybreak",sub="Sors Shield",ammo="Pemphredo Tathlum",
-		head="Gende. Caubeen +1",neck="Nodens Gorget",ear1="Regal Earring",ear2="Glorious Earring",
+		head="Gende. Caubeen +1",neck="Nodens Gorget",ear1="Glorious Earring",ear2="Ebers Earring +1",
 		body="Theo. Bliaut +1",hands="Theo. Mitts +1",ring1="Janniston Ring",ring2="Menelaus's Ring",
 		back=gear.cape_midcast_cure,waist="Luminary Sash",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
 		
 	sets.midcast.CureSolace = {main="Daybreak",sub="Sors Shield",ammo="Pemphredo Tathlum",
-		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Regal Earring",ear2="Glorious Earring",
+		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Glorious Earring",ear2="Ebers Earring +1",
 		body="Ebers Bliaut +1",hands="Theo. Mitts +1",ring1="Janniston Ring",ring2="Menelaus's Ring",
 		back=gear.cape_midcast_cure,waist="Luminary Sash",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
 
 	sets.midcast.LightWeatherCure = {main="Chatoyant Staff",sub="Curatio Grip",ammo="Esper Stone +1",
-		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Nourish. Earring +1",ear2="Glorious Earring",
+		head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Glorious Earring",ear2="Ebers Earring +1",
 		body="Kaykaus Bliaut",hands="Theo. Mitts +1",ring1="Janniston Ring",ring2="Lebeche Ring",
 		back="Twilight Cape",waist="Hachirin-no-Obi",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
 
