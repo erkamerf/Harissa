@@ -388,15 +388,15 @@ function init_gear_sets()
         back="Umbra Cape",waist="Flax Sash",legs="Hagondes Pants +1",feet=gear.chironic_refresh_feet}
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
-    sets.buff['Ebullience'] = {head="Arbatel Bonnet +1"}
-    sets.buff['Rapture'] = {head="Arbatel Bonnet +1"}
-    sets.buff['Perpetuance'] = {hands="Arbatel Bracers +1"}
-    sets.buff['Immanence'] = {hands="Arbatel Bracers +1"}
-    sets.buff['Penury'] = {legs="Arbatel Pants +1"}
-    sets.buff['Parsimony'] = {legs="Arbatel Pants +1"}
+    sets.buff['Ebullience'] = {head="Arbatel Bonnet +2"}
+    sets.buff['Rapture'] = {head="Arbatel Bonnet +2"}
+    sets.buff['Perpetuance'] = {hands="Arbatel Bracers +2"}
+    sets.buff['Immanence'] = {hands="Arbatel Bracers +2"}
+    sets.buff['Penury'] = {legs="Arbatel Pants +2"}
+    sets.buff['Parsimony'] = {legs="Arbatel Pants +2"}
     sets.buff['Celerity'] = {feet="Peda. Loafers +1"}
     sets.buff['Alacrity'] = {feet="Peda. Loafers +1"}
-    sets.buff['Klimaform'] = {feet="Arbatel Loafers +1"}
+    sets.buff['Klimaform'] = {feet="Arbatel Loafers +2"}
 	
 	sets.HPDown = {head="Pixie Hairpin +1",ear1="Mendicant's Earring",ear2="Evans Earring",
 		body="Zendik Robe",hands="Hieros Mittens",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
