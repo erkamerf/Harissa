@@ -163,6 +163,7 @@ function init_gear_sets()
 	sets.precast.WS.FullAcc = set_combine(sets.precast.WS, {head="Malignance Chapeau",neck="Erudit. Necklace",ear1="Cessance Earring",ear2="Telos Earring",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Malignance Tights",feet="Meg. Jam. +2"})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
+    sets.precast.WS["Exenterator"] = set_combine(sets.precast.WS, {back="Ik Cape"})
     sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {neck="Caro Necklace",ear1="",ear2="Ishvara Earring",body="",back=""})
     sets.precast.WS["Rudra's Storm"].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {neck="Caro Necklace",back=gear.wsd_jse_back})
     sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS.Acc, {ear1="Moonshade Earring",body="Meg. Cuirie +2",back=gear.wsd_jse_back})
