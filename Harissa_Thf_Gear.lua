@@ -325,7 +325,7 @@ function init_gear_sets()
                     neck="Asperity Necklace",
                     waist="Sarissapho. Belt",
                     left_ear="Sherida Earring",
-                    right_ear="Skulker's Earring",
+                    right_ear="Skulk. Earring +1",
                     left_ring="Epona's Ring",
                     right_ring="Petrov Ring",
                     back="Bleating Mantle",}
