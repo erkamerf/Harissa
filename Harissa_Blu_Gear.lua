@@ -8,7 +8,7 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options('PDT') --~f10
 	state.MagicalDefenseMode:options('MDT') --^f11
 	state.ResistDefenseMode:options('MEVA') 
-	state.Weapons:options('Tizalmace','Sequence','None','RangedWeap','Clubs','TrashWeapons') --f9
+	state.Weapons:options('Tizalmace','Sequence','None','RangedWeap','Clubs','Dynamis','TrashWeapons') --f9
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'} --!f11
 
@@ -459,6 +459,7 @@ function init_gear_sets()
 	sets.weapons.Sequence = {main="Sequence",sub="Tizona"} --previously Almace offhand
 	sets.weapons.RangedWeap = {main="Naegling",sub="Luhlaza Sword",range="Silver Gun +1",ammo="Bronze Bullet"}
 	sets.weapons.Clubs = {main="Maxentius",sub="Bolelabunga",}
+	sets.weapons.Dynamis = {main="Luhlaza Sword",sub="Tizona"}
 	sets.weapons.TrashWeapons = {main="Excalipoor II",sub="Feline Hagoita +1"}
 
 	-- Engaged sets
