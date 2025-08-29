@@ -48,7 +48,7 @@ function init_gear_sets()
 	sets.weapons.MeleeWeaponClub = {main="Maxentius",sub="Culminus"}
 	sets.weapons.Cpalug = {main="C. Palug Hammer", sub="Culminus"}
 	sets.weapons.DualWeapons = {main="Yagrush",sub="Feline Hagoita +1"}
-	sets.weapons.Yagrush = {main="Yagrush", sub="Sors Shield"}
+	sets.weapons.Yagrush = {main="Yagrush", sub="Chanter's Shield"}
 	
     sets.buff.Sublimation = {waist="Embla Sash"}
     sets.buff.DTSublimation = {waist="Embla Sash"}
@@ -279,47 +279,47 @@ function init_gear_sets()
 	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
 	
-	sets.midcast.BarElement = {main="Beneficus",sub="Ammurapi Shield",ammo="Hasty Pinion +1",
+	sets.midcast.BarElement = {main="Beneficus",sub="Chanter's Shield",ammo="Hasty Pinion +1",
 		head="Ebers Cap +1",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
 		body="Ebers Bliaut +1",hands="Ebers Mitts +1",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back=gear.cape_midcast_cure,waist="Olympus Sash",legs="Piety Pantaln. +1",feet="Ebers Duckbills +1"}
 
-	sets.midcast.Impact = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+	sets.midcast.Impact = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
 		head=empty,neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
 		body="Twilight Cloak",hands=gear.chironic_enfeeble_hands,ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
 		back=gear.obi_nuke_back,waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 		
-	sets.midcast['Elemental Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Dosis Tathlum",
+	sets.midcast['Elemental Magic'] = {main="Daybreak",sub="Culminus",ammo="Dosis Tathlum",
 		head="C. Palug Crown",neck="Baetyl Pendant",ear1="Regal Earring",ear2="Friomisi Earring",
 		body="Witching Robe",hands=gear.chironic_enfeeble_hands,ring1="Shiva Ring +1",ring2="Freke Ring",
 		back=gear.obi_nuke_back,waist=gear.ElementalObi,legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 
 	sets.midcast['Elemental Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Dosis Tathlum",
-		head="C. Palug Crown",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Crematio Earring",
+		head="C. Palug Crown",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Novio Earring",
 		body="Witching Robe",hands=gear.chironic_enfeeble_hands,ring1="Metamor. Ring +1",ring2="Freke Ring",
 		back=gear.obi_nuke_back,waist="Yamabuki-no-Obi",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 
-	sets.midcast['Divine Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+	sets.midcast['Divine Magic'] = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
 		head="C. Palug Crown",neck="Jokushu Chain",ear1="Regal Earring",ear2="Digni. Earring",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back=gear.obi_nuke_back,waist="Luminary Sash",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 		
-	sets.midcast.Holy = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+	sets.midcast.Holy = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
 		head="C. Palug Crown",neck="Jokushu Chain",ear1="Regal Earring",ear2="Friomisi Earring",
 		body="Witching Robe",hands=gear.chironic_enfeeble_hands,ring1="Metamor. Ring +1",ring2="Freke Ring",
 		back=gear.obi_nuke_back,waist=gear.ElementalObi,legs="Gyve Trousers",feet=gear.chironic_nuke_feet}
 
-	sets.midcast['Dark Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+	sets.midcast['Dark Magic'] = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
 		head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
 		body="Inyanga Jubbah +2",hands=gear.chironic_enfeeble_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back=gear.obi_nuke_back,waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 
-    sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+    sets.midcast.Drain = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
         head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
         body="Inyanga Jubbah +2",hands=gear.chironic_enfeeble_hands,ring1="Evanescence Ring",ring2="Archon Ring",
         back=gear.obi_nuke_back,waist="Fucho-no-obi",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 
-    sets.midcast.Drain.Resistant = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+    sets.midcast.Drain.Resistant = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
         head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
         body="Chironic Doublet",hands=gear.chironic_enfeeble_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.obi_nuke_back,waist="Fucho-no-obi",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
@@ -337,14 +337,14 @@ function init_gear_sets()
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back=gear.obi_nuke_back,waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 		
-	sets.midcast.Dispel = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+	sets.midcast.Dispel = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
 		head="Nahtirah Hat",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back=gear.obi_nuke_back,waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 		
 	sets.midcast.Dispelga = set_combine(sets.midcast.Dispel, {main="Daybreak",sub="Ammurapi Shield"})
 
-	sets.midcast['Enfeebling Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+	sets.midcast['Enfeebling Magic'] = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
 		head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
 		body="Theo. Bliaut +1",hands="Regal Cuffs",ring1="Kishar Ring",ring2="Stikini Ring +1",
 		back=gear.obi_nuke_back,waist="Luminary Sash",legs="Chironic Hose",feet="Uk'uxkaj Boots"}

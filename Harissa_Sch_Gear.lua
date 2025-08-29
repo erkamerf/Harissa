@@ -60,7 +60,7 @@ function init_gear_sets()
 		
 	sets.precast.FC.Arts = {}
 
-    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
+    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {main="Oranyan",waist="Siegel Sash"})
 
     sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {ear1="Malignance Earring"})
 
@@ -124,14 +124,14 @@ function init_gear_sets()
 		
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main=gear.grioavolr_fc_staff,sub="Clemency Grip"})
 
-	sets.midcast['Enhancing Magic'] = {main=gear.gada_enhancing_club,sub="Ammurapi Shield","Savant's Treatise",
+	sets.midcast['Enhancing Magic'] = {main=gear.gada_enhancing_club,sub="Chanter's Shield","Savant's Treatise",
 		head="Telchine Cap",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
 		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back="Perimede Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Telchine Pigaches"}
 
     sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {back=gear.nuke_jse_back})
 
-    sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
+    sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Doyen Pants"})
 	
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Coif +1"})
 	
@@ -139,7 +139,7 @@ function init_gear_sets()
 	
 	sets.midcast.BarElement = set_combine(sets.precast.FC['Enhancing Magic'], {legs="Shedir Seraweels"})
 
-    sets.midcast.Storm = set_combine(sets.midcast['Enhancing Magic'], {feet="Peda. Loafers +1"})
+    sets.midcast.Storm = set_combine(sets.midcast['Enhancing Magic'], {main="Oranyan",sub="Khonsu",feet="Peda. Loafers +1"})
 
     sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring"})
     sets.midcast.Protectra = sets.midcast.Protect
@@ -150,12 +150,12 @@ function init_gear_sets()
 
     -- Custom spell classes
 
-	sets.midcast['Enfeebling Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+	sets.midcast['Enfeebling Magic'] = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
         head="Acad. Mortar. +2",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
         body="Chironic Doublet",hands="Regal Cuffs",ring1="Kishar Ring",ring2="Stikini Ring +1",
         back=gear.nuke_jse_back,waist="Luminary Sash",legs="Chironic Hose",feet="Uk'uxkaj Boots"}
 	
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
         head="Acad. Mortar. +2",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
         body="Chironic Doublet",hands="Acad. Bracers +2",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
         back=gear.nuke_jse_back,waist="Luminary Sash",legs="Chironic Hose",feet="Medium's Sabots"}
@@ -177,27 +177,27 @@ function init_gear_sets()
 	
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'], {ring2="Stikini Ring +1",feet=gear.chironic_nuke_feet})
 
-    sets.midcast['Dark Magic'] = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+    sets.midcast['Dark Magic'] = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
         head="Amalric Coif +1",neck="Incanter's Torque",ear1="Regal Earring",ear2="Malignance Earring",
         body="Chironic Doublet",hands="Acad. Bracers +2",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.merlinic_aspir_feet}
 
     sets.midcast.Kaustra = {main="Akademos",sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head="Pixie Hairpin +1",neck="Saevus Pendant +1",ear1="Crematio Earring",ear2="Malignance Earring",
+        head="Pixie Hairpin +1",neck="Saevus Pendant +1",ear1="Novio Earring",ear2="Malignance Earring",
         body=gear.merlinic_nuke_body,hands="Amalric Gages +1",ring1="Freke Ring",ring2="Archon Ring",
         back=gear.nuke_jse_back,waist="Refoccilation Stone",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 		
     sets.midcast.Kaustra.Resistant = {main=gear.grioavolr_nuke_staff,sub="Enki Strap",ammo="Pemphredo Tathlum",
-        head=gear.merlinic_nuke_head,neck="Erra Pendant",ear1="Crematio Earring",ear2="Malignance Earring",
+        head=gear.merlinic_nuke_head,neck="Erra Pendant",ear1="Novio Earring",ear2="Malignance Earring",
         body=gear.merlinic_nuke_body,hands="Amalric Gages +1",ring1="Shiva Ring +1",ring2="Freke Ring",
         back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 
-    sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+    sets.midcast.Drain = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
         head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
         body="Chironic Doublet",hands="Acad. Bracers +2",ring1="Evanescence Ring",ring2="Archon Ring",
         back=gear.nuke_jse_back,waist="Fucho-no-obi",legs="Chironic Hose",feet=gear.merlinic_aspir_feet}
 		
-    sets.midcast.Drain.Resistant = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+    sets.midcast.Drain.Resistant = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
         head="Amalric Coif +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
         body="Chironic Doublet",hands="Acad. Bracers +2",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.merlinic_aspir_feet}
@@ -231,17 +231,17 @@ function init_gear_sets()
         back="Twilight Cape",}
 
     sets.midcast['Elemental Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-        head=gear.merlinic_nuke_head,neck="Sanctity Necklace",ear1="Crematio Earring",ear2="Malignance Earring",
+        head=gear.merlinic_nuke_head,neck="Sanctity Necklace",ear1="Novio Earring",ear2="Malignance Earring",
         body=gear.merlinic_nuke_body,hands="Mallquis Cuffs +2",ring1="Shiva Ring +1",ring2="Freke Ring",
         back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 		
-    sets.midcast['Elemental Magic'].Fodder = {main="Daybreak",sub="Ammurapi Shield",ammo="Dosis Tathlum",
-        head=gear.merlinic_nuke_head,neck="Saevus Pendant +1",ear1="Crematio Earring",ear2="Friomisi Earring",
+    sets.midcast['Elemental Magic'].Fodder = {main="Daybreak",sub="Chanter's Shield",ammo="Dosis Tathlum",
+        head=gear.merlinic_nuke_head,neck="Saevus Pendant +1",ear1="Novio Earring",ear2="Friomisi Earring",
         body=gear.merlinic_nuke_body,hands="Mallquis Cuffs +2",ring1="Shiva Ring +1",ring2="Freke Ring",
         back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 		
     sets.midcast['Elemental Magic']['9k'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-        head=gear.merlinic_nuke_head,neck="Saevus Pendant +1",ear1="Crematio Earring",ear2="Malignance Earring",
+        head=gear.merlinic_nuke_head,neck="Saevus Pendant +1",ear1="Novio Earring",ear2="Malignance Earring",
         body=gear.merlinic_nuke_body,hands="Mallquis Cuffs +2",ring1="Shiva Ring +1",ring2="Freke Ring",
         back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
 		
@@ -260,12 +260,12 @@ function init_gear_sets()
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = set_combine(sets.midcast['Elemental Magic'].Resistant, {ammo="Pemphredo Tathlum",ear1="Regal Earring",ear2="Malignance Earring",hands="Amalric Gages +1",ring1="Metamor. Ring +1"})
 	sets.midcast['Elemental Magic'].HighTierNuke.Fodder = set_combine(sets.midcast['Elemental Magic'].Fodder, {ammo="Pemphredo Tathlum",ear1="Regal Earring",ear2="Malignance Earring",hands="Amalric Gages +1",ring1="Metamor. Ring +1"})
 
-	sets.midcast.Helix = {main="Daybreak",sub="Ammurapi Shield",ammo="Dosis Tathlum",
-        head=gear.merlinic_nuke_head,neck="Saevus Pendant +1",ear1="Crematio Earring",ear2="Friomisi Earring",
+	sets.midcast.Helix = {main="Daybreak",sub="Culminus",ammo="Dosis Tathlum",
+        head=gear.merlinic_nuke_head,neck="Saevus Pendant +1",ear1="Novio Earring",ear2="Friomisi Earring",
         body=gear.merlinic_nuke_body,hands="Amalric Gages +1",ring1="Metamor. Ring +1",ring2="Freke Ring",
         back=gear.nuke_jse_back,waist="Refoccilation Stone",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 	
-	sets.midcast.Helix.Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+	sets.midcast.Helix.Resistant = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
         head=gear.merlinic_nuke_head,neck="Sanctity Necklace",ear1="Malignance Earring",ear2="Friomisi Earring",
         body=gear.merlinic_nuke_body,hands="Amalric Gages +1",ring1="Metamor. Ring +1",ring2="Freke Ring",
         back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
@@ -275,7 +275,7 @@ function init_gear_sets()
         body="Zendik Robe",hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Prolix Ring",
         back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
 
-	sets.midcast.Impact = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+	sets.midcast.Impact = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
 		head=empty,neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
 		body="Twilight Cloak",hands="Acad. Bracers +2",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
 		back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
