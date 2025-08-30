@@ -56,7 +56,7 @@ function init_gear_sets()
     hands={ name="Herculean Gloves", augments={'"Mag.Atk.Bns."+4','Weapon skill damage +3%','"Treasure Hunter"+1','Accuracy+15 Attack+15','Mag. Acc.+17 "Mag.Atk.Bns."+17',}},
     waist="Chaac Belt",
     legs={ name="Herculean Trousers", augments={'AGI+1','"Dbl.Atk."+2','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
-    feet="Skulk. Poulaines"}
+    feet="Skulk. Poulaines +1"}
     sets.ExtraRegen = {}
     sets.Kiting = {feet="Jute Boots +1"}
 
@@ -109,7 +109,7 @@ function init_gear_sets()
     sets.precast.JA['Conspirator'] = {body="Skulker's Vest"} 
     sets.precast.JA['Steal'] = {hands="Pill. Armlets +1"}
 	sets.precast.JA['Mug'] = {}
-    sets.precast.JA['Despoil'] = {legs="Skulker's Culottes",feet="Skulk. Poulaines"}
+    sets.precast.JA['Despoil'] = {legs="Skulker's Culottes",feet="Skulk. Poulaines +1"}
     sets.precast.JA['Perfect Dodge'] = {hands="Plunderer's Armlets +1"}
     sets.precast.JA['Feint'] = {} -- {legs="Assassin's Culottes +2"}
 
