@@ -137,7 +137,7 @@ function init_gear_sets()
         right_ring="Kishar Ring",
         back=gear.magic_wsd_jse_back}
 
-    sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {ring1="Garuda Ring"})
+    sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads",ring1="Garuda Ring"})
 	
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {})
 
