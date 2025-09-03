@@ -37,7 +37,7 @@ function user_job_setup()
     select_default_macro_book()
 end
 
--- Define sets and vars used by this job file.
+-- Define sets and vars used by this job file. Please note, Culminus has been inserted where Ammurapi Shield would be better, but I don't have it yet.
 function init_gear_sets()
 
     --------------------------------------
@@ -210,30 +210,45 @@ function init_gear_sets()
         body="Zendik Robe",hands="Acad. Bracers +2",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
         back=gear.nuke_jse_back,waist="Witful Belt",legs="Psycloth Lappas",feet="Regal Pumps +1"}
 
-    sets.midcast.Stun.Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+    sets.midcast.Stun.Resistant = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
         head="Acad. Mortar. +2",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
         body="Zendik Robe",hands="Acad. Bracers +2",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
         back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.merlinic_aspir_feet}
 
     -- Elemental Magic sets are default for handling low-tier nukes.
-    sets.midcast['Elemental Magic'] = {main="Akademos",sub="Enki Strap",ammo="Staunch Tathlum +1",
-        head="Jhakri Coronal +2",
-        body={ name="Amalric Doublet +1", augments={'MP+80','"Mag.Atk.Bns."+25','"Fast Cast"+4',}},
-        hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
-        legs={ name="Amalric Slops +1", augments={'MP+80','"Mag.Atk.Bns."+25','Enmity-6',}},
-        feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
-        neck="Sanctity Necklace",
+    sets.midcast['Elemental Magic'] = {
+        main={ name="Akademos", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
+        sub="Khonsu",
+        ammo="Staunch Tathlum +1",
+        head="Arbatel Bonnet +2",
+        body="Arbatel Gown +2",
+        hands="Arbatel Bracers +2",
+        legs="Arbatel Pants +3",
+        feet="Arbatel Loafers +2",
+        neck="Mizu. Kubikazari",
         waist="Hachirin-no-Obi",
         left_ear="Barkaro. Earring",
         right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+12','Enmity-2',}},
         left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-        right_ring="Strendu Ring",
+        right_ring="Mujin Band",
         back="Twilight Cape",}
 
-    sets.midcast['Elemental Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-        head=gear.merlinic_nuke_head,neck="Sanctity Necklace",ear1="Novio Earring",ear2="Malignance Earring",
-        body=gear.merlinic_nuke_body,hands="Mallquis Cuffs +2",ring1="Shiva Ring +1",ring2="Freke Ring",
-        back=gear.nuke_jse_back,waist="Yamabuki-no-Obi",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
+    sets.midcast['Elemental Magic'].Resistant = {
+        main="Daybreak",
+        sub="Culminus",
+        ammo="Staunch Tathlum +1",
+        head="Arbatel Bonnet +2",
+        body="Arbatel Gown +2",
+        hands="Arbatel Bracers +2",
+        legs="Arbatel Pants +3",
+        feet="Arbatel Loafers +2",
+        neck="Argute Stole +1",
+        waist="Hachirin-no-Obi",
+        left_ear="Barkaro. Earring",
+        right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+12','Enmity-2',}},
+        left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+        right_ring="Stikini Ring +1",
+        back="Twilight Cape",}
 		
     sets.midcast['Elemental Magic'].Fodder = {main="Daybreak",sub="Chanter's Shield",ammo="Dosis Tathlum",
         head=gear.merlinic_nuke_head,neck="Saevus Pendant +1",ear1="Novio Earring",ear2="Friomisi Earring",
@@ -298,8 +313,8 @@ function init_gear_sets()
         ammo="Homiliary",
         head="Befouled Crown",
         body="Jhakri Robe +2",
-        hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -4%','Magic dmg. taken -2%','"Cure" spellcasting time -5%',}},
-        legs="Nyame Flanchard",
+        hands="Nyame Gauntlets",
+        legs="Arbatel Pants +3",
         feet="Volte Gaiters",
         neck="Sanctity Necklace",
         waist="Embla Sash",
@@ -316,7 +331,7 @@ function init_gear_sets()
         head="Nyame Helm",
         body="Vrikodara Jupon",
         hands="Nyame Gauntlets",
-        legs="Nyame Flanchard",
+        legs="Arbatel Pants +3",
         feet="Volte Gaiters",
         neck="Twilight Torque",
         waist="Porous Rope",
@@ -338,17 +353,17 @@ function init_gear_sets()
     sets.defense.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum +1",
         head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Mallquis Saio +2",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
-        back="Umbra Cape",waist="Flax Sash",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
+        back="Umbra Cape",waist="Flax Sash",legs="Arbatel Pants +3",feet="Battlecast Gaiters"}
 
     sets.defense.MDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum +1",
         head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Mallquis Saio +2",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
-        back="Umbra Cape",waist="Flax Sash",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
+        back="Umbra Cape",waist="Flax Sash",legs="Arbatel Pants +3",feet="Battlecast Gaiters"}
 		
     sets.defense.MEVA = {main="Daybreak",sub="Genmei Shield",ammo="Staunch Tathlum +1",
         head=gear.merlinic_nuke_head,neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
         body=gear.merlinic_nuke_body,hands="Gende. Gages +1",ring1="Vengeful Ring",ring2="Purity Ring",
-        back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
+        back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Arbatel Pants +3",feet=gear.merlinic_nuke_feet}
 		
     sets.Kiting = {feet="Herald's Gaiters"}
     sets.latent_refresh = {waist="Fucho-no-obi"}
@@ -385,15 +400,15 @@ function init_gear_sets()
 	sets.engaged.PDT = {main="Malignance Pole", sub="Oneiros Grip",ammo="Staunch Tathlum +1",
         head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
         body="Vrikodara Jupon",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
-        back="Umbra Cape",waist="Flax Sash",legs="Hagondes Pants +1",feet=gear.chironic_refresh_feet}
+        back="Umbra Cape",waist="Flax Sash",legs="Arbatel Pants +3",feet=gear.chironic_refresh_feet}
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
     sets.buff['Ebullience'] = {head="Arbatel Bonnet +2"}
     sets.buff['Rapture'] = {head="Arbatel Bonnet +2"}
     sets.buff['Perpetuance'] = {hands="Arbatel Bracers +2"}
     sets.buff['Immanence'] = {hands="Arbatel Bracers +2"}
-    sets.buff['Penury'] = {legs="Arbatel Pants +2"}
-    sets.buff['Parsimony'] = {legs="Arbatel Pants +2"}
+    sets.buff['Penury'] = {legs="Arbatel Pants +3"}
+    sets.buff['Parsimony'] = {legs="Arbatel Pants +3"}
     sets.buff['Celerity'] = {feet="Peda. Loafers +1"}
     sets.buff['Alacrity'] = {feet="Peda. Loafers +1"}
     sets.buff['Klimaform'] = {feet="Arbatel Loafers +2"}
