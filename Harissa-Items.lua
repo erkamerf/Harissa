@@ -8,7 +8,7 @@ sets.TreasureHunter = {ammo="Per. Lucky Egg",head="Wh. Rarab Cap +1",
     hands={ name="Herculean Gloves", augments={'"Mag.Atk.Bns."+4','Weapon skill damage +3%','"Treasure Hunter"+1','Accuracy+15 Attack+15','Mag. Acc.+17 "Mag.Atk.Bns."+17',}},
     waist="Chaac Belt",
     legs={ name="Herculean Trousers", augments={'AGI+1','"Dbl.Atk."+2','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
-    feet="Skulk. Poulaines"}
+    feet="Skulk. Poulaines +1"}
 
 sets.precast.Item['Hallowed Water'] = {}
 sets.precast.Item['Holy Water'] = {neck="Nicander's Necklace"}
