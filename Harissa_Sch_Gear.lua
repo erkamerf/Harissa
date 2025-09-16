@@ -4,7 +4,7 @@ function user_job_setup()
     state.CastingMode:options('Normal','Resistant','Proc','OccultAcumen','9k')
     state.IdleMode:options('Normal','PDT','Hippo','Weak')
 	state.HybridMode:options('Normal','PDT')
-	state.Weapons:options('None','Akademos','Khatvanga','MalignancePole')
+	state.Weapons:options('None','Maxentius','Akademos','Khatvanga','MalignancePole')
 
 	gear.nuke_jse_back = {name="Lugh's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10'}}
     gear.bookworm = {}
@@ -73,6 +73,22 @@ function init_gear_sets()
 
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
+    sets.precast.WS = {
+        ammo="Hasty Pinion +1",
+        head="C. Palug Crown",
+        body="Nyame Mail",
+        hands="Regal Cuffs",
+        legs="Arbatel Pants +3",
+        feet="Nyame Sollerets",
+        neck="Fotia Gorget",
+        waist="Fotia Belt",
+        left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+        right_ear="Malignance Earring",
+        left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+        right_ring="Karieyh Ring +1",
+        back="Tuilha Cape",
+    }
+
     sets.precast.WS['Myrkr'] = {ammo="Staunch Tathlum +1",
 		head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Evans Earring",ear2="Etiolation Earring",
 		body="Amalric Doublet +1",hands="Regal Cuffs",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
@@ -384,18 +400,18 @@ function init_gear_sets()
         main="Maxentius",
         sub="Culminus",
         ammo="Staunch Tathlum +1",
-        head="Nyame Helm",
-        body="Jhakri Robe +2",
+        head="Arbatel Bonnet +2",
+        body="Arbatel Gown +2",
         hands="Nyame Gauntlets",
         legs="Jhakri Slops +2",
-        feet="Jhakri Pigaches +2",
-        neck="Sanctity Necklace",
+        feet="Battlecast Gaiters",
+        neck="Asperity Necklace",
         waist="Grunfeld Rope",
         left_ear="Cessance Earring",
         right_ear="Telos Earring",
         left_ring="Petrov Ring",
-        right_ring="Apate Ring",
-        back="Twilight Cape",}
+        right_ring="Chirich Ring +1",
+        back="Kayapa Cape",}
 		
 	sets.engaged.PDT = {main="Malignance Pole", sub="Oneiros Grip",ammo="Staunch Tathlum +1",
         head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
@@ -429,7 +445,8 @@ function init_gear_sets()
     sets.buff.Sublimation = {head="Acad. Mortar. +2",waist="Embla Sash"}
     sets.buff.DTSublimation = {waist="Embla Sash"}
 	
-	-- Weapons sets
+	-- Weapons sets\
+    sets.weapons.Maxentius = {main="Maxentius",sub="Culminus"}
 	sets.weapons.Akademos = {main="Akademos",sub="Enki Strap"}
 	sets.weapons.Khatvanga = {main="Khatvanga",sub="Bloodrain Strap"}
     sets.weapons.MalignancePole = {main="Malignance Pole",sub="Duplus Grip"}
