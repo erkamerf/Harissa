@@ -240,7 +240,7 @@ function init_gear_sets()
         body="Arbatel Gown +2",
         hands="Arbatel Bracers +2",
         legs="Arbatel Pants +3",
-        feet="Arbatel Loafers +2",
+        feet="Arbatel Loafers +3",
         neck="Mizu. Kubikazari",
         waist="Hachirin-no-Obi",
         left_ear="Barkaro. Earring",
@@ -257,7 +257,7 @@ function init_gear_sets()
         body="Arbatel Gown +2",
         hands="Arbatel Bracers +2",
         legs="Arbatel Pants +3",
-        feet="Arbatel Loafers +2",
+        feet="Arbatel Loafers +3",
         neck="Argute Stole +1",
         waist="Hachirin-no-Obi",
         left_ear="Barkaro. Earring",
@@ -427,7 +427,7 @@ function init_gear_sets()
     sets.buff['Parsimony'] = {legs="Arbatel Pants +3"}
     sets.buff['Celerity'] = {feet="Peda. Loafers +1"}
     sets.buff['Alacrity'] = {feet="Peda. Loafers +1"}
-    sets.buff['Klimaform'] = {feet="Arbatel Loafers +2"}
+    sets.buff['Klimaform'] = {feet="Arbatel Loafers +3"}
 	
 	sets.HPDown = {head="Pixie Hairpin +1",ear1="Mendicant's Earring",ear2="Evans Earring",
 		body="Zendik Robe",hands="Hieros Mittens",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
