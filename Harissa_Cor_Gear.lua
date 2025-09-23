@@ -76,9 +76,9 @@ function init_gear_sets()
 
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +2"}
     sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +3",body="Lanun Frac +4",legs="Lanun Trews +3",feet="Laksa. Bottes +3"}
-    sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +3",body="Laksa. Frac +3",feet="Lanun Bottes +4"}
+    sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +3",body="laksa. Frac +4",feet="Lanun Bottes +4"}
     sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +3",body="Lanun Frac +4",feet="Laksa. Bottes +3"}
-    sets.precast.FoldDoubleBust = {head="Lanun Tricorne +3",body="Laksa. Frac +3", hands="Lanun Gants+3",feet="Laksa. Bottes +3"}
+    sets.precast.FoldDoubleBust = {head="Lanun Tricorne +3",body="laksa. Frac +4", hands="Lanun Gants+3",feet="Laksa. Bottes +3"}
 
     sets.precast.CorsairRoll = {main="Lanun Knife",
       head="Lanun Tricorne +3",neck="Regal Necklace",ear2="",body="Nyame Mail",hands="Chasseur's Gants +2",ring1="Defending Ring",
@@ -154,7 +154,7 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
 		head=gear.herculean_ws_head,neck="Fotia Gorget",ear1="Telos Earring",ear2="Moonshade Earring",
-        body="Laksa. Frac +3",hands="Meg. Gloves +2",ring1="Sroda Ring",ring2="Karieyh Ring +1",
+        body="laksa. Frac +4",hands="Meg. Gloves +2",ring1="Sroda Ring",ring2="Karieyh Ring +1",
         back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Meg. Chausses +2",feet="Lanun Bottes +4"}
 		
     sets.precast.WS.Acc = {
@@ -179,7 +179,7 @@ function init_gear_sets()
 	
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
         head=gear.herculean_ws_head,neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Telos earring",
-        body="Laksa. Frac +3",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Garuda Ring",
+        body="laksa. Frac +4",hands="Meg. Gloves +2",ring1="Garuda Ring",ring2="Garuda Ring",
         back=gear.harissa_mantle,waist="Fotia Belt",legs="Nyame Flanchard",feet="Lanun Bottes +4"}
 
     sets.precast.WS['Last Stand'].Acc = set_combine(sets.precast.WS['Last Stand'], {legs="Meg. Chausses +2",feet="Meg. Jam. +2",ring1="Longshot Ring",ring2="Karieyh Ring +1"})
