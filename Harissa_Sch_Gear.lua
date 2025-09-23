@@ -211,7 +211,7 @@ function init_gear_sets()
 
     sets.midcast.Drain = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
         head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
-        body="Chironic Doublet",hands="Acad. Bracers +2",ring1="Evanescence Ring",ring2="Archon Ring",
+        body="Merlinic Jubbah",hands="Acad. Bracers +2",ring1="Evanescence Ring",ring2="Archon Ring",
         back=gear.nuke_jse_back,waist="Fucho-no-obi",legs="Chironic Hose",feet=gear.merlinic_aspir_feet}
 		
     sets.midcast.Drain.Resistant = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
