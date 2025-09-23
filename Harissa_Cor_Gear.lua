@@ -305,7 +305,7 @@ function init_gear_sets()
     sets.idle.PDT = {
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Nyame Flanchard",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Etiolation Earring",ring1="Defending Ring",ring2="Warden's Ring",back=gear.harissa_mantle}
+		ear2="Etiolation Earring",ring1="Defending Ring",ring2="Murky Ring",back=gear.harissa_mantle}
 		
     sets.idle.Refresh = set_combine(sets.idle, {ring1="Stikini Ring +1"})
     
@@ -314,17 +314,17 @@ function init_gear_sets()
     sets.defense.PDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Nyame Flanchard",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Etiolation Earring",ring1="Warden's Ring",ring2="Defending Ring",back=gear.harissa_mantle}
+		ear2="Etiolation Earring",ring1="Murky Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 	-- F11 to activate MDT
     sets.defense.MDT = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Etiolation Earring",
-		ear2="Telos Earring",ring1="Chirich Ring +1",ring2="Defending Ring",back=gear.harissa_mantle}
+		ear2="Telos Earring",ring1="Murky Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 		
     sets.defense.MEVA = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Meghanada Ring",ring2="Defending Ring",back=gear.harissa_mantle}
+		ear2="Brutal Earring",ring1="Murky Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 
     sets.Kiting = {legs="Carmine Cuisses +1"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {}) -- control + T to activate

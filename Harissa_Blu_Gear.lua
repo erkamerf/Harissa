@@ -421,24 +421,24 @@ function init_gear_sets()
 
 	sets.idle.Sphere = set_combine(sets.idle, {feet="Nyame Sollerets",right_ring="Chirich Ring +1",}) -- body="Mekosu. Harness",
 
-	sets.idle.PDT = set_combine{sets.idle, {feet="Nyame Sollerets",right_ring="Chirich Ring +1",}}
+	sets.idle.PDT = set_combine{sets.idle, {feet="Nyame Sollerets",right_ring="Murky Ring",}}
 
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})
 
 	-- Defense sets
 	sets.defense.PDT = {ammo="Staunch Tathlum +1",
 				head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-		        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Warden's Ring",
+		        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Murky Ring",
 				back="Archon Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.defense.MDT = {ammo="Staunch Tathlum +1",
 				head="Nyame Helm",neck="Mirage Stole +1",ear1="Cessance Earring",ear2="Telos Earring",
-		        body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Shadow Ring",
+		        body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Murky Ring",
 				back="Archon Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Nyame Sollerets"}
 
     sets.defense.MEVA = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-		body="Malignance Tabard",hands="Leyline Gloves",ring1="Vengeful Ring",ring2="Purity Ring",
+		body="Malignance Tabard",hands="Leyline Gloves",ring1="Defending Ring",ring2="Murky Ring",
         back=gear.nuke_jse_back,waist="Flume Belt +1",legs="Telchine Braconi",feet="Nyame Sollerets"}
 
 	sets.defense.NukeLock = sets.midcast['Blue Magic'].Magical

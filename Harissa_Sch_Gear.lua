@@ -355,14 +355,14 @@ function init_gear_sets()
         left_ear="Etiolation Earring",
         right_ear="Magnetic Earring",
         left_ring="Defending Ring",
-        right_ring="Warden's Ring",
+        right_ring="Murky Ring",
         back="Archon Cape",}
 		
 	sets.idle.Hippo = set_combine(sets.idle.PDT, {feet="Nyame Sollerets"}) --Hippo. Socks +1
 
     sets.idle.Weak = {main="Bolelabunga",sub="Genmei Shield",ammo="Homiliary",
         head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-        body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
+        body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Murky Ring",
         back="Umbra Cape",waist="Flax Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 		
     -- Defense sets
@@ -381,17 +381,17 @@ function init_gear_sets()
         left_ear="Etiolation Earring",
         right_ear="Malignance Earring",
         left_ring="Defending Ring",
-        right_ring="Warden's Ring",
+        right_ring="Murky Ring",
         back="Archon Cape",}
 
     sets.defense.MDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum +1",
         head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-        body="Mallquis Saio +2",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
+        body="Mallquis Saio +2",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Murky Ring",
         back="Umbra Cape",waist="Flax Sash",legs="Arbatel Pants +3",feet="Battlecast Gaiters"}
 		
     sets.defense.MEVA = {main="Daybreak",sub="Genmei Shield",ammo="Staunch Tathlum +1",
         head=gear.merlinic_nuke_head,neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-        body=gear.merlinic_nuke_body,hands="Gende. Gages +1",ring1="Vengeful Ring",ring2="Purity Ring",
+        body=gear.merlinic_nuke_body,hands="Gende. Gages +1",ring1="Defending Ring",ring2="Murky Ring",
         back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Arbatel Pants +3",feet=gear.merlinic_nuke_feet}
 		
     sets.Kiting = {feet="Herald's Gaiters"}
