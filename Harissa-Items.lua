@@ -16,9 +16,9 @@ sets.precast.Item['Holy Water'] = {neck="Nicander's Necklace"}
 --Augmented items that you'll use among multiple jobs.
 
 gear.gada_phalanx_club = {name="Gada", augments={'Accuracy+5','Pet: STR+7','Phalanx +4','DMG:+11',}}
-gear.gada_enhancing_club = {name="Gada", augments={'Mag. Acc.+23','"Conserve MP"+2','Attack+5',}}
+gear.gada_enhancing_club = {name="Gada", augments={'Accuracy+18','Mag. Acc.+25','MND+7','DMG:+5',}}
 gear.gada_healing_club = {name="Gada",augments={'"Cure" potency +9%','Mag. Acc.+11','"Mag.Atk.Bns."+13','DMG:+3',}}
-gear.gada_enfeebling_club= {name="Gada", augments={'Mag. Acc.+23','"Conserve MP"+2','Attack+5',}}
+gear.gada_enfeebling_club= {name="Gada", augments={'Accuracy+18','Mag. Acc.+25','MND+7','DMG:+5',}}
 gear.grioavolr_nuke_staff = {name="Grioavolr",augments={'Potency of "Cure" effect received+5%','Mag. Acc.+26','"Fast Cast"+5','Magic Damage +4',}}
 gear.grioavolr_fc_staff = {name="Grioavolr",augments={'Potency of "Cure" effect received+5%','Mag. Acc.+26','"Fast Cast"+5','Magic Damage +4',}}
 gear.grioavolr_pet_staff = {name="Grioavolr",augments={'Blood Pact Dmg.+8','Pet: STR+10','Pet: Mag. Acc.+19','Pet: "Mag.Atk.Bns."+30',}}

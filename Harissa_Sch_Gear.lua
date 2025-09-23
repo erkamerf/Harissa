@@ -148,6 +148,7 @@ function init_gear_sets()
     sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {back=gear.nuke_jse_back})
 
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Doyen Pants"})
+    sets.midcast.Phalanx = set_combine(sets.midcast['Enhancing Magic'], {body=gear.chironic_phalanx_body,})
 	
 	sets.midcast.Refresh = set_combine(sets.midcast['Enhancing Magic'], {head="Amalric Coif +1"})
 	
@@ -366,10 +367,22 @@ function init_gear_sets()
 		
     -- Defense sets
 
-    sets.defense.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum +1",
-        head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-        body="Mallquis Saio +2",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
-        back="Umbra Cape",waist="Flax Sash",legs="Arbatel Pants +3",feet="Battlecast Gaiters"}
+    sets.defense.PDT = {
+        main="Malignance Pole",
+        sub="Umbra Strap",
+        ammo="Staunch Tathlum +1",
+        head="Arbatel Bonnet +2",
+        body="Arbatel Gown +2",
+        hands="Nyame Gauntlets",
+        legs="Arbatel Pants +3",
+        feet="Nyame Sollerets",
+        neck="Twilight Torque",
+        waist="Rumination Sash",
+        left_ear="Etiolation Earring",
+        right_ear="Malignance Earring",
+        left_ring="Defending Ring",
+        right_ring="Warden's Ring",
+        back="Archon Cape",}
 
     sets.defense.MDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum +1",
         head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
