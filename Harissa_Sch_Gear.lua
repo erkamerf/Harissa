@@ -210,14 +210,14 @@ function init_gear_sets()
         back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 
     sets.midcast.Drain = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
-        head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
-        body="Merlinic Jubbah",hands="Acad. Bracers +2",ring1="Evanescence Ring",ring2="Archon Ring",
-        back=gear.nuke_jse_back,waist="Fucho-no-obi",legs="Arbatel Pants +3",feet=gear.merlinic_aspir_feet}
+        head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Hirudinea Earring",ear2="Malignance Earring",
+        body="Psycloth Vest",hands="Acad. Bracers +2",ring1="Evanescence Ring",ring2="Archon Ring",
+        back=gear.nuke_jse_back,waist="Fucho-no-obi",legs="Peda. Pants +1",feet="Merlinic Crackows"} --gear.merlinic_aspir_feet
 		
     sets.midcast.Drain.Resistant = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
-        head="Amalric Coif +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
-        body="Chironic Doublet",hands="Acad. Bracers +2",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-        back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Arbatel Pants +3",feet=gear.merlinic_aspir_feet}
+        head="Amalric Coif +1",neck="Erra Pendant",ear1="Hirudinea Earring",ear2="Malignance Earring",
+        body="Amalric Doublet +1",hands=gear.chironic_enfeeble_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Arbatel Pants +3",feet="Merlinic Crackows"}
 
     sets.midcast.Aspir = sets.midcast.Drain
 	sets.midcast.Aspir.Resistant = sets.midcast.Drain.Resistant
