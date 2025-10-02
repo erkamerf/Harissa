@@ -283,7 +283,7 @@ function init_gear_sets()
     sets.idle = {ammo="Staunch Tathlum +1",
         head="Nyame Helm",body="Nyame Mail",hands="Nyame Gauntlets",legs="Nyame Flanchard",
 		feet="Jute Boots +1",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back="Archon Cape"}
+		ear2="Alabaster Earring",ring1="Defending Ring",ring2="Karieyh Ring +1",back="Archon Cape"}
 		
     sets.idle.Sphere = set_combine(sets.idle, {body="Mekosu. Harness"})
 
@@ -298,15 +298,15 @@ function init_gear_sets()
     sets.defense.PDT = {ammo="Staunch Tathlum +1",
         head="Meghanada Visor +2",body="Meg. Cuirie +2",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Murky Ring",back="Archon Cape"}
+		ear2="Alabaster Earring",ring1="Defending Ring",ring2="Murky Ring",back="Archon Cape"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
 		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
-		ear2="Brutal Earring",ring1="Defending Ring",ring2="Murky Ring",back="Archon Cape"}
+		ear2="Alabaster Earring",ring1="Defending Ring",ring2="Murky Ring",back="Archon Cape"}
 		
 	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
-		head=gear.herculean_fc_head,neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+		head=gear.herculean_fc_head,neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Alabaster Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Murky Ring",ring2="Defending Ring",
 		back="Mujin Mantle",waist="Engraved Belt",legs="Malignance Tights",feet="Malignance Boots"}
 

@@ -330,7 +330,7 @@ function init_gear_sets()
         neck="Sanctity Necklace",
         waist="Embla Sash",
         left_ear="Etiolation Earring",
-        right_ear="Malignance Earring",
+        right_ear="Alabaster Earring",
         left_ring="Stikini Ring +1",
         right_ring="Chirich Ring +1",
         back="Swith Cape +1",}
@@ -347,7 +347,7 @@ function init_gear_sets()
         neck="Twilight Torque",
         waist="Porous Rope",
         left_ear="Etiolation Earring",
-        right_ear="Magnetic Earring",
+        right_ear="Alabaster Earring",
         left_ring="Defending Ring",
         right_ring="Murky Ring",
         back="Archon Cape",}
@@ -373,7 +373,7 @@ function init_gear_sets()
         neck="Twilight Torque",
         waist="Rumination Sash",
         left_ear="Etiolation Earring",
-        right_ear="Malignance Earring",
+        right_ear="Alabaster Earring",
         left_ring="Defending Ring",
         right_ring="Murky Ring",
         back="Archon Cape",}
@@ -384,7 +384,7 @@ function init_gear_sets()
         back="Umbra Cape",waist="Flax Sash",legs="Arbatel Pants +3",feet="Battlecast Gaiters"}
 		
     sets.defense.MEVA = {main="Daybreak",sub="Genmei Shield",ammo="Staunch Tathlum +1",
-        head=gear.merlinic_nuke_head,neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+        head=gear.merlinic_nuke_head,neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Alabaster Earring",
         body=gear.merlinic_nuke_body,hands="Gende. Gages +1",ring1="Defending Ring",ring2="Murky Ring",
         back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Arbatel Pants +3",feet=gear.merlinic_nuke_feet}
 		
