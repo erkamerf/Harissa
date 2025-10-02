@@ -68,7 +68,7 @@ function init_gear_sets()
 	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt +2"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 
-	sets.HPDown = {head="Pixie Hairpin +1",neck="Loricate Torque +1",ear1="Mendicant's Earring",ear2="Evans Earring",
+	sets.HPDown = {head="Pixie Hairpin +1",neck="Loricate Torque +1",ear1="Mendi. Earring",ear2="Evans Earring",
 		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
 		back="Swith Cape +1",waist="Flume Belt +1",legs="Shedir Seraweels",feet="Jhakri Pigaches +2"}
 
