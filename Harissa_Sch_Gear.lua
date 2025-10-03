@@ -231,7 +231,7 @@ function init_gear_sets()
         main={ name="Akademos", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
         sub="Khonsu",
         ammo="Staunch Tathlum +1",
-        head="Arbatel Bonnet +2",
+        head="Arbatel Bonnet +3",
         body="Arbatel Gown +2",
         hands="Arbatel Bracers +2",
         legs="Arbatel Pants +3",
@@ -248,7 +248,7 @@ function init_gear_sets()
         main="Daybreak",
         sub="Culminus",
         ammo="Staunch Tathlum +1",
-        head="Arbatel Bonnet +2",
+        head="Arbatel Bonnet +3",
         body="Arbatel Gown +2",
         hands="Arbatel Bracers +2",
         legs="Arbatel Pants +3",
@@ -365,7 +365,7 @@ function init_gear_sets()
         main="Malignance Pole",
         sub="Umbra Strap",
         ammo="Staunch Tathlum +1",
-        head="Arbatel Bonnet +2",
+        head="Arbatel Bonnet +3",
         body="Arbatel Gown +2",
         hands="Nyame Gauntlets",
         legs="Arbatel Pants +3",
@@ -407,7 +407,7 @@ function init_gear_sets()
         main="Maxentius",
         sub="Culminus",
         ammo="Staunch Tathlum +1",
-        head="Arbatel Bonnet +2",
+        head="Arbatel Bonnet +3",
         body="Arbatel Gown +2",
         hands="Nyame Gauntlets",
         legs="Jhakri Slops +2",
@@ -426,8 +426,8 @@ function init_gear_sets()
         back="Umbra Cape",waist="Flax Sash",legs="Arbatel Pants +3",feet=gear.chironic_refresh_feet}
 
     -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
-    sets.buff['Ebullience'] = {head="Arbatel Bonnet +2"}
-    sets.buff['Rapture'] = {head="Arbatel Bonnet +2"}
+    sets.buff['Ebullience'] = {head="Arbatel Bonnet +3"}
+    sets.buff['Rapture'] = {head="Arbatel Bonnet +3"}
     sets.buff['Perpetuance'] = {hands="Arbatel Bracers +2"}
     sets.buff['Immanence'] = {hands="Arbatel Bracers +2"}
     sets.buff['Penury'] = {legs="Arbatel Pants +3"}
