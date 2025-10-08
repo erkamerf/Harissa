@@ -6,7 +6,7 @@ function user_job_setup()
 	state.HybridMode:options('Normal','PDT')
 	state.Weapons:options('None','Maxentius','Akademos','Khatvanga','MalignancePole')
 
-	gear.nuke_jse_back = {name="Lugh's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10'}}
+	gear.nuke_jse_back = {name="Lugh's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     gear.bookworm = {}
 	
 	gear.obi_cure_back = "Tempered Cape +1"
@@ -206,7 +206,7 @@ function init_gear_sets()
     sets.midcast.Drain = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
         head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Hirudinea Earring",ear2="Malignance Earring",
         body="Psycloth Vest",hands="Acad. Bracers +2",ring1="Evanescence Ring",ring2="Archon Ring",
-        back=gear.nuke_jse_back,waist="Fucho-no-obi",legs="Peda. Pants +1",feet=gear.merlinic_aspir_feet} --gear.merlinic_aspir_feet
+        back=gear.nuke_jse_back,waist="Fucho-no-obi",legs="Peda. Pants +1",feet=gear.merlinic_aspir_feet} 
 		
     sets.midcast.Drain.Resistant = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
         head="Amalric Coif +1",neck="Erra Pendant",ear1="Hirudinea Earring",ear2="Malignance Earring",
@@ -259,7 +259,7 @@ function init_gear_sets()
         right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+12','Enmity-2',}},
         left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
         right_ring="Stikini Ring +1",
-        back="Twilight Cape",}
+        back=gear.nuke_jse_back,}
 		
     sets.midcast['Elemental Magic'].Fodder = {main="Daybreak",sub="Chanter's Shield",ammo="Dosis Tathlum",
         head=gear.merlinic_nuke_head,neck="Saevus Pendant +1",ear1="Novio Earring",ear2="Friomisi Earring",
@@ -289,7 +289,7 @@ function init_gear_sets()
 	sets.midcast.Helix = {main="Daybreak",sub="Culminus",ammo="Dosis Tathlum",
         head=gear.merlinic_nuke_head,neck="Saevus Pendant +1",ear1="Novio Earring",ear2="Friomisi Earring",
         body=gear.merlinic_nuke_body,hands="Amalric Gages +1",ring1="Metamor. Ring +1",ring2="Freke Ring",
-        back=gear.nuke_jse_back,waist="Refoccilation Stone",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
+        back="Bookworm's Cape",waist="Refoccilation Stone",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 	
 	sets.midcast.Helix.Resistant = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
         head=gear.merlinic_nuke_head,neck="Sanctity Necklace",ear1="Malignance Earring",ear2="Friomisi Earring",
