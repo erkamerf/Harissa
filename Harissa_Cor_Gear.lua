@@ -75,13 +75,13 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
 
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +2"}
-    sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +3",body="Lanun Frac +4",legs="Lanun Trews +3",feet="Laksa. Bottes +3"}
-    sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +3",body="laksa. Frac +4",feet="Lanun Bottes +4"}
-    sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +3",body="Lanun Frac +4",feet="Laksa. Bottes +3"}
-    sets.precast.FoldDoubleBust = {head="Lanun Tricorne +3",body="laksa. Frac +4", hands="Lanun Gants+3",feet="Laksa. Bottes +3"}
+    sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +4",body="Lanun Frac +4",legs="Lanun Trews +4",feet="Laksa. Bottes +3"}
+    sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +4",body="laksa. Frac +4",feet="Lanun Bottes +4"}
+    sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +4",body="Lanun Frac +4",feet="Laksa. Bottes +3"}
+    sets.precast.FoldDoubleBust = {head="Lanun Tricorne +4",body="laksa. Frac +4", hands="Lanun Gants+3",feet="Laksa. Bottes +3"}
 
     sets.precast.CorsairRoll = {main="Lanun Knife",
-      head="Lanun Tricorne +3",neck="Regal Necklace",ear2="",body="Nyame Mail",hands="Chasseur's Gants +2",ring1="Defending Ring",
+      head="Lanun Tricorne +4",neck="Regal Necklace",ear2="",body="Nyame Mail",hands="Chasseur's Gants +2",ring1="Defending Ring",
 			ring2="Warden's Ring",back=gear.harissa_mantle,waist="Flume Belt +1",legs="Nyame Flanchard", feet="Nyame Sollerets"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
