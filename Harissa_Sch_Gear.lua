@@ -4,7 +4,7 @@ function user_job_setup()
     state.CastingMode:options('Normal','Resistant','Proc','OccultAcumen','9k')
     state.IdleMode:options('Normal','PDT','Hippo','Weak')
 	state.HybridMode:options('Normal','PDT')
-	state.Weapons:options('None','Maxentius','Akademos','Khatvanga','MalignancePole')
+	state.Weapons:options('None','Maxentius','Akademos','Khatvanga','MalignancePole','Daybreak')
 
 	gear.nuke_jse_back = {name="Lugh's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     gear.bookworm = {}
