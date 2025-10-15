@@ -55,8 +55,8 @@ function init_gear_sets()
 
     sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
         head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
-        body="Vrikodara Jupon",hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Lebeche Ring",
-        back="Swith Cape +1",waist="Witful Belt",legs="Gyve Trousers",feet="Volte Gaiters"}
+        body="Merlinic Jubbah",hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Lebeche Ring",
+        back="Swith Cape +1",waist="Witful Belt",legs="Gyve Trousers",feet="Peda. Loafers +2"}
 		
 	sets.precast.FC.Arts = {}
 
@@ -459,6 +459,7 @@ function init_gear_sets()
 	sets.weapons.Akademos = {main="Akademos",sub="Enki Strap"}
 	sets.weapons.Khatvanga = {main="Khatvanga",sub="Bloodrain Strap"}
     sets.weapons.MalignancePole = {main="Malignance Pole",sub="Duplus Grip"}
+    sets.weapons.Daybreak = {main="Daybreak",sub="Culminus"}
 end
 
 -- Select default macro book on initial load or subjob change.
