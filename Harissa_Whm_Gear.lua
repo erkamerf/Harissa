@@ -72,7 +72,7 @@ function init_gear_sets()
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {main="Oranyan",waist="Embla Sash"})
 	
-    sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {legs="Doyen Pants"})
+    sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {ear2="Earthcry Earring",legs="Doyen Pants"})
 
     sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {right_ear="Ebers Earring +1",legs="Ebers Pant. +1"})
 
