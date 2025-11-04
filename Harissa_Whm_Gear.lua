@@ -126,7 +126,21 @@ function init_gear_sets()
 
     --sets.precast.WS['Flash Nova'] = {}
 
-    --sets.precast.WS['Mystic Boon'] = {}
+    sets.precast.WS['Mystic Boon'] = {
+		ammo="Hasty Pinion +1",
+    	head="C. Palug Crown",
+    	body="Inyanga Jubbah +2",
+    	hands="Inyan. Dastanas +2",
+    	legs={ name="Vanya Slops", augments={'MND+10','Spell interruption rate down +15%','"Conserve MP"+6',}},
+    	feet="Volte Gaiters",
+    	neck="Fotia Gorget",
+    	waist="Fotia Belt",
+    	left_ear="Moonshade Earring",
+    	right_ear="Malignance Earring",
+    	left_ring="Stikini Ring +1",
+    	right_ring="Metamor. Ring +1",
+    	back={ name="Alaunus's Cape", augments={'MND+20','Accuracy+20 Attack+20','MND+10','Weapon skill damage +10%',}},
+	}
 
     -- Midcast Sets
 
