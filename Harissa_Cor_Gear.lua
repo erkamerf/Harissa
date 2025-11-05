@@ -75,10 +75,10 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
 
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +2"}
-    sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +4",body="Lanun Frac +4",legs="Lanun Trews +4",feet="Laksa. Bottes +3"}
+    sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +4",body="Lanun Frac +4",legs="Lanun Trews +4",feet="Laksa. Bottes +4"}
     sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +4",body="laksa. Frac +4",feet="Lanun Bottes +4"}
-    sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +4",body="Lanun Frac +4",feet="Laksa. Bottes +3"}
-    sets.precast.FoldDoubleBust = {head="Lanun Tricorne +4",body="laksa. Frac +4", hands="Lanun Gants+3",feet="Laksa. Bottes +3"}
+    sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +4",body="Lanun Frac +4",feet="Laksa. Bottes +4"}
+    sets.precast.FoldDoubleBust = {head="Lanun Tricorne +4",body="laksa. Frac +4", hands="Lanun Gants+3",feet="Laksa. Bottes +4"}
 
     sets.precast.CorsairRoll = {main="Lanun Knife",
       head="Lanun Tricorne +4",neck="Regal Necklace",ear2="",body="Nyame Mail",hands="Chasseur's Gants +2",ring1="Defending Ring",
@@ -105,7 +105,7 @@ function init_gear_sets()
 	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne +2",body="Chasseur's Frac +2", 
         legs="Chas. Culottes +2",feet="Chass. Bottes +2"})
 	
-    sets.precast.CorsairShot.Proc = set_combine(sets.precast.CorsairShot, {head="Laksa. Tricorne +3",waist="Flume Belt +1"})
+    sets.precast.CorsairShot.Proc = set_combine(sets.precast.CorsairShot, {head="Laksa. Tricorne +4",waist="Flume Belt +1"})
 
     sets.precast.CorsairShot['Light Shot'] = set_combine(sets.precast.CorsairShot, {ear1="Telos Earring", waist="Eschan Stone"})
 
