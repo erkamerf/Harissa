@@ -108,7 +108,7 @@ function init_gear_sets()
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {body="Passion Jacket"})
 
-	sets.precast.FC['Blue Magic'] = set_combine(sets.precast.FC, {body="Hashishin Mintan +2",ring2="Lebeche Ring"}) 
+	sets.precast.FC['Blue Magic'] = set_combine(sets.precast.FC, {body="Hashishin Mintan +3",ring2="Lebeche Ring"}) 
 
 
 	-- Weaponskill sets
@@ -196,7 +196,7 @@ function init_gear_sets()
 	-- Midcast Sets
 	sets.midcast.FastRecast = {ammo="Hasty Pinion +1",
 		head="Carmine Mask +1",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Hashishin Mintan +2",hands="Hashi. Bazu. +2",ring1="Kishar Ring",ring2="Prolix Ring",
+		body="Hashishin Mintan +3",hands="Hashi. Bazu. +2",ring1="Kishar Ring",ring2="Prolix Ring",
 		back="Swith Cape +1",waist="Witful Belt",legs="Gyve Trousers",feet="Carmine Greaves +1"}
 
 	sets.midcast['Blue Magic'] = {}
@@ -264,7 +264,7 @@ function init_gear_sets()
 	sub="Bolelabunga",
 		ammo="Mavi Tathlum",
 		head="Amalric Coif +1",
-		body="Hashishin Mintan +2",
+		body="Hashishin Mintan +3",
 		hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
 		legs="Amalric Slops +1",
 		feet="Hashi. Basmak +2",
@@ -407,7 +407,7 @@ function init_gear_sets()
 	sets.idle = {
     			ammo="Staunch Tathlum +1",
     			head="Nyame Helm",
-    			body="Hashishin Mintan +2",
+    			body="Hashishin Mintan +3",
     			hands="Nyame Gauntlets",
     			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
     			feet="Coalrake Sabots",
