@@ -1,10 +1,10 @@
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_job_setup()
     state.OffenseMode:options('Normal')
-    state.CastingMode:options('Normal','Resistant','Proc','OccultAcumen','9k')
-    state.IdleMode:options('Normal','PDT','Hippo','Weak')
-	state.HybridMode:options('Normal','PDT')
-	state.Weapons:options('None','Maxentius','Akademos','Khatvanga','MalignancePole','Daybreak')
+    state.CastingMode:options('Normal','Resistant','Proc','OccultAcumen','9k') --Win + F10
+    state.IdleMode:options('Normal','PDT','Hippo','Weak') --F12
+	state.HybridMode:options('Normal','PDT') --Win +F9
+	state.Weapons:options('None','Maxentius','Akademos','Khatvanga','MalignancePole','Daybreak') --F9
 
 	gear.nuke_jse_back = {name="Lugh's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     gear.bookworm = {}
@@ -21,7 +21,7 @@ function user_job_setup()
 	send_command('bind @` gs c cycle MagicBurstMode')
 	send_command('bind ^q gs c weapons Khatvanga;gs c set CastingMode OccultAcumen')
 	send_command('bind !q gs c weapons default;gs c reset CastingMode')
-	send_command('bind @f10 gs c cycle RecoverMode')
+	--send_command('bind @f10 gs c cycle RecoverMode')
 	send_command('bind @f8 gs c toggle AutoNukeMode')
 	send_command('bind !pause gs c toggle AutoSubMode') --Automatically uses sublimation and Myrkr.
 	send_command('bind @^` input /ja "Parsimony" <me>')
@@ -196,7 +196,7 @@ function init_gear_sets()
     sets.midcast.Kaustra = {main="Akademos",sub="Enki Strap",ammo="Pemphredo Tathlum",
         head="Pixie Hairpin +1",neck="Saevus Pendant +1",ear1="Novio Earring",ear2="Malignance Earring",
         body=gear.merlinic_nuke_body,hands="Amalric Gages +1",ring1="Freke Ring",ring2="Archon Ring",
-        back=gear.nuke_jse_back,waist="Refoccilation Stone",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 		
     sets.midcast.Kaustra.Resistant = {main=gear.grioavolr_nuke_staff,sub="Enki Strap",ammo="Pemphredo Tathlum",
         head="Peda. M.Board +2",neck="Erra Pendant",ear1="Novio Earring",ear2="Malignance Earring",
@@ -237,7 +237,7 @@ function init_gear_sets()
         legs="Arbatel Pants +3",
         feet="Arbatel Loafers +3",
         neck="Mizu. Kubikazari",
-        waist="Hachirin-no-Obi",
+        waist="Orpheus's Sash",
         left_ear="Barkaro. Earring",
         right_ear={ name="Arbatel Earring +1", augments={'System: 1 ID: 1676 Val: 0','Mag. Acc.+12','Enmity-2',}},
         left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
@@ -264,7 +264,7 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'].Fodder = {main="Daybreak",sub="Chanter's Shield",ammo="Dosis Tathlum",
         head="Peda. M.Board +2",neck="Saevus Pendant +1",ear1="Novio Earring",ear2="Friomisi Earring",
         body=gear.merlinic_nuke_body,hands="Mallquis Cuffs +2",ring1="Shiva Ring +1",ring2="Freke Ring",
-        back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
+        back=gear.nuke_jse_back,waist="Eschan Stone",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 		
     sets.midcast['Elemental Magic']['9k'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
         head="Peda. M.Board +2",neck="Saevus Pendant +1",ear1="Novio Earring",ear2="Malignance Earring",
@@ -289,7 +289,7 @@ function init_gear_sets()
 	sets.midcast.Helix = {main="Daybreak",sub="Culminus",ammo="Dosis Tathlum",
         head="Peda. M.Board +2",neck="Saevus Pendant +1",ear1="Novio Earring",ear2="Friomisi Earring",
         body=gear.merlinic_nuke_body,hands="Amalric Gages +1",ring1="Metamor. Ring +1",ring2="Freke Ring",
-        back="Bookworm's Cape",waist="Refoccilation Stone",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
+        back="Bookworm's Cape",waist="Eschan Stone",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 	
 	sets.midcast.Helix.Resistant = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
         head="Peda. M.Board +2",neck="Sanctity Necklace",ear1="Malignance Earring",ear2="Friomisi Earring",
