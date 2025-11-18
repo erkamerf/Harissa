@@ -404,18 +404,19 @@ function init_gear_sets()
 			      back="Bleating Mantle",waist="Flume Belt +1",legs="Lengo Pants",feet=gear.herculean_refresh_feet}
 
 	-- Idle sets
-	sets.idle = {
+	sets.idle = {main="Bolelabunga",
+				sub="Medeina Kilij",
     			ammo="Staunch Tathlum +1",
     			head="Nyame Helm",
     			body="Hashishin Mintan +3",
-    			hands="Nyame Gauntlets",
+    			hands="Hashi. Bazu. +2",
     			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
     			feet="Coalrake Sabots",
     			neck="Twilight Torque",
     			waist="Flume Belt +1",
-    			left_ear="Mache Earring +1",
+    			left_ear="Etiolation Earring",
     			right_ear="Alabaster Earring",
-    			left_ring="Defending Ring",
+    			left_ring="Stikini Ring +1",
     			right_ring="Karieyh Ring +1",
     			back="Archon Cape",}
 
