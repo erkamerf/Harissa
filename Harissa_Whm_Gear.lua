@@ -48,7 +48,7 @@ function init_gear_sets()
 	sets.weapons.MeleeWeaponClub = {main="Maxentius",sub="Culminus"}
 	sets.weapons.Cpalug = {main="C. Palug Hammer", sub="Culminus"}
 	sets.weapons.DualWeapons = {main="Yagrush",sub="Feline Hagoita +1"}
-	sets.weapons.Yagrush = {main="Yagrush", sub="Chanter's Shield"}
+	sets.weapons.Yagrush = {main="Yagrush", sub="Archduke's Shield"}
 	
     sets.buff.Sublimation = {waist="Embla Sash"}
     sets.buff.DTSublimation = {waist="Embla Sash"}
@@ -392,7 +392,7 @@ function init_gear_sets()
 		back="Umbra Cape",waist="Fucho-no-obi",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-	sets.idle = {main="Daybreak",sub="Culminus",ammo="Homiliary",
+	sets.idle = {main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
     			head="Inyanga Tiara +2",
     			body={ name="Witching Robe", augments={'MP+45','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
     			hands="Inyan. Dastanas +2",
