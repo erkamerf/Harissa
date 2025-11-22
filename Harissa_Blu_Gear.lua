@@ -8,7 +8,7 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options('PDT') --~f10
 	state.MagicalDefenseMode:options('MDT') --^f11
 	state.ResistDefenseMode:options('MEVA') 
-	state.Weapons:options('Tizalmace','Sequence','None','RangedWeap','Clubs','Dynamis','TrashWeapons') --f9
+	state.Weapons:options('None','Tizalmace','Sequence','RangedWeap','Clubs','Dynamis','TrashWeapons') --f9
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'} --!f11
 
