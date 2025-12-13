@@ -146,9 +146,9 @@ function init_gear_sets()
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {})
 
     sets.precast.RA = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Marked Gorget", ear1="Enervating earring", ear2="Telos Earring",
-        body="Nisroch Jerkin",hands="Carmine Fin. Ga. +1",ring1="Meghanada Ring", ring2="Arvina Ringlet +1",
-        back=gear.harissa_mantle,waist="Ponente Sash",legs="Laksa. Trews +4",feet="Pursuer's Gaiters"}
+        head="Chass. Tricorne +2",neck="Comm. Charm +1", ear1="Enervating earring", ear2="Telos Earring",
+        body="Laksa. Frac +4",hands="Carmine Fin. Ga. +1",ring1="Meghanada Ring", ring2="Arvina Ringlet +1",
+        back=gear.harissa_mantle,waist="Ponente Sash",legs="Laksa. Trews +4",feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {})
 	sets.precast.RA.Flurry2 = set_combine(sets.precast.RA, {})
@@ -294,7 +294,7 @@ function init_gear_sets()
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Marked Gorget",ear1="Beyla earring", ear2="Telos earring",
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Arvina Ringlet +1",ring2="Garuda Ring",
-        back=gear.harissa_mantle,waist="Ponente Sash",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+        back=gear.harissa_mantle,waist="Ponente Sash",legs="Laksa. Trews +4",feet="Laksa. Bottes +4"}
 		
 	sets.buff['Triple Shot'] = {body="Chasseur's Frac +2",hands="Lanun Gants +4"}
     
