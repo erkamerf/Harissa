@@ -147,7 +147,7 @@ function init_gear_sets()
 
     sets.precast.RA = {ammo=gear.RAbullet,
         head="Chass. Tricorne +2",neck="Comm. Charm +1", ear1="Enervating earring", ear2="Telos Earring",
-        body="Laksa. Frac +4",hands="Carmine Fin. Ga. +1",ring1="Meghanada Ring", ring2="Arvina Ringlet +1",
+        body="Laksa. Frac +4",hands="Lanun Gants +4",ring1="Meghanada Ring", ring2="Arvina Ringlet +1",
         back=gear.harissa_mantle,waist="Ponente Sash",legs="Laksa. Trews +4",feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {})
