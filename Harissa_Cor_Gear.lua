@@ -156,12 +156,12 @@ function init_gear_sets()
        
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {
+    sets.precast.WS = {ammo=gear.WSbullet,
 		head=gear.herculean_ws_head,neck="Fotia Gorget",ear1="Cessance Earring",ear2="Moonshade Earring",
-        body="Laksa. Frac +4",hands="Chasseur's Gants +3",ring1="Sroda Ring",ring2="Karieyh Ring +1",
+        body="Laksa. Frac +4",hands="Chasseur's Gants +3",ring1="Epaminondas's Ring",ring2="Karieyh Ring +1",
         back=gear.str_wsd_jse_back,waist="Fotia Belt",legs="Lanun Trews +4",feet="Lanun Bottes +4"}
 		
-    sets.precast.WS.Acc = {
+    sets.precast.WS.Acc = {ammo=gear.WSbullet,
         head="Malignance Chapeau",neck="Ej Necklace",ear1="Telos Earring",ear2="Moonshade Earring",
         body="Malignance Tabard",hands="Chasseur's Gants +3",ring1="Meghanada Ring",ring2="Karieyh Ring +1",
         back=gear.harissa_mantle,waist="Ponente Sash",legs="Lanun Trews +4",feet="Meg. Jam. +2"}		
@@ -181,12 +181,9 @@ function init_gear_sets()
 
     sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS['Savage Blade'], {neck="Caro Necklace",waist="Sailfi Belt +1",ring2="Ifrit Ring +1"})
 	
-    sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
-        head="Lanun Tricorne +4",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Telos earring",
-        body="Laksa. Frac +4",hands="Chasseur's Gants +3",ring1="Sroda Ring",ring2="Garuda Ring",
-        back=gear.harissa_mantle,waist="Fotia Belt",legs="Lanun Trews +4",feet="Lanun Bottes +4"}
+    sets.precast.WS['Last Stand'] = set_combine(sets.precast.WS, {head="Lanun Tricorne +4",ear1="Telos Earring",back=gear.harissa_mantle,})
 
-    sets.precast.WS['Last Stand'].Acc = set_combine(sets.precast.WS['Last Stand'], {ring2="Karieyh Ring +1"})
+    sets.precast.WS['Last Stand'].Acc = set_combine(sets.precast.WS['Last Stand'], {})
 		
     sets.precast.WS['Detonator'] = sets.precast.WS['Last Stand']
     sets.precast.WS['Detonator'].Acc = sets.precast.WS['Last Stand'].Acc
@@ -209,7 +206,7 @@ function init_gear_sets()
         waist="Orpheus's Sash",
         left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         right_ear="Friomisi Earring",
-        left_ring="Arvina Ringlet +1",
+        left_ring="Epaminondas's Ring",
         right_ring="Archon Ring",
         back=gear.magic_wsd_jse_back,}
 
