@@ -73,22 +73,22 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
 
-	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +2"}
+	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +3"}
     sets.precast.JA['Snake Eye'] = {head="Lanun Tricorne +4",body="Lanun Frac +4",legs="Lanun Trews +4",feet="Laksa. Bottes +4"}
     sets.precast.JA['Wild Card'] = {head="Lanun Tricorne +4",body="Laksa. Frac +4",feet="Lanun Bottes +4"}
     sets.precast.JA['Random Deal'] = {head="Lanun Tricorne +4",body="Lanun Frac +4",feet="Laksa. Bottes +4"}
     sets.precast.FoldDoubleBust = {head="Lanun Tricorne +4",body="Laksa. Frac +4", hands="Lanun Gants +4",feet="Laksa. Bottes +4"}
 
     sets.precast.CorsairRoll = {main="Lanun Knife",
-      head="Lanun Tricorne +4",neck="Regal Necklace",ear2="",body="Chasseur's Frac +2",hands="Chasseur's Gants +3",ring1="Defending Ring",
+      head="Lanun Tricorne +4",neck="Regal Necklace",ear2="",body="Chasseur's Frac +3",hands="Chasseur's Gants +3",ring1="Defending Ring",
 			ring2="Warden's Ring",back=gear.harissa_mantle,waist="Flume Belt +1",legs="Chas. Culottes +2", feet="Nyame Sollerets"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +2"})
-    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +2", feet="Chass. Bottes +2"})
+    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +3", feet="Chass. Bottes +2"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +2", body="Lanun Frac +4"})
-    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +2"})
+    sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +3"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +3"})
 
     --vv The set below has very consistent dmg around 9.5k per shot (point blank due to O.Sash) Vs. Acerbic Jagil in Morimar. Varies by about 1k dmg at 18 yalms
@@ -103,10 +103,10 @@ function init_gear_sets()
 
     -- sets.precast.CorsairShot = {range="Death Penalty",ammo=gear.QDbullet,
      --    head="Chass. Tricorne +2",neck="Comm. Charm +1",ear1="Novio earring",ear2="Friomisi earring",
-       --  body="Chasseur's Frac +2",hands="Chasseur's Gants +3",ring1="Shiva Ring +1",ring2="Arvina Ringlet +1",
+       --  body="Chasseur's Frac +3",hands="Chasseur's Gants +3",ring1="Shiva Ring +1",ring2="Arvina Ringlet +1",
          --back="Gunslinger's Cape",waist="Orpheus's Sash",legs="Chas. Culottes +2",feet="Chass. Bottes +2"}
 		
-	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne +2",body="Chasseur's Frac +2", 
+	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne +2",body="Chasseur's Frac +3", 
         legs="Chas. Culottes +2",feet="Chass. Bottes +2"})
 	
     sets.precast.CorsairShot.Proc = set_combine(sets.precast.CorsairShot, {head="Laksa. Tricorne +4",waist="Flume Belt +1"})
@@ -293,7 +293,7 @@ function init_gear_sets()
         body="Malignance Tabard",hands="Malignance Gloves",ring1="Arvina Ringlet +1",ring2="Garuda Ring",
         back=gear.harissa_mantle,waist="Ponente Sash",legs="Laksa. Trews +4",feet="Laksa. Bottes +4"}
 		
-	sets.buff['Triple Shot'] = {body="Chasseur's Frac +2",hands="Lanun Gants +4"}
+	sets.buff['Triple Shot'] = {body="Chasseur's Frac +3",hands="Lanun Gants +4"}
     
     -- Sets to return to when not performing an action.
 	
@@ -309,7 +309,7 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {main="Lanun Knife",sub="Regis",range="Fomalhaut",ammo=gear.MAbullet,
         head="Chass. Tricorne +2",
-        body="Chasseur's Frac +2",
+        body="Chasseur's Frac +3",
         hands="Malignance Gloves",
         legs="Chas. Culottes +2",
         feet="Lanun Bottes +4",

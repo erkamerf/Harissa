@@ -78,7 +78,7 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Aeneas = {main="Aeneas",sub="Shijo"}
 	sets.weapons.Savage = {main="Naegling",sub="Aeneas"}
-	sets.weapons.Evisceration = {main="Tauret",sub="Shijo"}
+	sets.weapons.Evisceration = {main="Tauret",sub="Crepuscular Knife"}
 	sets.weapons.Throwing = {main="Aeneas",sub="Shijo",range="Wingcutter",ammo=empty}
 	sets.weapons.SwordThrowing = {main="Naegling",sub="Tauret",range="Wingcutter",ammo=empty}
 	sets.weapons.Gun = {main="Aeneas",sub="Shijo",range="Silver Gun +1",ammo="Bronze Bullet"}
@@ -223,10 +223,10 @@ function init_gear_sets()
 		
     sets.precast.WS['Aeolian Edge'] = {ammo="Seeth. Bomblet +1",
         head={ name="Herculean Helm", augments={'INT+8','"Mag.Atk.Bns."+26','Accuracy+19 Attack+19','Mag. Acc.+17 "Mag.Atk.Bns."+17',}},
-        body="Nyame Mail",
-        hands="Nyame Gauntlets",
-        legs="Nyame Flanchard",
-        feet="Nyame Sollerets",
+        body="Ashera Harness",
+        hands="Herculean Gloves",
+        legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+12','Rng.Atk.+27','Accuracy+12 Attack+12','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
+        feet="Herculean Boots",
         neck="Sanctity Necklace",
         waist="Orpheus's Sash",
         left_ear="Odr Earring",
