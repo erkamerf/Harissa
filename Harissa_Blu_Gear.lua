@@ -60,7 +60,7 @@ function init_gear_sets()
 	-- Start defining the sets
 	--------------------------------------
 
-	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar +3",feet="Hashi. Basmak +2"}
+	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar +4",feet="Hashi. Basmak +2"}
 	sets.buff['Chain Affinity'] = {feet="Assim. Charuqs +3"}
 	sets.buff.Convergence = {head="Luh. Keffiyeh +2"}
 	sets.buff.Diffusion = {feet="Luhlaza Charuqs +3"}
@@ -91,7 +91,7 @@ function init_gear_sets()
 
 	sets.precast.Step = {ammo="Falcon Eye",
 					head="Carmine Mask +1",neck="244 +1",ear1="Regal Earring",ear2="Telos Earring",
-					body="Assim. Jubbah +4",hands="Assim. Bazu. +3",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
+					body="Assim. Jubbah +4",hands="Assim. Bazu. +4",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 					back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Nyame Sollerets"}
 
 	sets.precast.Flourish1 = {ammo="Falcon Eye",
@@ -130,7 +130,7 @@ function init_gear_sets()
 
 	sets.precast.WS.DT = {ammo="Aurgelmir Orb +1",
 				  head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
-          body="Malignance Tabard",hands="Assim. Bazu. +3",ring1="Defending Ring",ring2="Karieyh Ring +1",
+          body="Malignance Tabard",hands="Assim. Bazu. +4",ring1="Defending Ring",ring2="Karieyh Ring +1",
 				  back=gear.da_jse_back,waist="Fotia Belt",legs="Malignance Tights",feet="Nyame Sollerets"}
 
 	sets.precast.WS.Fodder = {ammo="Aurgelmir Orb +1",
@@ -395,7 +395,7 @@ function init_gear_sets()
 	sets.NightIdle = {}
 
 	-- Gear for learning spells: +skill and AF hands.
-	sets.Learning = {hands="Assim. Bazu. +3"}
+	sets.Learning = {hands="Assim. Bazu. +4"}
 
 	-- Resting sets
 	sets.resting = {ammo="Falcon Eye",
@@ -497,12 +497,12 @@ function init_gear_sets()
 
 	sets.engaged.FullAcc = {ammo="Falcon Eye",
 				head="Carmine Mask +1",neck="Mirage Stole +1",ear1="Mache Earring +1",ear2="Odr Earring",
-				body="Malignance Tabard",hands="Assim. Bazu. +3",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
+				body="Malignance Tabard",hands="Assim. Bazu. +4",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 				back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Nyame Sollerets"}
 
 	sets.engaged.FullAcc.AM = {ammo="Falcon Eye",
 			    head="Carmine Mask +1",neck="Mirage Stole +1",ear1="Mache Earring +1",ear2="Odr Earring",
-			    body="Malignance Tabard",hands="Assim. Bazu. +3",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
+			    body="Malignance Tabard",hands="Assim. Bazu. +4",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 			    back=gear.stp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Nyame Sollerets"}
 
 	sets.engaged.Fodder = {ammo="Aurgelmir Orb +1",
@@ -553,7 +553,7 @@ function init_gear_sets()
 	sets.Self_Healing = {neck="Phalaina Locket",hands="Buremte Gloves",legs="Gyve Trousers",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	sets.Cure_Received = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	sets.Self_Refresh = {back="Grapevine Cape",waist="Gishdubar Sash"}
-	sets.MagicBurst = {body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Locus Ring",legs="Assim. Shalwar +3",feet="Hashi. Basmak +2"}
+	sets.MagicBurst = {body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Locus Ring",legs="Assim. Shalwar +4",feet="Hashi. Basmak +2"}
 	sets.Phalanx_Received = {hands=gear.herculean_phalanx_hands,feet=gear.herculean_nuke_feet}
 end
 
