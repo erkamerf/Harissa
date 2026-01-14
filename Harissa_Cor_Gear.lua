@@ -81,11 +81,11 @@ function init_gear_sets()
 
     sets.precast.CorsairRoll = {main="Lanun Knife",
       head="Lanun Tricorne +4",neck="Regal Necklace",ear2="",body="Chasseur's Frac +3",hands="Chasseur's Gants +3",ring1="Defending Ring",
-			ring2="Warden's Ring",back=gear.harissa_mantle,waist="Flume Belt +1",legs="Chas. Culottes +2", feet="Nyame Sollerets"}
+			ring2="Warden's Ring",back=gear.harissa_mantle,waist="Flume Belt +1",legs="Chas. Culottes +3", feet="Nyame Sollerets"}
 
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
-    sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +2"})
+    sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +3"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +3", feet="Chass. Bottes +2"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +2", body="Lanun Frac +4"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +3"})
@@ -104,10 +104,10 @@ function init_gear_sets()
     -- sets.precast.CorsairShot = {range="Death Penalty",ammo=gear.QDbullet,
      --    head="Chass. Tricorne +2",neck="Comm. Charm +1",ear1="Novio earring",ear2="Friomisi earring",
        --  body="Chasseur's Frac +3",hands="Chasseur's Gants +3",ring1="Shiva Ring +1",ring2="Arvina Ringlet +1",
-         --back="Gunslinger's Cape",waist="Orpheus's Sash",legs="Chas. Culottes +2",feet="Chass. Bottes +2"}
+         --back="Gunslinger's Cape",waist="Orpheus's Sash",legs="Chas. Culottes +3",feet="Chass. Bottes +2"}
 		
 	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne +2",body="Chasseur's Frac +3", 
-        legs="Chas. Culottes +2",feet="Chass. Bottes +2"})
+        legs="Chas. Culottes +3",feet="Chass. Bottes +2"})
 	
     sets.precast.CorsairShot.Proc = set_combine(sets.precast.CorsairShot, {head="Laksa. Tricorne +4",waist="Flume Belt +1"})
 
@@ -278,7 +278,7 @@ function init_gear_sets()
         head="Malignance Chapeau",
         body="Malignance Tabard",
         hands="Malignance Gloves",
-        legs="Chas. Culottes +2",
+        legs="Chas. Culottes +3",
         feet={ name="Carmine Greaves +1", augments={'HP+80','MP+80','Phys. dmg. taken -4',}},
         neck="Marked Gorget",
         waist="Reiki Yotai",
@@ -311,7 +311,7 @@ function init_gear_sets()
         head="Chass. Tricorne +2",
         body="Chasseur's Frac +3",
         hands="Malignance Gloves",
-        legs="Chas. Culottes +2",
+        legs="Chas. Culottes +3",
         feet="Lanun Bottes +4",
         neck="Sanctity Necklace",
         waist="Flume Belt +1",
