@@ -324,7 +324,7 @@ function init_gear_sets()
         ammo="Homiliary",
         head="Befouled Crown",
         body="Arbatel Gown +3",
-        hands="Nyame Gauntlets",
+        hands="Volte Gloves",
         legs="Arbatel Pants +3",
         feet="Volte Gaiters",
         neck="Sanctity Necklace",

@@ -395,7 +395,7 @@ function init_gear_sets()
 	sets.idle = {main="Daybreak",sub="Archduke's Shield",ammo="Homiliary",
     			head="Inyanga Tiara +2",
     			body={ name="Witching Robe", augments={'MP+45','Mag. Acc.+14','"Mag.Atk.Bns."+14',}},
-    			hands="Inyan. Dastanas +2",
+    			hands="Volte Gloves",
     			legs="Inyanga Shalwar +2",
     			feet="Inyan. Crackows +2",
     			neck="Twilight Torque",
