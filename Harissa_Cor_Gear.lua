@@ -95,7 +95,7 @@ function init_gear_sets()
     
     sets.precast.CorsairShot = {range="Death Penalty",ammo=gear.QDbullet,
         head=gear.herculean_nuke_head,neck="Comm. Charm +1",ear1="Novio earring",ear2="Friomisi earring",
-        body="Lanun Frac +4",hands="Carmine Fin. Ga. +1",ring1="Shiva Ring +1",ring2="Arvina Ringlet +1",
+        body="Lanun Frac +4",hands="Carmine Fin. Ga. +1",ring1="Crepuscular Ring",ring2="Arvina Ringlet +1",
         back="Gunslinger's Cape",waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Chass. Bottes +2"}
 
     --vv The set below makes it to where you have a chance at triple dmg. normal dmg is about half of the above set. proc chance is not super high even with all pieces.
@@ -147,7 +147,7 @@ function init_gear_sets()
 
     sets.precast.RA = {ammo=gear.RAbullet,
         head="Chass. Tricorne +2",neck="Comm. Charm +1", ear1="Enervating earring", ear2="Telos Earring",
-        body="Laksa. Frac +4",hands="Lanun Gants +4",ring1="Meghanada Ring", ring2="Arvina Ringlet +1",
+        body="Laksa. Frac +4",hands="Lanun Gants +4",ring1="Crepuscular Ring", ring2="Arvina Ringlet +1",
         back=gear.harissa_mantle,waist="Ponente Sash",legs="Laksa. Trews +4",feet="Meg. Jam. +2"}
 		
 	sets.precast.RA.Flurry = set_combine(sets.precast.RA, {})
@@ -284,13 +284,13 @@ function init_gear_sets()
         waist="Reiki Yotai",
         left_ear="Enervating Earring",
         right_ear="Telos Earring",
-        left_ring="Chirich Ring +1",
+        left_ring="Crepuscular Ring1",
         right_ring="Chirich Ring +1",
         back="Null Shawl",}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
         head="Malignance Chapeau",neck="Marked Gorget",ear1="Beyla earring", ear2="Telos earring",
-        body="Malignance Tabard",hands="Malignance Gloves",ring1="Arvina Ringlet +1",ring2="Garuda Ring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Arvina Ringlet +1",ring2="Crepuscular Ring",
         back=gear.harissa_mantle,waist="Ponente Sash",legs="Laksa. Trews +4",feet="Laksa. Bottes +4"}
 		
 	sets.buff['Triple Shot'] = {body="Chasseur's Frac +3",hands="Lanun Gants +4"}
