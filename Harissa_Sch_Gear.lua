@@ -4,7 +4,7 @@ function user_job_setup()
     state.CastingMode:options('Normal','Resistant','Proc','OccultAcumen','9k') --Win + F10
     state.IdleMode:options('Normal','PDT','Hippo','Weak') --F12
 	state.HybridMode:options('Normal','PDT') --Win +F9
-	state.Weapons:options('None','Maxentius','Akademos','Khatvanga','MalignancePole','Daybreak') --F9
+	state.Weapons:options('None','Maxentius','MarinStaff','Khatvanga','MalignancePole','Daybreak') --F9
 
 	gear.nuke_jse_back = {name="Lugh's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     gear.bookworm = {}
@@ -102,7 +102,7 @@ function init_gear_sets()
 	sets.RecoverMP = {body="Seidr Cotehardie"}
 	
 	-- Gear for Magic Burst mode.
-    sets.MagicBurst = {main="Akademos",sub="Enki Strap",neck="Mizu. Kubikazari",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Locus Ring",feet="Jhakri Pigaches +2"}
+    sets.MagicBurst = {main="Marin Staff +1",sub="Enki Strap",neck="Mizu. Kubikazari",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Locus Ring",feet="Jhakri Pigaches +2"}
 	
 	-- Gear for specific elemental nukes.
 	sets.element.Dark = {head="Pixie Hairpin +1",ring2="Archon Ring"}
@@ -193,7 +193,7 @@ function init_gear_sets()
         body="Chironic Doublet",hands="Acad. Bracers +2",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.merlinic_aspir_feet}
 
-    sets.midcast.Kaustra = {main="Akademos",sub="Enki Strap",ammo="Pemphredo Tathlum",
+    sets.midcast.Kaustra = {main="Marin Staff +1",sub="Enki Strap",ammo="Pemphredo Tathlum",
         head="Pixie Hairpin +1",neck="Saevus Pendant +1",ear1="Novio Earring",ear2="Malignance Earring",
         body=gear.merlinic_nuke_body,hands="Amalric Gages +1",ring1="Freke Ring",ring2="Archon Ring",
         back=gear.nuke_jse_back,waist="Eschan Stone",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
@@ -228,7 +228,7 @@ function init_gear_sets()
 
     -- Elemental Magic sets are default for handling low-tier nukes.
     sets.midcast['Elemental Magic'] = {
-        main={ name="Akademos", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
+        main={ name="Marin Staff +1", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
         sub="Khonsu",
         ammo="Staunch Tathlum +1",
         head="Arbatel Bonnet +3",
@@ -456,7 +456,7 @@ function init_gear_sets()
 	
 	-- Weapons sets\
     sets.weapons.Maxentius = {main="Maxentius",sub="Culminus"}
-	sets.weapons.Akademos = {main="Akademos",sub="Enki Strap"}
+	sets.weapons.MarinStaff = {main="Marin Staff +1",sub="Enki Strap"}
 	sets.weapons.Khatvanga = {main="Khatvanga",sub="Bloodrain Strap"}
     sets.weapons.MalignancePole = {main="Malignance Pole",sub="Duplus Grip"}
     sets.weapons.Daybreak = {main="Daybreak",sub="Culminus"}
