@@ -54,9 +54,9 @@ function init_gear_sets()
     -- Fast cast sets for spells
 
     sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
-        head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
-        body="Merlinic Jubbah",hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Lebeche Ring",
-        back="Swith Cape +1",waist="Witful Belt",legs="Gyve Trousers",feet="Peda. Loafers +2"}
+        head=gear.merlinic_fastcast_head,neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
+        body=gear.merlinic_fastcast_body,hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Lebeche Ring",
+        back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Peda. Loafers +2"}
 		
 	sets.precast.FC.Arts = {}
 
