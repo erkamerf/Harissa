@@ -86,7 +86,7 @@ function init_gear_sets()
     sets.precast.LuzafRing = {ring2="Luzaf's Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Chas. Culottes +3"})
-    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +3", feet="Chass. Bottes +2"})
+    sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +3", feet="Chass. Bottes +3"})
     sets.precast.CorsairRoll["Blitzer's Roll"] = set_combine(sets.precast.CorsairRoll, {head="Chass. Tricorne +3", body="Lanun Frac +4"})
     sets.precast.CorsairRoll["Tactician's Roll"] = set_combine(sets.precast.CorsairRoll, {body="Chasseur's Frac +3"})
     sets.precast.CorsairRoll["Allies' Roll"] = set_combine(sets.precast.CorsairRoll, {hands="Chasseur's Gants +3"})
@@ -96,7 +96,7 @@ function init_gear_sets()
     sets.precast.CorsairShot = {range="Death Penalty",ammo=gear.QDbullet,
         head=gear.herculean_nuke_head,neck="Comm. Charm +1",ear1="Novio earring",ear2="Friomisi earring",
         body="Lanun Frac +4",hands="Carmine Fin. Ga. +1",ring1="Crepuscular Ring",ring2="Arvina Ringlet +1",
-        back="Gunslinger's Cape",waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Chass. Bottes +2"}
+        back="Gunslinger's Cape",waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Chass. Bottes +3"}
 
     --vv The set below makes it to where you have a chance at triple dmg. normal dmg is about half of the above set. proc chance is not super high even with all pieces.
     -- Currently puts out about 5k first shot, 6.4k second shot or 12k to 16k on a triple, 16k to potential 20k second shot if it were to proc (point blank, O.Sash)
@@ -104,10 +104,10 @@ function init_gear_sets()
     -- sets.precast.CorsairShot = {range="Death Penalty",ammo=gear.QDbullet,
      --    head="Chass. Tricorne +3",neck="Comm. Charm +1",ear1="Novio earring",ear2="Friomisi earring",
        --  body="Chasseur's Frac +3",hands="Chasseur's Gants +3",ring1="Shiva Ring +1",ring2="Arvina Ringlet +1",
-         --back="Gunslinger's Cape",waist="Orpheus's Sash",legs="Chas. Culottes +3",feet="Chass. Bottes +2"}
+         --back="Gunslinger's Cape",waist="Orpheus's Sash",legs="Chas. Culottes +3",feet="Chass. Bottes +3"}
 		
 	sets.precast.CorsairShot.Damage = set_combine(sets.precast.CorsairShot, {head="Chass. Tricorne +3",body="Chasseur's Frac +3", 
-        legs="Chas. Culottes +3",feet="Chass. Bottes +2"})
+        legs="Chas. Culottes +3",feet="Chass. Bottes +3"})
 	
     sets.precast.CorsairShot.Proc = set_combine(sets.precast.CorsairShot, {head="Laksa. Tricorne +4",waist="Flume Belt +1"})
 
