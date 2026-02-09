@@ -48,7 +48,7 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
 
-    sets.precast.JA['Tabula Rasa'] = {legs="Peda. Pants +2"}
+    sets.precast.JA['Tabula Rasa'] = {legs="Peda. Pants +4"}
 	sets.precast.JA['Enlightenment'] = {body="Peda. Gown +2"}
 
     -- Fast cast sets for spells
@@ -206,7 +206,7 @@ function init_gear_sets()
     sets.midcast.Drain = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
         head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Hirudinea Earring",ear2="Malignance Earring",
         body="Psycloth Vest",hands="Acad. Bracers +2",ring1="Evanescence Ring",ring2="Archon Ring",
-        back=gear.nuke_jse_back,waist="Fucho-no-obi",legs="Peda. Pants +2",feet=gear.merlinic_aspir_feet} 
+        back=gear.nuke_jse_back,waist="Fucho-no-obi",legs="Peda. Pants +4",feet=gear.merlinic_aspir_feet} 
 		
     sets.midcast.Drain.Resistant = {main="Rubicundity",sub="Culminus",ammo="Pemphredo Tathlum",
         head="Amalric Coif +1",neck="Erra Pendant",ear1="Hirudinea Earring",ear2="Malignance Earring",
