@@ -398,7 +398,7 @@ function init_gear_sets()
     			hands="Volte Gloves",
     			legs="Inyanga Shalwar +2",
     			feet="Inyan. Crackows +2",
-    			neck="Twilight Torque",
+    			neck="Loricate Torque +1",
     			waist="Porous Rope",
     			left_ear="Magnetic Earring",
     			right_ear="Glorious Earring",

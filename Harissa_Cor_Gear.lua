@@ -321,7 +321,7 @@ function init_gear_sets()
         right_ring="Karieyh Ring +1",
         back=gear.harissa_mantle}
 		
-    sets.idle.PDT = set_combine(sets.idle, {})
+    sets.idle.PDT = set_combine(sets.idle, {neck="Loricate Torque +1"})
 		
     sets.idle.Refresh = set_combine(sets.idle, {ring1="Stikini Ring +1"})
     
@@ -330,12 +330,12 @@ function init_gear_sets()
     sets.defense.PDT = set_combine(sets.idle, {})
 
 	-- F11 to activate MDT
-    sets.defense.MDT = set_combine(sets.idle, {neck="Twilight Torque",ear1="Etiolation Earring",
+    sets.defense.MDT = set_combine(sets.idle, {neck="Loricate Torque +1",ear1="Etiolation Earring",
 		ear2="Alabaster Earring",ring1="Murky Ring",ring2="Defending Ring"})
 		
     sets.defense.MEVA = {ammo=gear.RAbullet,
         head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",
-		feet="Nyame Sollerets",neck="Twilight Torque",waist="Flume Belt +1",ear1="Cessance Earring",
+		feet="Nyame Sollerets",neck="Loricate Torque +1",waist="Flume Belt +1",ear1="Cessance Earring",
 		ear2="Alabaster Earring",ring1="Murky Ring",ring2="Defending Ring",back=gear.harissa_mantle}
 
     sets.Kiting = {legs="Carmine Cuisses +1"}

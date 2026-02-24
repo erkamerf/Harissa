@@ -412,7 +412,7 @@ function init_gear_sets()
     			hands="Hashi. Bazu. +2",
     			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
     			feet="Coalrake Sabots",
-    			neck="Twilight Torque",
+    			neck="Loricate Torque +1",
     			waist="Flume Belt +1",
     			left_ear="Etiolation Earring",
     			right_ear="Alabaster Earring",
