@@ -103,7 +103,7 @@ function init_gear_sets()
 
 	sets.precast.FC = {ammo="Impatiens",
 		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Luhlaza Jubbah +2",hands="Hashi. Bazu. +2",ring1="Prolix Ring",ring2="Kishar Ring",
+		body="Luhlaza Jubbah +2",hands="Hashi. Bazu. +3",ring1="Prolix Ring",ring2="Kishar Ring",
 		back="Swith Cape +1",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {body="Passion Jacket"})
@@ -196,7 +196,7 @@ function init_gear_sets()
 	-- Midcast Sets
 	sets.midcast.FastRecast = {ammo="Hasty Pinion +1",
 		head="Carmine Mask +1",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Hashishin Mintan +3",hands="Hashi. Bazu. +2",ring1="Kishar Ring",ring2="Prolix Ring",
+		body="Hashishin Mintan +3",hands="Hashi. Bazu. +3",ring1="Kishar Ring",ring2="Prolix Ring",
 		back="Swith Cape +1",waist="Witful Belt",legs="Gyve Trousers",feet="Carmine Greaves +1"}
 
 	sets.midcast['Blue Magic'] = {}
@@ -380,7 +380,7 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].Buff = {ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +2",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Loquac. Earring",
-		body="Assim. Jubbah +4",hands="Hashi. Bazu. +2",ring1="Kishar Ring",ring2="Dark Ring",
+		body="Assim. Jubbah +4",hands="Hashi. Bazu. +3",ring1="Kishar Ring",ring2="Dark Ring",
 		back="Aurist's Cape +1",waist="Witful Belt",legs="Lengo Pants",feet="Carmine Greaves +1"}
 
 	sets.midcast['Blue Magic']['Battery Charge'] = set_combine(sets.midcast['Blue Magic'].Buff, {head="Amalric Coif +1",back="Grapevine Cape",waist="Gishdubar Sash"})
@@ -409,7 +409,7 @@ function init_gear_sets()
     			ammo="Staunch Tathlum +1",
     			head="Nyame Helm",
     			body="Hashishin Mintan +3",
-    			hands="Hashi. Bazu. +2",
+    			hands="Hashi. Bazu. +3",
     			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
     			feet="Coalrake Sabots",
     			neck="Loricate Torque +1",
