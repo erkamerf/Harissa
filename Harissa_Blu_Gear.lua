@@ -70,7 +70,7 @@ function init_gear_sets()
 
 	sets.HPDown = {head="Pixie Hairpin +1",neck="Loricate Torque +1",ear1="Mendi. Earring",ear2="Evans Earring",
 		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
-		back="Swith Cape +1",waist="Flume Belt +1",legs="Shedir Seraweels",feet="Jhakri Pigaches +2"}
+		back="Fi Follet Cape +1",waist="Flume Belt +1",legs="Shedir Seraweels",feet="Jhakri Pigaches +2"}
 
 	-- Precast Sets
 
@@ -104,7 +104,7 @@ function init_gear_sets()
 	sets.precast.FC = {ammo="Impatiens",
 		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body="Luhlaza Jubbah +2",hands="Hashi. Bazu. +3",ring1="Prolix Ring",ring2="Kishar Ring",
-		back="Swith Cape +1",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
+		back="Fi Follet Cape +1",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {body="Passion Jacket"})
 
@@ -197,7 +197,7 @@ function init_gear_sets()
 	sets.midcast.FastRecast = {ammo="Hasty Pinion +1",
 		head="Carmine Mask +1",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body="Hashishin Mintan +3",hands="Hashi. Bazu. +3",ring1="Kishar Ring",ring2="Prolix Ring",
-		back="Swith Cape +1",waist="Witful Belt",legs="Gyve Trousers",feet="Carmine Greaves +1"}
+		back="Fi Follet Cape +1",waist="Witful Belt",legs="Gyve Trousers",feet="Carmine Greaves +1"}
 
 	sets.midcast['Blue Magic'] = {}
 
@@ -280,7 +280,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].Magical.Proc = set_combine(sets.precast.FC, {})
 					 
 	sets.midcast['Blue Magic'].Magical.Resistant = set_combine(sets.midcast['Blue Magic'].Magical,
-		{neck="Mirage Stole +1",ring2="Stikini Ring +1",waist="Yamabuki-no-Obi"})
+		{neck="Mirage Stole +1",ring2="Stikini Ring +1",waist="Yamabuki-no-Obi",back="Aurist's Cape +1"})
 
 	sets.midcast['Blue Magic'].Magical.Fodder = set_combine(sets.midcast['Blue Magic'].Magical, {})
 
@@ -298,7 +298,7 @@ function init_gear_sets()
 	sets.midcast['Enhancing Magic'] = {ammo="Hasty Pinion +1",
 	head="Telchine Cap",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
 	body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-	back="Perimede Cape",waist="Olympus Sash",legs="Telchine Braconi",feet="Telchine Pigaches"}
+	back="Fi Follet Cape +1",waist="Olympus Sash",legs="Telchine Braconi",feet="Telchine Pigaches"}
 		
 	sets.midcast['Phalanx'] = set_combine(sets.midcast['Enhancing Magic'],{head="Carmine Mask +1",legs="Carmine Cuisses +1",})
 
@@ -401,7 +401,7 @@ function init_gear_sets()
 	sets.resting = {ammo="Falcon Eye",
 			      head="Rawhide Mask",neck="Loricate Torque +1",ear1="Etiolation Earring", ear2="Ethereal Earring",
 			      body="Jhakri Robe +2",hands=gear.herculean_refresh_hands,ring1="Defending Ring",ring2="Sheltered Ring",
-			      back="Bleating Mantle",waist="Flume Belt +1",legs="Lengo Pants",feet=gear.herculean_refresh_feet}
+			      back="Umbra Cape",waist="Flume Belt +1",legs="Lengo Pants",feet=gear.herculean_refresh_feet}
 
 	-- Idle sets
 	sets.idle = {main="Bolelabunga",
@@ -422,7 +422,7 @@ function init_gear_sets()
 
 	sets.idle.Sphere = set_combine(sets.idle, {feet="Nyame Sollerets",right_ring="Chirich Ring +1",}) -- body="Mekosu. Harness",
 
-	sets.idle.PDT = set_combine{sets.idle, {feet="Nyame Sollerets",right_ring="Murky Ring",}}
+	sets.idle.PDT = set_combine{sets.idle, {feet="Nyame Sollerets",right_ring="Murky Ring",back="Umbra Cape"}}
 
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})
 
@@ -430,17 +430,17 @@ function init_gear_sets()
 	sets.defense.PDT = {ammo="Staunch Tathlum +1",
 				head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Alabaster Earring",
 		        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Murky Ring",
-				back="Archon Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+				back="Umbra Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.defense.MDT = {ammo="Staunch Tathlum +1",
 				head="Nyame Helm",neck="Mirage Stole +1",ear1="Cessance Earring",ear2="Alabaster Earring",
 		        body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Murky Ring",
-				back="Archon Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Nyame Sollerets"}
+				back="Umbra Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Nyame Sollerets"}
 
     sets.defense.MEVA = {ammo="Staunch Tathlum +1",
         head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Alabaster Earring",
 		body="Malignance Tabard",hands="Leyline Gloves",ring1="Defending Ring",ring2="Murky Ring",
-        back=gear.nuke_jse_back,waist="Flume Belt +1",legs="Telchine Braconi",feet="Nyame Sollerets"}
+        back="Null Shawl",waist="Flume Belt +1",legs="Telchine Braconi",feet="Nyame Sollerets"}
 
 	sets.defense.NukeLock = sets.midcast['Blue Magic'].Magical
 
@@ -488,7 +488,7 @@ function init_gear_sets()
 	sets.engaged.Acc = {ammo="Falcon Eye",
 				head="Dampening Tam",neck="Mirage Stole +1",ear1="Cessance Earring",ear2="Odr Earring",
 				body="Malignance Tabard",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
-				back=gear.da_jse_back,waist="Windbuffet Belt ",legs="Carmine Cuisses +1",feet="Nyame Sollerets"}
+				back="Null Shawl",waist="Windbuffet Belt ",legs="Carmine Cuisses +1",feet="Nyame Sollerets"}
 
 	sets.engaged.Acc.AM = {ammo="Falcon Eye",
 			    head="Dampening Tam",neck="Mirage Stole +1",ear1="Digni. Earring",ear2="Telos Earring",
@@ -498,7 +498,7 @@ function init_gear_sets()
 	sets.engaged.FullAcc = {ammo="Falcon Eye",
 				head="Carmine Mask +1",neck="Mirage Stole +1",ear1="Mache Earring +1",ear2="Odr Earring",
 				body="Malignance Tabard",hands="Assim. Bazu. +4",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-				back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Nyame Sollerets"}
+				back="Null Shawl",waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Nyame Sollerets"}
 
 	sets.engaged.FullAcc.AM = {ammo="Falcon Eye",
 			    head="Carmine Mask +1",neck="Mirage Stole +1",ear1="Mache Earring +1",ear2="Odr Earring",
@@ -508,7 +508,7 @@ function init_gear_sets()
 	sets.engaged.Fodder = {ammo="Aurgelmir Orb +1",
 			    head="Dampening Tam",neck="Mirage Stole +1",ear1="Cessance Earring",ear2="Brutal Earring",
 			    body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Epona's Ring",ring2="Petrov Ring",
-			    back=gear.da_jse_back,waist="Windbuffet Belt ",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
+			    back="Null Shawl",waist="Windbuffet Belt ",legs="Samnuha Tights",feet=gear.herculean_ta_feet}
 
 	sets.engaged.Fodder.AM = {ammo="Aurgelmir Orb +1",
 			    head="Dampening Tam",neck="Mirage Stole +1",ear1="Dedition Earring",ear2="Telos Earring",
@@ -528,7 +528,7 @@ function init_gear_sets()
 	sets.engaged.Acc.DT = {ammo="Falcon Eye",
 			    head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Odr Earring",
 			    body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ilabrat Ring",
-			    back=gear.da_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Nyame Sollerets"}
+			    back="Null Shawl",waist="Reiki Yotai",legs="Malignance Tights",feet="Nyame Sollerets"}
 				
 	sets.engaged.Acc.DT.AM = {ammo="Falcon Eye",
 			    head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Digni. Earring",ear2="Telos Earring",
@@ -538,12 +538,12 @@ function init_gear_sets()
 	sets.engaged.FullAcc.DT = {ammo="Falcon Eye",
 			    head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Mache Earring +1",ear2="Odr Earring",
 			    body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ramuh Ring +1",
-			    back=gear.da_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Nyame Sollerets"}
+			    back="Null Shawl",waist="Reiki Yotai",legs="Malignance Tights",feet="Nyame Sollerets"}
 
 	sets.engaged.Fodder.DT = {ammo="Aurgelmir Orb +1",
 			    head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
 			    body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Petrov Ring",
-			    back=gear.da_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Nyame Sollerets"}
+			    back="Null Shawl",waist="Reiki Yotai",legs="Malignance Tights",feet="Nyame Sollerets"}
 
 	sets.engaged.Fodder.DT.AM = {ammo="Aurgelmir Orb +1",
 			    head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Mache Earring +1",ear2="Odr Earring",
