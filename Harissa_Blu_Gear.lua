@@ -410,7 +410,7 @@ function init_gear_sets()
     			head="Nyame Helm",
     			body="Hashishin Mintan +3",
     			hands="Hashi. Bazu. +3",
-    			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    			legs="Hashishin Tayt +3",
     			feet="Coalrake Sabots",
     			neck="Loricate Torque +1",
     			waist="Flume Belt +1",
