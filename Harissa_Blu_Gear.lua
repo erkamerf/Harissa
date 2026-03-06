@@ -65,7 +65,7 @@ function init_gear_sets()
 	sets.buff.Convergence = {head="Luh. Keffiyeh +2"}
 	sets.buff.Diffusion = {feet="Luhlaza Charuqs +3"}
 	sets.buff.Enchainment = {}
-	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt +2"}
+	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt +3"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 
 	sets.HPDown = {head="Pixie Hairpin +1",neck="Loricate Torque +1",ear1="Mendi. Earring",ear2="Evans Earring",
@@ -207,7 +207,7 @@ function init_gear_sets()
     	head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
     	body={ name="Luhlaza Jubbah +2", augments={'Enhances "Enchainment" effect',}},
     	hands={ name="Luh. Bazubands +2", augments={'Enhances "Azure Lore" effect',}},
-    	legs="Hashishin Tayt +2",
+    	legs="Hashishin Tayt +3",
     	feet="Assim. Charuqs +3",
     	neck={ name="Mirage Stole +1", augments={'Path: A',}},
     	waist="Prosilio Belt +1",
@@ -340,7 +340,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].Breath = {ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +2",neck="Mirage Stole +1",ear1="Regal Earring",ear2="Digni. Earring",
 		body="Assim. Jubbah +4",hands="Luh. Bazubands +2",ring1="Shiva Ring +1",ring2="Lebeche Ring",
-		back="Cornflower Cape",legs="Hashishin Tayt +2",feet="Luhlaza Charuqs +3"}
+		back="Cornflower Cape",legs="Hashishin Tayt +3",feet="Luhlaza Charuqs +3"}
 
 	-- Physical Added Effect Spells most notably "Stun" spells --
 
@@ -376,7 +376,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +2",neck="Mirage Stole +1",ear1="Gifted Earring",ear2="Loquac. Earring",
 		body="Assim. Jubbah +4",hands="Rawhide Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +2",feet="Luhlaza Charuqs +3"}
+		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +3",feet="Luhlaza Charuqs +3"}
 
 	sets.midcast['Blue Magic'].Buff = {ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +2",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Loquac. Earring",
