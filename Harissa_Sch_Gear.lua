@@ -4,7 +4,7 @@ function user_job_setup()
     state.CastingMode:options('Normal','Resistant','Proc','OccultAcumen','9k') --Win + F10
     state.IdleMode:options('Normal','PDT','Hippo','Weak') --F12
 	state.HybridMode:options('Normal','PDT') --Win +F9
-	state.Weapons:options('None','Maxentius','MarinStaff','Khatvanga','MalignancePole','Daybreak') --F9
+	state.Weapons:options('None','Maxentius','MarinStaff','Khatvanga','MalignancePole','Daybreak','Gun') --F9
 
 	gear.nuke_jse_back = {name="Lugh's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}}
     gear.bookworm = {}
@@ -451,6 +451,7 @@ function init_gear_sets()
 	sets.weapons.Khatvanga = {main="Khatvanga",sub="Bloodrain Strap"}
     sets.weapons.MalignancePole = {main="Malignance Pole",sub="Duplus Grip"}
     sets.weapons.Daybreak = {main="Daybreak",sub="Culminus"}
+    sets.weapons.Gun = {ranged="Silver Gun +1",ammo="Bronze Bullet"}
 end
 
 -- Select default macro book on initial load or subjob change.
