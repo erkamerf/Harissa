@@ -452,6 +452,7 @@ function init_gear_sets()
     sets.weapons.MalignancePole = {main="Malignance Pole",sub="Duplus Grip"}
     sets.weapons.Daybreak = {main="Daybreak",sub="Culminus"}
     sets.weapons.Gun = {ranged="Silver Gun +1",ammo="Bronze Bullet"}
+
 end
 
 -- Select default macro book on initial load or subjob change.

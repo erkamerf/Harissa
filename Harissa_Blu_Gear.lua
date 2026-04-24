@@ -115,18 +115,18 @@ function init_gear_sets()
 	-- Default set for any weaponskill that isn't any more specifically defined
 	sets.precast.WS = {ammo="Aurgelmir Orb +1",
 				  head="Hashishin Kavuk +3",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Brutal Earring",
-          body="Assim. Jubbah +4",hands="Herculean Gloves",ring1="Sroda's Ring",ring2="Karieyh Ring +1",
-				  back=gear.wsd_jse_back,waist="Fotia Belt",legs="Luh. Shalwar +4",feet="Herculean Boots"}
+        		  body="Assim. Jubbah +4",hands="Herculean Gloves",ring1="Sroda's Ring",ring2="Karieyh Ring +1",
+				  back=gear.wsd_jse_back,waist="Fotia Belt",legs="Luh. Shalwar +4",feet="SV Gaiters +1"}
 
 	sets.precast.WS.Acc = {ammo="Falcon Eye",
 				  head="Herculean Helm",neck="Fotia Gorget",ear1="Mache Earring +1",ear2="Odr Earring",
 				  body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Karieyh Ring +1",ring2="Chirich Ring +1",
-          back=gear.wsd_jse_back,waist="Fotia Belt",legs="Carmine Cuisses +1",feet="Herculean Boots"}
+          back=gear.wsd_jse_back,waist="Fotia Belt",legs="Carmine Cuisses +1",feet="SV Gaiters +1"}
 
 	sets.precast.WS.FullAcc = {ammo="Falcon Eye",
 				  head="Malignance Chapeau",neck="Ej Necklace",ear1="Mache Earring +1",ear2="Odr Earring",
 				  body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
-          back=gear.wsd_jse_back,waist="Artful Belt +1",legs="Malignance Tights",feet="Herculean Boots"}
+          back=gear.wsd_jse_back,waist="Artful Belt +1",legs="Malignance Tights",feet="SV Gaiters +1"}
 
 	sets.precast.WS.DT = {ammo="Aurgelmir Orb +1",
 				  head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Brutal Earring",
@@ -157,8 +157,8 @@ function init_gear_sets()
 	sets.precast.WS['Chant du Cygne'].DT = set_combine(sets.precast.WS.DT, {back=gear.crit_jse_back})
 	sets.precast.WS['Chant du Cygne'].Fodder = set_combine(sets.precast.WS['Chant du Cygne'], {})
 
-	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {neck="Mirage Stole +1",ear2="Ishvara Earring",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Sroda Ring",waist="Sailfi Belt +1",feet=gear.herculean_wsd_feet})
-	sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {ear1="Moonshade Earring",hands="Jhakri Cuffs +2",back=gear.wsd_jse_back,waist="Grunfeld Rope",feet=gear.herculean_wsd_feet})
+	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {neck="Mirage Stole +1",hands="Jhakri Cuffs +2",ring1="Ifrit Ring +1",ring2="Sroda Ring",waist="Sailfi Belt +1"})
+	sets.precast.WS['Savage Blade'].Acc = set_combine(sets.precast.WS.Acc, {ear1="Moonshade Earring",hands="Jhakri Cuffs +2",waist="Grunfeld Rope"})
 	sets.precast.WS['Savage Blade'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Savage Blade'].DT = set_combine(sets.precast.WS.DT, {back=gear.wsd_jse_back})
 	sets.precast.WS['Savage Blade'].Fodder = set_combine(sets.precast.WS['Savage Blade'], {})
