@@ -130,7 +130,7 @@ function init_gear_sets()
 	sets.midcast.Cursna = {main=gear.grioavolr_fc_staff,sub="Clemency Grip",ammo="Hasty Pinion +1",
 		head="Amalric Coif +1",neck="Debilis Medallion",ear1="Meili Earring",ear2="Malignance Earring",
 		body="Peda. Gown +4",hands="Hieros Mittens",ring1="Haoma's Ring",ring2="Menelaus's Ring",
-		back="Oretan. Cape +1",waist="Witful Belt",legs="Acad. Pants +3",feet="Vanya Clogs"}
+		back="Oretan. Cape +1",waist="Witful Belt",legs="Acad. Pants +4",feet="Vanya Clogs"}
 		
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main=gear.grioavolr_fc_staff,sub="Clemency Grip"})
 
@@ -439,7 +439,7 @@ function init_gear_sets()
         back="Moonlight Cape",waist="Luminary Sash",legs="Carmine Cuisses +1",feet="Kaykaus Boots"}
 	
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
-	sets.buff['Light Arts'] = {legs="Acad. Pants +3"}
+	sets.buff['Light Arts'] = {legs="Acad. Pants +4"}
 	sets.buff['Dark Arts'] = {legs="Acad. Gown +4"} 
 
     sets.buff.Sublimation = {head="Acad. Mortar. +3",body="Peda. Gown +4",waist="Embla Sash"}
