@@ -162,12 +162,12 @@ function init_gear_sets()
     -- Custom spell classes
 
 	sets.midcast['Enfeebling Magic'] = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
-        head="Acad. Mortar. +3",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
+        head="Acad. Mortar. +4",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
         body="Acad. Gown +4",hands="Regal Cuffs",ring1="Kishar Ring",ring2="Stikini Ring +1",
         back=gear.nuke_jse_back,waist="Luminary Sash",legs="Chironic Hose",feet="Uk'uxkaj Boots"}
 	
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
-        head="Acad. Mortar. +3",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
+        head="Acad. Mortar. +4",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
         body="Acad. Gown +4",hands="Acad. Bracers +3",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
         back="Aurist's Cape +1",waist="Luminary Sash",legs="Chironic Hose",feet="Acad. Loafers +4"}
 		
@@ -222,7 +222,7 @@ function init_gear_sets()
         back=gear.nuke_jse_back,waist="Witful Belt",legs="Psycloth Lappas",feet="Acad. Loafers +4"}
 
     sets.midcast.Stun.Resistant = {main="Daybreak",sub="Culminus",ammo="Pemphredo Tathlum",
-        head="Acad. Mortar. +3",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
+        head="Acad. Mortar. +4",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
         body="Zendik Robe",hands="Acad. Bracers +3",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
         back="Aurist's Cape +1",waist="Acuity Belt +1",legs="Chironic Hose",feet="Acad. Loafers +4"}
 
@@ -442,7 +442,7 @@ function init_gear_sets()
 	sets.buff['Light Arts'] = {legs="Acad. Pants +4"}
 	sets.buff['Dark Arts'] = {legs="Acad. Gown +4"} 
 
-    sets.buff.Sublimation = {head="Acad. Mortar. +3",body="Peda. Gown +4",waist="Embla Sash"}
+    sets.buff.Sublimation = {head="Acad. Mortar. +4",body="Peda. Gown +4",waist="Embla Sash"}
     sets.buff.DTSublimation = {waist="Embla Sash"}
 	
 	-- Weapons sets\
