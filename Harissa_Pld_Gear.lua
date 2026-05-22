@@ -301,7 +301,7 @@ function init_gear_sets()
 		back=gear.fastcast_jse_back,waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.idle.Tank = {main="Sakpata's Sword",sub="Ochain",ammo="Staunch Tathlum +1",
-		head="Chev. Armet +2",neck="Warder's Charm +1",ear1="Creed Earring",ear2="Thureous Earring",
+		head="Chev. Armet +3",neck="Warder's Charm +1",ear1="Creed Earring",ear2="Thureous Earring",
 		body="Sakpata's Breastplate",hands="Souv. Handsch. +1",ring1="Gelatinous Ring +1",ring2="Shadow Ring",
 		back="Shadow Mantle",waist="Flume Belt +1",legs="Chev. Cuisses +3",feet="Souveran Schuhs +1"}
 		
@@ -324,8 +324,8 @@ function init_gear_sets()
 	
 	-- Extra defense sets.  Apply these on top of melee or defense sets.
 	sets.Knockback = {legs="Dashing Subligar"}
-	sets.MP = {head="Chev. Armet +2",neck="Coatl Gorget +1",hands="Volte Bracers",ear2="Ethereal Earring",waist="Flume Belt +1",feet="Rev. Leggings +2"}
-	sets.passive.AbsorbMP = {head="Chev. Armet +2",neck="Coatl Gorget +1",ear2="Ethereal Earring",waist="Flume Belt +1",feet="Rev. Leggings +2"}
+	sets.MP = {head="Chev. Armet +3",neck="Coatl Gorget +1",hands="Volte Bracers",ear2="Ethereal Earring",waist="Flume Belt +1",feet="Rev. Leggings +2"}
+	sets.passive.AbsorbMP = {head="Chev. Armet +3",neck="Coatl Gorget +1",ear2="Ethereal Earring",waist="Flume Belt +1",feet="Rev. Leggings +2"}
 	sets.MP_Knockback = {}
 	sets.Twilight = {head="Twilight Helm", body="Twilight Mail"}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
@@ -338,7 +338,7 @@ function init_gear_sets()
 	sets.weapons.DualWeapons = {main="Naegling",sub="Demersal Degen +1"}
 	
 	sets.defense.Block = {main="Sakpata's Sword",sub="Ochain",ammo="Eluder's Sachet",
-		head="Chev. Armet +2",neck="Diemer Gorget",ear1="Creed Earring",ear2="Thureous Earring",
+		head="Chev. Armet +3",neck="Diemer Gorget",ear1="Creed Earring",ear2="Thureous Earring",
 		body="Sakpata's Breastplate",hands="Souv. Handsch. +1",ring1="Defending Ring",ring2="Warden's Ring",
 		back="Shadow Mantle",waist="Flume Belt +1",legs="Sakpata's Cuisses",feet="Souveran Schuhs +1"}
 		
@@ -394,7 +394,7 @@ function init_gear_sets()
 	sets.engaged.DW.Acc = {}
 
 	sets.engaged.Tank = {main="Sakpata's Sword",sub="Ochain",ammo="Staunch Tathlum +1",
-		head="Chev. Armet +2",neck="Loricate Torque +1",ear1="Creed Earring",ear2="Thureous Earring",
+		head="Chev. Armet +3",neck="Loricate Torque +1",ear1="Creed Earring",ear2="Thureous Earring",
 		body="Tartarus Platemail",hands="Souv. Handsch. +1",ring1="Defending Ring",ring2="Shadow Ring",
 		back="Shadow Mantle",waist="Flume Belt +1",legs="Chev. Cuisses +3",feet="Souveran Schuhs +1"}
 		
