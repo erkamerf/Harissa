@@ -8,7 +8,7 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options('PDT') --~f10
 	state.MagicalDefenseMode:options('MDT') --^f11
 	state.ResistDefenseMode:options('MEVA') 
-	state.Weapons:options('None','Tizalmace','Sequence','RangedWeap','Clubs','Dynamis','TrashWeapons') --f9
+	state.Weapons:options('None','Tizalmace','Sequence','LuhlaSakpata','GunNaegling','Clubs','Dynamis','TrashWeapons') --f9
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'} --!f11
 
@@ -27,14 +27,14 @@ function user_job_setup()
 	--send_command('bind ^` input /ja "Chain Affinity" <me>')
 	--send_command('bind @` input /ja "Efflux" <me>')
 	--send_command('bind !` input /ja "Burst Affinity" <me>')
-	send_command('bind ^@!` gs c cycle SkillchainMode')
+	--send_command('bind ^@!` gs c cycle SkillchainMode')
 	--send_command('bind ^backspace input /ja "Unbridled Learning" <me>;wait 1;input /ja "Diffusion" <me>;wait 2;input /ma "Mighty Guard" <me>')
 	--send_command('bind !backspace input /ja "Unbridled Learning" <me>;wait 1;input /ja "Diffusion" <me>;wait 2;input /ma "Carcharian Verve" <me>')
 	--send_command('bind @backspace input /ja "Convergence" <me>')
 	send_command('bind ^f10 gs c toggle LearningMode')
-	send_command('bind ^@!` gs c cycle MagicBurstMode')
-	send_command('bind @f8 gs c toggle AutoNukeMode')
-	send_command('bind !@^f7 gs c toggle AutoWSMode')
+	--send_command('bind ^@!` gs c cycle MagicBurstMode')
+	--send_command('bind @f8 gs c toggle AutoNukeMode')
+	--send_command('bind !@^f7 gs c toggle AutoWSMode')
 	--send_command('bind !r gs c weapons None;gs c update')
 	--send_command('bind @q gs c weapons MaccWeapons;gs c update')
 	--send_command('bind ^q gs c weapons Almace;gs c update')
@@ -61,9 +61,9 @@ function init_gear_sets()
 	--------------------------------------
 
 	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar +4",feet="Hashi. Basmak +3"}
-	sets.buff['Chain Affinity'] = {feet="Assim. Charuqs +3"}
+	sets.buff['Chain Affinity'] = {feet="Assim. Charuqs +4"}
 	sets.buff.Convergence = {head="Luh. Keffiyeh +2"}
-	sets.buff.Diffusion = {feet="Luhlaza Charuqs +3"}
+	sets.buff.Diffusion = {feet="Luhlaza Ch. +4"}
 	sets.buff.Enchainment = {}
 	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt +3"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
@@ -101,10 +101,10 @@ function init_gear_sets()
 
 	-- Fast cast sets for spells
 
-	sets.precast.FC = {ammo="Impatiens",
+	sets.precast.FC = {main="Sakpata's Sword",sub="Chanter's Shield",ammo="Impatiens",
 		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
 		body="Luhlaza Jubbah +2",hands="Hashi. Bazu. +3",ring1="Prolix Ring",ring2="Kishar Ring",
-		back="Fi Follet Cape +1",waist="Witful Belt",legs="Aya. Cosciales +2",feet="Carmine Greaves +1"}
+		back="Fi Follet Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Carmine Greaves +1"}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {body="Passion Jacket"})
 
@@ -139,7 +139,7 @@ function init_gear_sets()
 				  back=gear.wsd_jse_back,waist="Fotia Belt",legs=gear.herculean_nuke_legs,feet="Herculean Boots"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-	sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {head="Jhakri Coronal +2",body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring2="Petrov Ring",feet="Luhlaza Charuqs +3"})
+	sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {head="Jhakri Coronal +2",body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring2="Petrov Ring",feet="Luhlaza Ch. +4"})
 	sets.precast.WS['Requiescat'].Acc = set_combine(sets.precast.WS.Acc, {head="Jhakri Coronal +2",ear1="Regal Earring",ear2="Telos Earring",ring1="Rufescent Ring",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"})
 	sets.precast.WS['Requiescat'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Requiescat'].DT = set_combine(sets.precast.WS.DT, {})
@@ -151,7 +151,7 @@ function init_gear_sets()
 	sets.precast.WS['Realmrazer'].DT = set_combine(sets.precast.WS.DT, {})
 	sets.precast.WS['Realmrazer'].Fodder = set_combine(sets.precast.WS['Realmrazer'], {})
 
-	sets.precast.WS['Chant du Cygne'] = set_combine(sets.precast.WS, {ammo="Falcon Eye",head="Adhemar Bonnet +1",neck="Mirage Stole +1",ear2="Odr Earring",body="Abnoba Kaftan",hands="Adhemar Wrist. +1",ring2="Begrudging Ring",back=gear.crit_jse_back,feet="Thereoid Greaves"})
+	sets.precast.WS['Chant du Cygne'] = set_combine(sets.precast.WS, {ammo="Falcon Eye",head="Blistering Sallet +1",neck="Mirage Stole +1",ear2="Odr Earring",body="Abnoba Kaftan",hands="Adhemar Wrist. +1",ring2="Begrudging Ring",back=gear.crit_jse_back,legs="Zoar Subligar +1",feet="Thereoid Greaves"})
 	sets.precast.WS['Chant du Cygne'].Acc = set_combine(sets.precast.WS.Acc, {ear1="Moonshade Earring",ear2="Odr Earring",ring2="Begrudging Ring",body="Sayadio's Kaftan",back=gear.crit_jse_back,legs="Carmine Cuisses +1"})
 	sets.precast.WS['Chant du Cygne'].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
 	sets.precast.WS['Chant du Cygne'].DT = set_combine(sets.precast.WS.DT, {back=gear.crit_jse_back})
@@ -208,7 +208,7 @@ function init_gear_sets()
     	body={ name="Luhlaza Jubbah +2", augments={'Enhances "Enchainment" effect',}},
     	hands={ name="Luh. Bazubands +2", augments={'Enhances "Azure Lore" effect',}},
     	legs="Hashishin Tayt +3",
-    	feet="Assim. Charuqs +3",
+    	feet="Assim. Charuqs +4",
     	neck={ name="Mirage Stole +1", augments={'Path: A',}},
     	waist="Prosilio Belt +1",
     	left_ear="Telos Earring",
@@ -260,8 +260,7 @@ function init_gear_sets()
 
 	-- Magical Spells --
 
-	sets.midcast['Blue Magic'].Magical = {		main="Maxentius",
-	sub="Bolelabunga",
+	sets.midcast['Blue Magic'].Magical = {main="Bunzi's Rod",sub="Sakpata's Sword",
 		ammo="Mavi Tathlum",
 		head="Amalric Coif +1",
 		body="Hashishin Mintan +3",
@@ -278,9 +277,6 @@ function init_gear_sets()
 	}
 					 
 	sets.midcast['Blue Magic'].Magical.Proc = set_combine(sets.precast.FC, {})
-					 
-	sets.midcast['Blue Magic'].Magical.Resistant = set_combine(sets.midcast['Blue Magic'].Magical,
-		{neck="Mirage Stole +1",ring2="Stikini Ring +1",waist="Yamabuki-no-Obi",back="Aurist's Cape +1"})
 
 	sets.midcast['Blue Magic'].Magical.Fodder = set_combine(sets.midcast['Blue Magic'].Magical, {})
 
@@ -289,7 +285,9 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].MagicalVit = set_combine(sets.midcast['Blue Magic'].Magical, {})
 	sets.midcast['Blue Magic'].MagicalDex = set_combine(sets.midcast['Blue Magic'].Magical, {})
 
-	sets.midcast['Blue Magic'].MagicAccuracy = set_combine(sets.midcast['Blue Magic'].Magical, {})
+	sets.midcast['Blue Magic'].MagicAccuracy = set_combine(sets.midcast['Blue Magic'].Magical, {head="Hashishin Kavuk +3",hands="Hashi. Bazu. +3",legs="Hashishin Tayt +3",neck={ name="Mirage Stole +1", augments={'Path: A',}},right_ear={ name="Hashi. Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','"Dbl.Atk."+5',}},right_ring="Stikini Ring +1",back="Aurist's Cape +1",})
+
+	sets.midcast['Blue Magic'].Magical.Resistant = set_combine(sets.midcast['Blue Magic'].MagicAccuracy,{waist="Yamabuki-no-Obi",})
 
 	sets.midcast['Enfeebling Magic'] = set_combine(sets.midcast['Blue Magic'].Magical, {hands="Regal Cuffs",ring1="Kishar Ring"})
 
@@ -327,7 +325,7 @@ function init_gear_sets()
 	sets.element.Dark = {head="Pixie Hairpin +1",ring2="Archon Ring",waist="Orpheus's Sash"}
 	sets.element.Light = {} --ring2="Weatherspoon Ring"
 
-	sets.midcast.Cure = {ammo="Pemphredo Tathlum",
+	sets.midcast.Cure = {main="Bunzi's Rod",ammo="Pemphredo Tathlum",
 		head="Carmine Mask +1",neck="Incanter's Torque",ear1="Etiolation Earring",ear2="Mendi. Earring",
 		body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Lebeche Ring",ring2="Stikini Ring +1",
 		back=gear.ElementalCape,waist=gear.ElementalObi,legs="Carmine Cuisses +1",feet="Medium's Sabots"}
@@ -340,7 +338,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].Breath = {ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +2",neck="Mirage Stole +1",ear1="Regal Earring",ear2="Digni. Earring",
 		body="Assim. Jubbah +4",hands="Luh. Bazubands +2",ring1="Shiva Ring +1",ring2="Lebeche Ring",
-		back="Cornflower Cape",legs="Hashishin Tayt +3",feet="Luhlaza Charuqs +3"}
+		back="Cornflower Cape",legs="Hashishin Tayt +3",feet="Luhlaza Ch. +4"}
 
 	-- Physical Added Effect Spells most notably "Stun" spells --
 
@@ -358,14 +356,14 @@ function init_gear_sets()
 
 	-- Other Specific Spells --
 
-	sets.midcast['Blue Magic']['White Wind'] = {ammo="Mavi Tathlum",
+	sets.midcast['Blue Magic']['White Wind'] = {main="Bunzi's Rod",sub="Sakpata's Sword",ammo="Mavi Tathlum",
 		head="Carmine Mask +1",neck="Phalaina Locket",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
 		body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Janniston Ring",ring2="Lebeche Ring",
 		back="Moonlight Cape",waist=gear.ElementalObi,legs="Gyve Trousers",feet="Medium's Sabots"}
 					
 	sets.midcast['Blue Magic']['Healing Breeze'] = sets.midcast['Blue Magic']['White Wind']
 
-	sets.midcast['Blue Magic'].Healing = {ammo="Mavi Tathlum",
+	sets.midcast['Blue Magic'].Healing = {main="Bunzi's Rod",sub="Sakpata's Sword",ammo="Mavi Tathlum",
 		head="Carmine Mask +1",neck="Incanter's Torque",ear1="Etiolation Earring",ear2="Mendi. Earring",
 		body="Vrikodara Jupon",hands="Telchine Gloves",ring1="Janniston Ring",ring2="Menelaus's Ring",
 		back=gear.ElementalCape,waist=gear.ElementalObi,legs="Carmine Cuisses +1",feet="Medium's Sabots"}
@@ -376,7 +374,7 @@ function init_gear_sets()
 	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +2",neck="Mirage Stole +1",ear1="Gifted Earring",ear2="Loquac. Earring",
 		body="Assim. Jubbah +4",hands="Rawhide Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +3",feet="Luhlaza Charuqs +3"}
+		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +3",feet="Luhlaza Ch. +4"}
 
 	sets.midcast['Blue Magic'].Buff = {ammo="Mavi Tathlum",
 		head="Luh. Keffiyeh +2",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Loquac. Earring",
@@ -458,8 +456,9 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Tizalmace = {main="Tizona",sub="Luhlaza Sword"} -- previously Almace offhand
 	sets.weapons.Sequence = {main="Sequence",sub="Tizona"} --previously Almace offhand
-	sets.weapons.RangedWeap = {main="Naegling",sub="Luhlaza Sword",range="Silver Gun +1",ammo="Bronze Bullet"}
-	sets.weapons.Clubs = {main="Maxentius",sub="Bolelabunga",}
+	sets.weapons.LuhlaSakpata = {main="Luhlaza Sword",sub="Sakpata's Sword"}
+	sets.weapons.GunNaegling = {main="Naegling",sub="Luhlaza Sword",range="Silver Gun +1",ammo="Bronze Bullet"}
+	sets.weapons.Clubs = {main="Maxentius",sub="Bunzi's Rod",}
 	sets.weapons.Dynamis = {main="Luhlaza Sword",sub="Tizona"}
 	sets.weapons.TrashWeapons = {main="Excalipoor II",sub="Feline Hagoita +1"}
 
@@ -554,7 +553,7 @@ function init_gear_sets()
 	sets.Cure_Received = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	sets.Self_Refresh = {back="Grapevine Cape",waist="Gishdubar Sash"}
 	sets.MagicBurst = {body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Locus Ring",legs="Assim. Shalwar +4",feet="Hashi. Basmak +3"}
-	sets.Phalanx_Received = {hands=gear.herculean_phalanx_hands,feet=gear.herculean_nuke_feet}
+	sets.Phalanx_Received = {main="Sakpata's Sword",hands=gear.herculean_phalanx_hands,feet=gear.herculean_nuke_feet}
 end
 
 -- Select default macro book on initial load or subjob change.
