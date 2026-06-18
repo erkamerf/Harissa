@@ -62,7 +62,7 @@ function init_gear_sets()
 
 	sets.buff['Burst Affinity'] = {legs="Assim. Shalwar +4",feet="Hashi. Basmak +3"}
 	sets.buff['Chain Affinity'] = {feet="Assim. Charuqs +4"}
-	sets.buff.Convergence = {head="Luh. Keffiyeh +2"}
+	sets.buff.Convergence = {head="Luhlaza Keffiyeh +4"}
 	sets.buff.Diffusion = {feet="Luhlaza Ch. +4"}
 	sets.buff.Enchainment = {}
 	sets.buff.Efflux = {back=gear.da_jse_back,legs="Hashishin Tayt +3"}
@@ -336,7 +336,7 @@ function init_gear_sets()
 	-- Breath Spells --
 
 	sets.midcast['Blue Magic'].Breath = {ammo="Mavi Tathlum",
-		head="Luh. Keffiyeh +2",neck="Mirage Stole +1",ear1="Regal Earring",ear2="Digni. Earring",
+		head="Luhlaza Keffiyeh +4",neck="Mirage Stole +1",ear1="Regal Earring",ear2="Digni. Earring",
 		body="Assim. Jubbah +4",hands="Luh. Bazubands +2",ring1="Shiva Ring +1",ring2="Lebeche Ring",
 		back="Cornflower Cape",legs="Hashishin Tayt +3",feet="Luhlaza Ch. +4"}
 
@@ -372,12 +372,12 @@ function init_gear_sets()
 	sets.NonElementalCure = {back="Tempered Cape +1",waist="Luminary Sash"}
 
 	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Mavi Tathlum",
-		head="Luh. Keffiyeh +2",neck="Mirage Stole +1",ear1="Gifted Earring",ear2="Loquac. Earring",
+		head="Luhlaza Keffiyeh +4",neck="Mirage Stole +1",ear1="Gifted Earring",ear2="Loquac. Earring",
 		body="Assim. Jubbah +4",hands="Rawhide Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back="Cornflower Cape",waist="Witful Belt",legs="Hashishin Tayt +3",feet="Luhlaza Ch. +4"}
 
 	sets.midcast['Blue Magic'].Buff = {ammo="Mavi Tathlum",
-		head="Luh. Keffiyeh +2",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Loquac. Earring",
+		head="Luhlaza Keffiyeh +4",neck="Incanter's Torque",ear1="Gifted Earring",ear2="Loquac. Earring",
 		body="Assim. Jubbah +4",hands="Hashi. Bazu. +3",ring1="Kishar Ring",ring2="Dark Ring",
 		back="Aurist's Cape +1",waist="Witful Belt",legs="Lengo Pants",feet="Carmine Greaves +1"}
 
