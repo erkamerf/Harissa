@@ -75,7 +75,7 @@ function init_gear_sets()
 	-- Precast Sets
 
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Azure Lore'] = {hands="Luh. Bazubands +2"}
+	sets.precast.JA['Azure Lore'] = {hands="Luh. Bazu. +4"}
 
 
 	-- Waltz set (chr and vit)
@@ -103,7 +103,7 @@ function init_gear_sets()
 
 	sets.precast.FC = {main="Sakpata's Sword",sub="Chanter's Shield",ammo="Impatiens",
 		head="Carmine Mask +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
-		body="Luhlaza Jubbah +2",hands="Hashi. Bazu. +3",ring1="Prolix Ring",ring2="Kishar Ring",
+		body="Luhlaza Jubbah +4",hands="Hashi. Bazu. +3",ring1="Prolix Ring",ring2="Kishar Ring",
 		back="Fi Follet Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Carmine Greaves +1"}
 
 	sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {body="Passion Jacket"})
@@ -205,8 +205,8 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].Physical = {ammo="Aurgelmir Orb +1",
     	head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
-    	body={ name="Luhlaza Jubbah +2", augments={'Enhances "Enchainment" effect',}},
-    	hands={ name="Luh. Bazubands +2", augments={'Enhances "Azure Lore" effect',}},
+    	body={ name="Luhlaza Jubbah +4", augments={'Enhances "Enchainment" effect',}},
+    	hands={ name="Luh. Bazu. +4", augments={'Enhances "Azure Lore" effect',}},
     	legs="Hashishin Tayt +3",
     	feet="Assim. Charuqs +4",
     	neck={ name="Mirage Stole +1", augments={'Path: A',}},
@@ -337,7 +337,7 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].Breath = {ammo="Mavi Tathlum",
 		head="Luhlaza Keffiyeh +4",neck="Mirage Stole +1",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Assim. Jubbah +4",hands="Luh. Bazubands +2",ring1="Shiva Ring +1",ring2="Lebeche Ring",
+		body="Assim. Jubbah +4",hands="Luh. Bazu. +4",ring1="Shiva Ring +1",ring2="Lebeche Ring",
 		back="Cornflower Cape",legs="Hashishin Tayt +3",feet="Luhlaza Ch. +4"}
 
 	-- Physical Added Effect Spells most notably "Stun" spells --
@@ -467,7 +467,7 @@ function init_gear_sets()
 	sets.engaged = {ammo="Aurgelmir Orb +1",
     				head="Malignance Chapeau",
     				body="Malignance Tabard",
-    				hands={ name="Luh. Bazubands +2", augments={'Enhances "Azure Lore" effect',}},
+    				hands={ name="Luh. Bazu. +4", augments={'Enhances "Azure Lore" effect',}},
     				legs="Malignance Tights",
     				feet={ name="Herculean Boots", augments={'Attack+13','"Mag.Atk.Bns."+25','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     				neck="Combatant's Torque",
