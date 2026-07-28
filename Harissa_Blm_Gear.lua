@@ -127,17 +127,17 @@ function init_gear_sets()
 	sets.midcast.BarElement = set_combine(sets.precast.FC['Enhancing Magic'], {})--legs="Shedir Seraweels"
 
 	sets.midcast['Enfeebling Magic'] = {main="Bunzi's Rod",sub="Culminus",ammo="Pemphredo Tathlum",
-		head="Wicce Petasos +2",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
+		head="Wicce Petasos +3",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Kishar Ring",ring2="Stikini Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 		
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Bunzi's Rod",sub="Culminus",ammo="Pemphredo Tathlum",
-		head="Wicce Petasos +2",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
+		head="Wicce Petasos +3",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 		
 	sets.midcast.ElementalEnfeeble = {main="Bunzi's Rod",sub="Culminus",ammo="Pemphredo Tathlum",
-		head="Wicce Petasos +2",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
+		head="Wicce Petasos +3",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Kishar Ring",ring2="Stikini Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 		
@@ -150,7 +150,7 @@ function init_gear_sets()
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'], {})
 
 	sets.midcast['Dark Magic'] = {main="Bunzi's Rod",sub="Culminus",ammo="Pemphredo Tathlum",
-		head="Wicce Petasos +2",neck="Erra Pendant",ear1="Malignance Earring",ear2="Wicce Earring +1",
+		head="Wicce Petasos +3",neck="Erra Pendant",ear1="Malignance Earring",ear2="Wicce Earring +1",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 
@@ -160,7 +160,7 @@ function init_gear_sets()
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 		
 	sets.midcast.Drain.Resistant = {main="Bunzi's Rod",sub="Culminus",ammo="Pemphredo Tathlum",
-		head="Wicce Petasos +2",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
+		head="Wicce Petasos +3",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 	
@@ -168,22 +168,22 @@ function init_gear_sets()
 	sets.midcast.Aspir.Resistant = sets.midcast.Drain.Resistant
 	
 	sets.midcast.Comet = {main="Bunzi's Rod",sub="Culminus",ammo="Pemphredo Tathlum",
-		head="Wicce Petasos +2",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
+		head="Wicce Petasos +3",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
 		back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 	
 	sets.midcast.Stun = {main="Bunzi's Rod",sub="Culminus",ammo="Pemphredo Tathlum",
-		head="Wicce Petasos +2",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
+		head="Wicce Petasos +3",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 		
 	sets.midcast.Stun.Resistant = {main="Bunzi's Rod",sub="Culminus",ammo="Pemphredo Tathlum",
-		head="Wicce Petasos +2",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
+		head="Wicce Petasos +3",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 
 	sets.midcast.BardSong = {main="Bunzi's Rod",sub="Culminus",ammo="Pemphredo Tathlum",
-		head="Wicce Petasos +2",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
+		head="Wicce Petasos +3",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 
@@ -195,27 +195,27 @@ function init_gear_sets()
 	-- Elemental Magic sets
 	
 	sets.midcast['Elemental Magic'] = {main="Bunzi's Rod",sub="Culminus",ammo="Pemphredo Tathlum",
-		head="Wicce Petasos +2",neck="Saevus Pendant +1",ear1="Malignance Earring",ear2="Wicce Earring +1",
+		head="Wicce Petasos +3",neck="Saevus Pendant +1",ear1="Malignance Earring",ear2="Wicce Earring +1",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Resonance Ring",ring2="Metamor. Ring +1",
 		back=gear.nuke_jse_back,waist="Hachirin-no-Obi",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 		
 	sets.midcast['Elemental Magic'].DT = {main="Bunzi's Rod",sub="Culminus",ammo="Staunch Tathlum +1",
-		head="Wicce Petasos +2",neck="Loricate Torque +1",ear1="Malignance Earring",ear2="Wicce Earring +1",
+		head="Wicce Petasos +3",neck="Loricate Torque +1",ear1="Malignance Earring",ear2="Wicce Earring +1",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Defending Ring",ring2="Freke Ring",
 		back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 		
 	sets.midcast['Elemental Magic'].Resistant = {main="Bunzi's Rod",sub="Culminus",ammo="Pemphredo Tathlum",
-		head="Wicce Petasos +2",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
+		head="Wicce Petasos +3",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 		
 	sets.midcast['Elemental Magic'].HighTierNuke = {main="Bunzi's Rod",sub="Culminus",ammo="Pemphredo Tathlum",
-		head="Wicce Petasos +2",neck="Sibyl Scarf",ear1="Malignance Earring",ear2="Wicce Earring +1",
+		head="Wicce Petasos +3",neck="Sibyl Scarf",ear1="Malignance Earring",ear2="Wicce Earring +1",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Freke Ring",ring2="Metamor. Ring +1",
 		back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 	
 	sets.midcast['Elemental Magic'].HighTierNuke.Resistant = {main="Bunzi's Rod",sub="Culminus",ammo="Pemphredo Tathlum",
-		head="Wicce Petasos +2",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
+		head="Wicce Petasos +3",neck="Null Loop",ear1="Malignance Earring",ear2="Wicce Earring +1",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 	
@@ -275,12 +275,12 @@ function init_gear_sets()
 		back="Shadow Mantle",waist="Plat. Mog. Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
 	sets.idle.MDT = {main="Daybreak",sub="Culminus",ammo="Staunch Tathlum +1",
-		head="Wicce Petasos +2",neck="Warder's Charm +1",ear1="Sanare Earring",ear2="Alabaster Earring",
+		head="Wicce Petasos +3",neck="Warder's Charm +1",ear1="Sanare Earring",ear2="Alabaster Earring",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Defending Ring",ring2="Shadow Ring",
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 		
 	sets.idle.MEVA = {main="Daybreak",sub="Culminus",ammo="Staunch Tathlum +1",
-		head="Wicce Petasos +2",neck="Warder's Charm +1",ear1="Sanare Earring",ear2="Alabaster Earring",
+		head="Wicce Petasos +3",neck="Warder's Charm +1",ear1="Sanare Earring",ear2="Alabaster Earring",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Defending Ring",ring2="Shadow Ring",
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 
@@ -294,12 +294,12 @@ function init_gear_sets()
 		back="Shadow Mantle",waist="Plat. Mog. Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.defense.MDT = {main="Daybreak",sub="Culminus",ammo="Staunch Tathlum +1",
-		head="Wicce Petasos +2",neck="Warder's Charm +1",ear1="Sanare Earring",ear2="Lugalbanda Earring",
+		head="Wicce Petasos +3",neck="Warder's Charm +1",ear1="Sanare Earring",ear2="Lugalbanda Earring",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Defending Ring",ring2="Shadow Ring",
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 		
 	sets.defense.MEVA = {main="Daybreak",sub="Culminus",ammo="Staunch Tathlum +1",
-		head="Wicce Petasos +2",neck="Warder's Charm +1",ear1="Sanare Earring",ear2="Lugalbanda Earring",
+		head="Wicce Petasos +3",neck="Warder's Charm +1",ear1="Sanare Earring",ear2="Lugalbanda Earring",
 		body="Wicce Coat +3",hands="Wicce Gloves +2",ring1="Defending Ring",ring2="Shadow Ring",
 		back="Null Shawl",waist="Null Belt",legs="Wicce Chausses +3",feet="Wicce Sabots +3"}
 
