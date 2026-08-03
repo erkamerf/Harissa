@@ -48,7 +48,7 @@ send_command('bind ^f9 gs c cycle HybridMode') --Changes defense settings for me
 send_command('bind @f9 gs c cycle RangedMode') --Changes ranged offense settings such as accuracy.
 send_command('bind ~f9 gs c cycle WeaponskillMode') --Changes weaponskill offense settings such as accuracy.
 send_command('bind f10 gs c set DefenseMode Physical') --Turns your physical defense set on.
-send_command('bind ^f10 gs c cycle PhysicalDefenseMode') --Changes your physical defense set.
+send_command('bind ~f10 gs c cycle PhysicalDefenseMode') --Changes your physical defense set.
 send_command('bind !f10 gs c toggle Kiting') --Keeps your kiting gear on..
 send_command('bind f11 gs c set DefenseMode Magical') --Turns your magical defense set on.
 send_command('bind ^f11 gs c cycle MagicalDefenseMode') --Changes your magical defense set.
