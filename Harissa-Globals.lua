@@ -59,6 +59,7 @@ send_command('bind f12 gs c set DefenseMode Resist') --Turns your resist defense
 send_command('bind @f12 gs c cycle IdleMode') --Changes your idle mode options such as refresh.
 send_command('bind !f12 gs c reset DefenseMode') --Turns your defensive mode off.
 send_command('bind ^@!f12 gs reload') --Reloads gearswap.
+send_command('bind ^t gs c cycle TreasureMode') --Turns on TreasureHunter sets
 send_command('bind pause gs c update user') --Runs a quick check to make sure you have the right gear on and checks variables.
 send_command('bind ^@!pause gs org') --Runs organizer.
 send_command('bind ^@!backspace gs c buffup') --Buffup macro because buffs are love.
