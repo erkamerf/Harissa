@@ -484,10 +484,22 @@ function init_gear_sets()
 		back="Null Shawl",waist="Null Belt",legs="Bunzi's Pants",feet="Leth. Houseaux +3"}
 
 	-- Idle sets
-	sets.idle = {main="Mpaca's Staff",sub="Oneiros Grip",ammo="Homiliary",
-		head="Viti. Chapeau +3",neck="Sibyl Scarf",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Lethargy Sayon +3",hands=gear.chironic_refresh_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back="Null Shawl",waist="Null Belt",legs=gear.merlinic_refresh_legs,feet=gear.merlinic_refresh_feet}
+	sets.idle = {
+		main="Bolelabunga",
+    	sub="Archduke's Shield",
+    	ammo="Homiliary",
+    	head="Befouled Crown",
+    	body="Jhakri Robe +2",
+    	hands="Volte Gloves",
+    	legs="Volte Brais",
+    	feet="Volte Gaiters",
+    	neck="Sanctity Necklace",
+    	waist="Null Belt",
+    	left_ear="Etiolation Earring",
+    	right_ear="Alabaster Earring",
+    	left_ring="Stikini Ring +1",
+    	right_ring="Karieyh Ring +1",
+    	back="Null Shawl",}
 		
 	sets.idle.PDT = {main="Daybreak",sub="Sacro Bulwark",ammo="Staunch Tathlum +1",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
@@ -527,7 +539,7 @@ function init_gear_sets()
 		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Defending Ring",ring2="Shadow Ring",
 		back="Null Shawl",waist="Null Belt",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
 		
-	sets.Kiting = {ring2="Shneddick Ring"}
+	sets.Kiting = {legs="Carmine Cuisses +1",ring2="Shneddick Ring"}
 	sets.latent_refresh = {waist="Fucho-no-obi"}
 	sets.latent_refresh_grip = {sub="Oneiros Grip"}
 	sets.DayIdle = {}
