@@ -94,19 +94,19 @@ function init_gear_sets()
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Requiescat'] = {range=empty,ammo="Regal Gem",
 		head="Jhakri Coronal +2",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
-		body="Jhakri Robe +2",hands="Atrophy Gloves +2",ring1="Ifrit Ring +1",ring2="Rufescent Ring",
+		body="Jhakri Robe +2",hands="Atrophy Gloves +4",ring1="Ifrit Ring +1",ring2="Rufescent Ring",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 	
 	sets.precast.WS['Chant Du Cygne'] = {range=empty,ammo="Voluspa Tathlum",
 		head="Blistering Sallet +1",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Sherida Earring",
-		body="Ayanmo Corazza +2",hands="Atrophy Gloves +2",ring1="Begrudging Ring",ring2="Chirich Ring +1",
+		body="Ayanmo Corazza +2",hands="Atrophy Gloves +4",ring1="Begrudging Ring",ring2="Chirich Ring +1",
 		back=gear.wsd_jse_back,waist="Fotia Belt",legs="Zoar Subligar +1",feet="Thereoid Greaves"}
 		
 	sets.precast.WS['Evisceration'] = sets.precast.WS['Chant Du Cygne']
 
 	sets.precast.WS['Savage Blade'] = {range=empty,ammo="Regal Gem",
 		head="Viti. Chapeau +2",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Ishvara Earring",
-		body="Viti. Tabard +2",hands="Atrophy Gloves +2",ring1="Ifrit Ring +1",ring2="Rufescent Ring",
+		body="Viti. Tabard +2",hands="Atrophy Gloves +4",ring1="Ifrit Ring +1",ring2="Rufescent Ring",
 		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 		
 	sets.precast.WS['Sanguine Blade'] = {range=empty,ammo="Pemphredo Tathlum",
@@ -169,7 +169,7 @@ function init_gear_sets()
 
 	sets.midcast['Enhancing Magic'] = {main="Oranyan",sub="Culminus",range=empty,ammo="Hasty Pinion +1",
 		head="Telchine Cap",neck="Dls. Torque +2",ear1="Andoaa Earring",ear2="Leth Earring +2",
-		body="Viti. Tabard +2",hands="Atrophy Gloves +2",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
+		body="Viti. Tabard +2",hands="Atrophy Gloves +4",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
 		back=gear.nuke_jse_back,waist="Embla Sash",legs="Telchine Braconi",feet="Leth. Houseaux +2"}
 
 	--Atrophy Gloves are better than Lethargy for me despite the set bonus for duration on others.		
@@ -357,13 +357,13 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Naegling = {main="Naegling",sub="Sacro Bulwark",range=empty}
 	sets.weapons.NaeglingBow = {main="Naegling",sub="Sacro Bulwark",range="Ullr",ammo="Beetle Arrow"}
-	sets.weapons.DualWeapons = {main="Naegling",sub="Thibron",range=empty}
-	sets.weapons.DualWeaponsAcc = {main="Naegling",sub="Almace",range=empty}
-	sets.weapons.DualEvisceration = {main="Tauret",sub="Almace",range=empty}
+	sets.weapons.DualWeapons = {main="Sequence",sub="Sakpata's Sword",range=empty}
+	sets.weapons.DualWeaponsAcc = {main="Naegling",sub="Sakpata's Sword",range=empty}
+	sets.weapons.DualEvisceration = {main="Tauret",sub="Crepuscular Knife",range=empty}
 	sets.weapons.DualAeolian = {main="Tauret",sub="Bunzi's Rod",range=empty}
 	sets.weapons.DualProcDaggers = {main="Blurred Knife +1",sub="Atoyac",range=empty}
 	sets.weapons.EnspellOnly = {main="Norgish Dagger",sub="Aern Dagger",range="Ullr",ammo="Beetle Arrow"}
-	sets.weapons.EnspellDW = {main="Blurred Knife +1",sub="Atoyac",range="Ullr",ammo="Beetle Arrow"}
+	sets.weapons.EnspellDW = {main="Sakpata's Sword",sub="Archduke's Sword",range="Ullr",ammo="Beetle Arrow"}
 	sets.weapons.DualClubs = {main="Maxentius",sub="Thibron",range=empty}
 	sets.weapons.DualAlmace = {main="Almace",sub="Sequence",range=empty}
 	sets.weapons.DualBow = {main="Naegling",sub="Tauret",range="Ullr",ammo="Beetle Arrow"}

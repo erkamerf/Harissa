@@ -96,7 +96,7 @@ function init_gear_sets()
     sets.precast.CorsairShot = {range="Death Penalty",ammo=gear.QDbullet,
         head=gear.herculean_nuke_head,neck="Comm. Charm +1",ear1="Novio earring",ear2="Friomisi earring",
         body="Lanun Frac +4",hands="Carmine Fin. Ga. +1",ring1="Crepuscular Ring",ring2="Arvina Ringlet +1",
-        back="Gunslinger's Cape",waist="Orpheus's Sash",legs="Nyame Flanchard",feet="Chass. Bottes +3"}
+        back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="SV Loincloth +1",feet="Lanun Bottes +4"}
 
     --vv The set below makes it to where you have a chance at triple dmg. normal dmg is about half of the above set. proc chance is not super high even with all pieces.
     -- Currently puts out about 5k first shot, 6.4k second shot or 12k to 16k on a triple, 16k to potential 20k second shot if it were to proc (point blank, O.Sash)
