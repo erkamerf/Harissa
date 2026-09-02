@@ -94,7 +94,7 @@ function init_gear_sets()
     --vv The set below has very consistent dmg around 9.5k per shot (point blank due to O.Sash) Vs. Acerbic Jagil in Morimar. Varies by about 1k dmg at 18 yalms
     
     sets.precast.CorsairShot = {range="Death Penalty",ammo=gear.QDbullet,
-        head=gear.herculean_nuke_head,neck="Comm. Charm +1",ear1="Novio earring",ear2="Friomisi earring",
+        head=gear.herculean_nuke_head,neck="Comm. Charm +1",ear1="Friomisi Earring",ear2="Chas. Earring +1",
         body="Lanun Frac +4",hands="Carmine Fin. Ga. +1",ring1="Crepuscular Ring",ring2="Arvina Ringlet +1",
         back=gear.magic_wsd_jse_back,waist="Eschan Stone",legs="SV Loincloth +1",feet="Lanun Bottes +4"}
 
@@ -284,7 +284,7 @@ function init_gear_sets()
         waist="Reiki Yotai",
         left_ear="Enervating Earring",
         right_ear="Telos Earring",
-        left_ring="Crepuscular Ring1",
+        left_ring="Crepuscular Ring",
         right_ring="Chirich Ring +1",
         back="Null Shawl",}
 
