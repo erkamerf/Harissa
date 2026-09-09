@@ -168,8 +168,8 @@ function init_gear_sets()
 	sets.Cure_Received = {neck="Phalaina Locket",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
 	sets.Self_Refresh = {back="Grapevine Cape",waist="Gishdubar Sash"}
 
-	sets.midcast['Enhancing Magic'] = {main="Oranyan",sub="Culminus",range=empty,ammo="Hasty Pinion +1",
-		head="Telchine Cap",neck="Dls. Torque +2",ear1="Andoaa Earring",ear2="Leth Earring +2",
+	sets.midcast['Enhancing Magic'] = {main="Oranyan",sub="Enki Strap",range=empty,ammo="Hasty Pinion +1",
+		head="Telchine Cap",neck="Dls. Torque +2",ear1="Andoaa Earring",ear2="Leth. Earring +2",
 		body="Viti. Tabard +2",hands="Atrophy Gloves +4",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
 		back=gear.nuke_jse_back,waist="Embla Sash",legs="Telchine Braconi",feet="Leth. Houseaux +2"}
 
