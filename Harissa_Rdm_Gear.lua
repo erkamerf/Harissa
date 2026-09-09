@@ -363,14 +363,14 @@ function init_gear_sets()
 	sets.weapons.Pierce = {main="Crepuscular Knife",sub="Sacro Bulwark"}
 	sets.weapons.EnspellOnly = {main="Norgish Dagger",sub="Aern Dagger",range="Ullr",ammo="Beetle Arrow"}
 
-	sets.weapons.DualWeapons = {main="Sequence",sub="Sakpata's Sword",range=empty}
-	sets.weapons.DualWeaponsAcc = {main="Naegling",sub="Sakpata's Sword",range=empty}
+	sets.weapons.DualWeapons = {main="Naegling",sub="Thibron",range=empty}
+	sets.weapons.DualWeaponsAcc = {main="Sequence",sub="Thibron",range=empty}
 	sets.weapons.DualEvisceration = {main="Tauret",sub="Crepuscular Knife",range=empty}
 	sets.weapons.DualAeolian = {main="Tauret",sub="Bunzi's Rod",range=empty}
 	sets.weapons.DualProcDaggers = {main="Blurred Knife +1",sub="Atoyac",range=empty}
 	sets.weapons.EnspellDW = {main="Sakpata's Sword",sub="Archduke's Sword",range="Ullr",ammo="Beetle Arrow"}
 	sets.weapons.DualClubs = {main="Maxentius",sub="Thibron",range=empty}
-	sets.weapons.DualAlmace = {main="Almace",sub="Sequence",range=empty}
+	sets.weapons.DualAlmace = {main="Sakpata's Sword",sub="Sequence",range=empty}
 	sets.weapons.DualBow = {main="Naegling",sub="Tauret",range="Ullr",ammo="Beetle Arrow"}
 	sets.weapons.BowMacc = {main="Naegling",sub="Tauret",range="Ullr",ammo=empty}
 	
