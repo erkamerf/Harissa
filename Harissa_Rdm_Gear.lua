@@ -136,7 +136,7 @@ function init_gear_sets()
     sets.MagicBurst = {main=gear.grioavolr_nuke_staff,sub="Alber Strap",head="Ea Hat +1",neck="Mizu. Kubikazari",body="Ea Houppe. +1",hands="Amalric Gages +1",ring1="Mujin Band",legs="Ea Slops +1",feet="Jhakri Pigaches +2"}
 	
 	sets.midcast.FastRecast = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",range=empty,ammo="Hasty Pinion +1",
-		head="Atro. Chapeau +2",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
+		head="Atro. Chapeau +2",neck="Voltsurge Torque",ear1="Malignance Earring",ear2="Enchntr. Earring +1",
 		body="Zendik Robe",hands="Gende. Gages +1",ring1="Kishar Ring",ring2="Prolix Ring",
 		back="Swith Cape +1",waist="Witful Belt",legs="Psycloth Lappas",feet="Medium's Sabots"}
 
@@ -194,14 +194,14 @@ function init_gear_sets()
 	sets.midcast.Shell = {ring2="Sheltered Ring"}
 	
 	sets.midcast['Enfeebling Magic'] = {main="Daybreak",sub="Culminus",range=empty,ammo="Regal Gem",
-		head="Viti. Chapeau +3",neck="Dls. Torque +2",ear1="Regal Earring",ear2="Snotra Earring",
+		head="Viti. Chapeau +3",neck="Dls. Torque +2",ear1="Malignance Earring",ear2="Snotra Earring",
 		body="Lethargy Sayon +2",hands="Regal Cuffs",ring1="Kishar Ring",ring2="Stikini Ring +1",
-		back=gear.nuke_jse_back,waist="Obstin. Sash",legs="Chironic Hose",feet="Viti. Boots +4"}
+		back=gear.nuke_jse_back,waist="Rumination Sash",legs="Chironic Hose",feet="Viti. Boots +4"}
 		
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak",sub="Culminus",range=empty,ammo="Regal Gem",
-		head="Viti. Chapeau +3",neck="Dls. Torque +2",ear1="Regal Earring",ear2="Snotra Earring",
-		body="Atrophy Tabard +2",hands=gear.chironic_enfeeble_hands,ring1="Metamor. Ring +1",ring2="Metamor. Ring +1",
-		back=gear.nuke_jse_back,waist="Luminary Sash",legs="Chironic Hose",feet="Viti. Boots +4"}
+		head="Viti. Chapeau +3",neck="Dls. Torque +2",ear1="Malignance Earring",ear2="Snotra Earring",
+		body="Atrophy Tabard +2",hands=gear.chironic_enfeeble_hands,ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
+		back=gear.nuke_jse_back,waist="Null Belt",legs="Chironic Hose",feet="Viti. Boots +4"}
 		
 	sets.midcast.DurationOnlyEnfeebling = set_combine(sets.midcast['Enfeebling Magic'], {main="Bunzi's Rod",body="Atrophy Tabard +2",range="Ullr"})
 		
@@ -267,14 +267,14 @@ function init_gear_sets()
 		back=gear.nuke_jse_back,waist="Luminary Sash",legs="Psycloth Lappas",feet="Amalric Nails +1"}
 
     sets.midcast.Drain = {main="Rubicundity",sub="Culminus",range="Ullr",ammo=empty,
-        head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
+        head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Friomisi Earring",ear2="Malignance Earring",
         body=gear.merlinic_aspir_body,hands=gear.chironic_enfeeble_hands,ring1="Evanescence Ring",ring2="Archon Ring",
         back=gear.nuke_jse_back,waist="Fucho-no-obi",legs=gear.merlinic_aspir_legs,feet=gear.merlinic_aspir_feet}
 
 	sets.midcast.Aspir = sets.midcast.Drain
 		
 	sets.midcast.Stun = {main="Bunzi's Rod",sub="Culminus",range="Ullr",ammo=empty,
-		head="Atro. Chapeau +2",neck="Dls. Torque +2",ear1="Regal Earring",ear2="Malignance Earring",
+		head="Atro. Chapeau +2",neck="Dls. Torque +2",ear1="Friomisi Earring",ear2="Malignance Earring",
 		body="Zendik Robe",hands="Volte Gloves",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
 		back=gear.nuke_jse_back,waist="Sailfi Belt +1",legs="Chironic Hose",feet=gear.merlinic_aspir_feet}
 		

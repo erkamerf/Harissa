@@ -8,7 +8,7 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options('PDT') --~f10
 	state.MagicalDefenseMode:options('MDT') --^f11
 	state.ResistDefenseMode:options('MEVA') 
-	state.Weapons:options('None','Tizalmace','Sequence','LuhlaSakpata','GunNaegling','Clubs','Dynamis','TrashWeapons') --f9
+	state.Weapons:options('None','Tizalmace','NaegThibron','Sequence','LuhlaSakpata','GunNaegling','Clubs','Dynamis','TrashWeapons') --f9
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'} --!f11
 
@@ -455,9 +455,10 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.Tizalmace = {main="Tizona",sub="Luhlaza Sword"} -- previously Almace offhand
+	sets.weapons.NaegThibron = {main="Naegling",sub="Thibron"}
 	sets.weapons.Sequence = {main="Sequence",sub="Tizona"} --previously Almace offhand
 	sets.weapons.LuhlaSakpata = {main="Luhlaza Sword",sub="Sakpata's Sword"}
-	sets.weapons.GunNaegling = {main="Naegling",sub="Luhlaza Sword",range="Silver Gun +1",ammo="Bronze Bullet"}
+	sets.weapons.GunNaegling = {main="Naegling",sub="Thibron",range="Silver Gun +1",ammo="Bronze Bullet"}
 	sets.weapons.Clubs = {main="Maxentius",sub="Bunzi's Rod",}
 	sets.weapons.Dynamis = {main="Luhlaza Sword",sub="Tizona"}
 	sets.weapons.TrashWeapons = {main="Excalipoor II",sub="Feline Hagoita +1"}
