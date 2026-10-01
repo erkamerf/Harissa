@@ -8,7 +8,7 @@ function user_job_setup()
 	state.PhysicalDefenseMode:options('PDT') --~f10
 	state.MagicalDefenseMode:options('MDT') --^f11
 	state.ResistDefenseMode:options('MEVA') 
-	state.Weapons:options('None','Tizalmace','NaegThibron','Sequence','LuhlaSakpata','GunNaegling','Clubs','Dynamis','TrashWeapons') --f9
+	state.Weapons:options('None','Tizalmace','NaegThibron','Sequence','LuhlaThibron','GunNaegling','Clubs') --f9
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'} --!f11
 
@@ -261,11 +261,11 @@ function init_gear_sets()
 	-- Magical Spells --
 
 	sets.midcast['Blue Magic'].Magical = {main="Bunzi's Rod",sub="Sakpata's Sword",
-		ammo="Mavi Tathlum",
-		head="Amalric Coif +1",
+		ammo="Ghastly Tathlum +1",
+		head="Hashishin Kavuk +3",
 		body="Hashishin Mintan +3",
-		hands={ name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20',}},
-		legs="Amalric Slops +1",
+		hands="Hashi. Bazu. +3",
+		legs="Hashishin Tayt +3",
 		feet="Hashi. Basmak +3",
 		neck="Mirage Stole +1",
 		waist="Orpheus's Sash",
@@ -454,14 +454,13 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
 	
 	-- Weapons sets
-	sets.weapons.Tizalmace = {main="Tizona",sub="Luhlaza Sword"} -- previously Almace offhand
+	sets.weapons.Tizalmace = {main="Tizona",sub="Thibron"} -- previously Almace offhand
 	sets.weapons.NaegThibron = {main="Naegling",sub="Thibron"}
-	sets.weapons.Sequence = {main="Sequence",sub="Tizona"} --previously Almace offhand
-	sets.weapons.LuhlaSakpata = {main="Luhlaza Sword",sub="Sakpata's Sword"}
+	sets.weapons.Sequence = {main="Sequence",sub="Thibron"} --previously Almace offhand
+	sets.weapons.LuhlaThibron = {main="Luhlaza Sword",sub="Thibron"}
 	sets.weapons.GunNaegling = {main="Naegling",sub="Thibron",range="Silver Gun +1",ammo="Bronze Bullet"}
 	sets.weapons.Clubs = {main="Maxentius",sub="Bunzi's Rod",}
-	sets.weapons.Dynamis = {main="Luhlaza Sword",sub="Tizona"}
-	sets.weapons.TrashWeapons = {main="Excalipoor II",sub="Feline Hagoita +1"}
+
 
 	-- Engaged sets
 
