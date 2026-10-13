@@ -49,7 +49,7 @@ function init_gear_sets()
 	-- Precast Sets
 	
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Chainspell'] = {body="Viti. Tabard +2"}
+	sets.precast.JA['Chainspell'] = {body="Viti. Tabard +4"}
 	
 
 	-- Waltz set (chr and vit)
@@ -65,7 +65,7 @@ function init_gear_sets()
     	sub="Chanter's Shield",
     	ammo="Impatiens",
     	head="Atro. Chapeau +4",
-    	body="Viti. Tabard +2",
+    	body="Viti. Tabard +4",
     	hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -4%','Magic dmg. taken -2%','"Cure" spellcasting time -5%',}},
     	legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
     	feet={ name="Carmine Greaves +1", augments={'HP+80','MP+80','Phys. dmg. taken -4',}},
@@ -110,7 +110,7 @@ function init_gear_sets()
 
 	sets.precast.WS['Savage Blade'] = {range=empty,ammo="Regal Gem",
 		head="Viti. Chapeau +4",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Leth. Earring +2",
-		body="Viti. Tabard +2",hands="Atrophy Gloves +4",ring1="Ifrit Ring +1",ring2="Sroda Ring",
+		body="Viti. Tabard +4",hands="Atrophy Gloves +4",ring1="Ifrit Ring +1",ring2="Sroda Ring",
 		back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 		
 	sets.precast.WS['Sanguine Blade'] = {range=empty,ammo="Pemphredo Tathlum",
@@ -145,7 +145,7 @@ function init_gear_sets()
 
     sets.midcast.Cure = {main="Daybreak",sub="Sors Shield",range=empty,ammo="Hasty Pinion +1",
         head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Meili Earring",ear2="Mendi. Earring",
-        body="Viti. Tabard +2",hands="Kaykaus Cuffs",ring1="Janniston Ring",ring2="Menelaus's Ring",
+        body="Viti. Tabard +4",hands="Kaykaus Cuffs",ring1="Janniston Ring",ring2="Menelaus's Ring",
         back="Tempered Cape +1",waist="Luminary Sash",legs="Atro. Tights +4",feet="Kaykaus Boots"}
 		
     sets.midcast.LightWeatherCure = {main="Chatoyant Staff",sub="Curatio Grip",range=empty,ammo="Hasty Pinion +1",
@@ -161,7 +161,7 @@ function init_gear_sets()
 		
 	sets.midcast.Cursna = {main=gear.grioavolr_fc_staff,sub="Curatio Grip",range=empty,ammo="Staunch Tathlum +1",
         head="Bunzi's Hat",neck="Debilis Medallion",ear1="Meili Earring",ear2="Mendi. Earring",
-        body="Viti. Tabard +2",hands="Hieros Mittens",ring1="Haoma's Ring",ring2="Menelaus's Ring",
+        body="Viti. Tabard +4",hands="Hieros Mittens",ring1="Haoma's Ring",ring2="Menelaus's Ring",
         back="Oretan. Cape +1",waist="Witful Belt",legs="Atro. Tights +4",feet="Vanya Clogs"}
 
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main=gear.grioavolr_fc_staff,sub="Clemency Grip"})
@@ -173,7 +173,7 @@ function init_gear_sets()
 
 	sets.midcast['Enhancing Magic'] = {main="Oranyan",sub="Enki Strap",range=empty,ammo="Hasty Pinion +1",
 		head="Telchine Cap",neck="Dls. Torque +2",ear1="Andoaa Earring",ear2="Leth. Earring +2",
-		body="Viti. Tabard +2",hands="Atrophy Gloves +4",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
+		body="Viti. Tabard +4",hands="Atrophy Gloves +4",ring1="Stikini Ring +1",ring2="Metamor. Ring +1",
 		back=gear.nuke_jse_back,waist="Embla Sash",legs="Telchine Braconi",feet="Leth. Houseaux +2"}
 
 	--Atrophy Gloves are better than Lethargy for me despite the set bonus for duration on others.		
@@ -296,7 +296,7 @@ function init_gear_sets()
 		
     sets.HPCure = {main="Daybreak",sub="Sors Shield",range=empty,ammo="Hasty Pinion +1",
         head="Gende. Caubeen +1",neck="Unmoving Collar +1",ear1="Gifted Earring",ear2="Mendi. Earring",
-        body="Viti. Tabard +2",hands="Kaykaus Cuffs",ring1="Gelatinous Ring +1",ring2="Meridian Ring",
+        body="Viti. Tabard +4",hands="Kaykaus Cuffs",ring1="Gelatinous Ring +1",ring2="Meridian Ring",
         back="Moonlight Cape",waist="Luminary Sash",legs="Atro. Tights +4",feet="Kaykaus Boots"}
 	
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})

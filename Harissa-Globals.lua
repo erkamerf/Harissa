@@ -7,6 +7,16 @@ state.DisplayMode = M(true, 'Display Mode') --Set this to false if you don't wan
 --Uncomment the settings below and change the values to edit the display's look.
 display.x = 1100
 display.y = 1329
+--x = 900, y = 1060 for Ygnas machine
+--equipviewer:1630 935
+--Tickle:-150 -175
+--pointwatch:17 1333
+
+--Display seems to not be working on TV
+--equipviewer:1310, 753
+--Tickle:-150 -175 (???) shows as this inside settings.xml
+--pointwatch: 13 882
+
 display.font = 'Arial'
 display.size = 12
 
