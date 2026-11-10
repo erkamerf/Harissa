@@ -364,7 +364,7 @@ function init_gear_sets()
 	sets.weapons.Sequence = {main="Sequence",sub="Sacro Bulwark",range="Ullr",ammo="Beetle Arrow"}
 	sets.weapons.Blunt = {main="Maxentius",sub="Sacro Bulwark"}
 	sets.weapons.Pierce = {main="Crepuscular Knife",sub="Sacro Bulwark"}
-	sets.weapons.EnspellOnly = {main="Norgish Dagger",sub="Aern Dagger",range="Ullr",ammo="Beetle Arrow"}
+	sets.weapons.EnspellOnly = {main="Aern Dagger II",sub="Aern Dagger",range="Ullr",ammo="Beetle Arrow"}
 
 	sets.weapons.DualWeapons = {main="Naegling",sub="Thibron",range=empty}
 	sets.weapons.DualWeaponsAcc = {main="Sequence",sub="Thibron",range=empty}
