@@ -52,7 +52,7 @@ function init_gear_sets()
     -- Special sets (required by rules)
     --------------------------------------
 
-	sets.TreasureHunter = {head="Wh. Rarab Cap +1", ammo="Per. Lucky Egg",
+	sets.TreasureHunter = {head="Wh. Rarab Cap +1", ammo="Per. Lucky Egg",body="Volte Jupon",
     hands={ name="Herculean Gloves", augments={'"Mag.Atk.Bns."+4','Weapon skill damage +3%','"Treasure Hunter"+1','Accuracy+15 Attack+15','Mag. Acc.+17 "Mag.Atk.Bns."+17',}},
     waist="Chaac Belt",
     legs={ name="Herculean Trousers", augments={'AGI+1','"Dbl.Atk."+2','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+3 "Mag.Atk.Bns."+3',}},
